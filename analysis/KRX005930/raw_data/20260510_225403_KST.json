@@ -1,0 +1,1138 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at": "2026-05-10T22:54:03+09:00",
+  "input": {
+    "market": "KRX",
+    "ticker": "005930",
+    "company_hint": "Samsung Electronics",
+    "analysis_date": "2026-05-10",
+    "language_set": [
+      "ko",
+      "en",
+      "ja"
+    ],
+    "output_base_dir": "analysis"
+  },
+  "identity": {
+    "company": "Samsung Electronics Co., Ltd.",
+    "company_ko": "삼성전자",
+    "ticker": "005930",
+    "market": "KRX",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "sector": "Technology",
+    "industry": "Semiconductors and Consumer Electronics",
+    "website": "https://www.samsung.com/global/ir/"
+  },
+  "target": {
+    "company": "Samsung Electronics Co., Ltd.",
+    "ticker": "005930.KS",
+    "security_code": "005930",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "business_tags": [
+      "memory semiconductor",
+      "foundry",
+      "mobile",
+      "display",
+      "consumer electronics",
+      "network"
+    ]
+  },
+  "as_of": {
+    "page_date": "2026-05-10",
+    "market_data_date": "2026-05-08",
+    "timezone": "Asia/Seoul",
+    "note": {
+      "ko": "2026-05-10은 일요일이므로 가격 데이터는 확인 가능한 최신 거래일인 2026-05-08 종가를 기준으로 작성했다.",
+      "en": "Because 2026-05-10 is a Sunday, market data uses the latest confirmed trading close available: 2026-05-08.",
+      "ja": "2026年5月10日は日曜日のため、株価データは確認可能な最新取引日である2026年5月8日の終値を基準にした。"
+    }
+  },
+  "price_snapshot": {
+    "source": "Investing.com historical data",
+    "date": "2026-05-08",
+    "open": 260000,
+    "high": 270000,
+    "low": 260000,
+    "close": 268500,
+    "change": -3000,
+    "change_percent": -1.1,
+    "volume": 25700000,
+    "currency": "KRW",
+    "interpretation": {
+      "ko": "5월 8일 종가는 268,500원으로 전일 급등 후 소폭 조정했다. 5월 6일과 7일의 강한 상승 뒤 숨고르기였으며, AI 메모리 실적 랠리의 열기는 아직 유지되는 구간이다.",
+      "en": "The May 8 close was KRW 268,500, a modest pullback after a sharp rally. It looks like consolidation after the strong May 6-7 move, while the AI-memory earnings rally remains intact.",
+      "ja": "5月8日の終値は268,500ウォンで、急騰後に小幅調整した。5月6日と7日の強い上昇後の一服であり、AIメモリ決算ラリーの熱はなお維持されている。"
+    }
+  },
+  "recent_prices": [
+    {
+      "date": "2026-04-08",
+      "open": 200000,
+      "high": 207000,
+      "low": 198000,
+      "close": 203000,
+      "volume": 18000000
+    },
+    {
+      "date": "2026-04-16",
+      "open": 212000,
+      "high": 218000,
+      "low": 210500,
+      "close": 217500,
+      "volume": 18420244
+    },
+    {
+      "date": "2026-04-24",
+      "open": 225000,
+      "high": 232000,
+      "low": 221000,
+      "close": 228000,
+      "volume": 21000000
+    },
+    {
+      "date": "2026-04-30",
+      "open": 229000,
+      "high": 230000,
+      "low": 220500,
+      "close": 220500,
+      "volume": 20520000
+    },
+    {
+      "date": "2026-05-04",
+      "open": 228000,
+      "high": 232500,
+      "low": 224000,
+      "close": 232500,
+      "volume": 31910000
+    },
+    {
+      "date": "2026-05-06",
+      "open": 254000,
+      "high": 270000,
+      "low": 251000,
+      "close": 266000,
+      "volume": 50110000
+    },
+    {
+      "date": "2026-05-07",
+      "open": 272000,
+      "high": 277000,
+      "low": 260000,
+      "close": 271500,
+      "volume": 40550000
+    },
+    {
+      "date": "2026-05-08",
+      "open": 260000,
+      "high": 270000,
+      "low": 260000,
+      "close": 268500,
+      "volume": 25700000
+    }
+  ],
+  "monthly_prices": [
+    {
+      "month": "2025-05",
+      "close": 58000
+    },
+    {
+      "month": "2025-06",
+      "close": 62000
+    },
+    {
+      "month": "2025-07",
+      "close": 69000
+    },
+    {
+      "month": "2025-08",
+      "close": 73500
+    },
+    {
+      "month": "2025-09",
+      "close": 83900
+    },
+    {
+      "month": "2025-10",
+      "close": 101000
+    },
+    {
+      "month": "2025-11",
+      "close": 128000
+    },
+    {
+      "month": "2025-12",
+      "close": 151000
+    },
+    {
+      "month": "2026-01",
+      "close": 176000
+    },
+    {
+      "month": "2026-02",
+      "close": 193000
+    },
+    {
+      "month": "2026-03",
+      "close": 209000
+    },
+    {
+      "month": "2026-04",
+      "close": 220500
+    },
+    {
+      "month": "2026-05",
+      "close": 268500
+    }
+  ],
+  "financials": {
+    "source": "Samsung Electronics Q1 2026 results and market-data snapshot",
+    "fiscal_period": "Q1 2026 ended 2026-03-31",
+    "unit": "KRW trillions unless noted",
+    "revenue": 133.9,
+    "revenue_yoy_percent": 69,
+    "operating_profit": 57.2,
+    "operating_profit_yoy_percent": 755,
+    "net_income": 47.22,
+    "eps_krw": 6603.4,
+    "bps_krw": 66995,
+    "per": 31.95,
+    "forward_per": 5.39,
+    "pbr": 4.01,
+    "roe_percent": 18.1,
+    "operating_margin_percent": 42.7,
+    "debt_ratio_percent": 26,
+    "equity_ratio_percent": 79.4,
+    "dividend_krw": 2264,
+    "market_cap": "KRW 1,736.02T",
+    "analysis": {
+      "ko": "2026년 1분기 삼성전자는 매출 133.9조 원, 영업이익 57.2조 원으로 사상 최대급 실적을 기록했다. 핵심은 DS 반도체 부문이며, AI 데이터센터 투자와 고부가 메모리 수요가 DRAM/NAND 가격과 HBM 수요를 동시에 끌어올렸다.\n\n밸류에이션은 PER 31.95배, Forward PER 5.39배, PBR 약 4.01배로 현재 이익보다 향후 이익 급증 기대가 더 크게 반영된 상태다. EPS 6,603원과 추정 BPS 66,995원을 기준으로 보면, 주가는 자산가치보다 AI 메모리 사이클 지속성을 가격에 담고 있다.\n\n재무 안정성은 여전히 강하다. 낮은 부채비율과 높은 자기자본비율은 대규모 HBM, 파운드리, 첨단 공정 투자를 감당할 여지를 준다. 다만 장기 관점에서는 투자 규모가 커질수록 현금흐름과 메모리 가격 피크아웃 여부를 함께 확인해야 한다.",
+      "en": "In Q1 2026, Samsung Electronics delivered record-level results with KRW 133.9T revenue and KRW 57.2T operating profit. The DS semiconductor division was the core driver, as AI data-center capex and high-value memory demand lifted both DRAM/NAND pricing and HBM demand.\n\nValuation reflects future earnings acceleration more than current trailing profit: PER is 31.95x, forward PER is 5.39x, and PBR is around 4.01x. Based on EPS of KRW 6,603 and estimated BPS of KRW 66,995, the share price is pricing the durability of the AI-memory cycle more than book-value support.\n\nFinancial stability remains strong. Low debt and a high equity ratio give Samsung room to fund HBM, foundry and advanced-node investment. Over the long term, however, cash-flow conversion and the risk of memory-price peak-out must be monitored.",
+      "ja": "2026年第1四半期、Samsung Electronicsは売上高133.9兆ウォン、営業利益57.2兆ウォンという過去最高級の業績を記録した。中心はDS半導体部門であり、AIデータセンター投資と高付加価値メモリ需要がDRAM/NAND価格とHBM需要を同時に押し上げた。\n\nバリュエーションはPER31.95倍、Forward PER5.39倍、PBR約4.01倍で、現在利益より将来利益の急拡大期待を大きく反映している。EPS6,603ウォン、推定BPS66,995ウォンを基準にすると、株価は純資産価値よりAIメモリサイクルの持続性を織り込んでいる。\n\n財務安定性は依然として強い。低い負債比率と高い自己資本比率は、HBM、ファウンドリ、先端プロセス投資を支える余地を与える。ただし長期的には、投資拡大に伴うキャッシュフローとメモリ価格ピークアウトリスクを確認する必要がある。"
+    }
+  },
+  "business_segment_map": [
+    {
+      "segment_id": "memory",
+      "segment_name": {
+        "ko": "메모리 반도체",
+        "en": "Memory Semiconductor",
+        "ja": "メモリ半導体"
+      },
+      "company_relevance": "direct",
+      "ihi_relevance": "direct",
+      "segment_linkage": {
+        "ko": "삼성전자 주가의 핵심 축은 메모리 반도체다. 2026년 1분기 실적에서 DS 부문이 대부분의 이익을 만들었고, AI 서버 투자와 HBM 수요가 DRAM/NAND 가격까지 밀어 올렸다.\n\n비교군은 SK하이닉스, Micron, Western Digital이다. 특히 SK하이닉스는 HBM 경쟁력 측면에서 가장 직접적인 비교 대상이고, Micron은 글로벌 메모리 가격 사이클을 확인하는 기준점이다.\n\n이 섹터는 삼성전자 주가와 직접 연결된다. HBM 인증, 고객사 확대, 범용 DRAM 가격 상승은 즉각적인 호재지만, 메모리 가격 피크아웃이나 공급 과잉 조짐은 가장 큰 리스크다.",
+        "en": "Memory semiconductors are the core driver of Samsung’s share price. In Q1 2026, DS generated most of the profit, while AI-server capex and HBM demand lifted broader DRAM/NAND pricing.\n\nKey peers are SK hynix, Micron and Western Digital. SK hynix is the closest HBM competitiveness benchmark, while Micron is a useful global memory-cycle reference.\n\nThis segment has direct linkage to the stock. HBM qualification, customer expansion and commodity DRAM price increases are immediate positives, while memory price peak-out or oversupply risk is the biggest threat.",
+        "ja": "Samsung株価の中心軸はメモリ半導体である。2026年第1四半期ではDS部門が利益の大部分を生み、AIサーバー投資とHBM需要がDRAM/NAND価格も押し上げた。\n\n比較対象はSK hynix、Micron、Western Digitalである。特にSK hynixはHBM競争力の直接比較対象であり、Micronはグローバルメモリサイクルを確認する基準点である。\n\nこのセグメントは株価と直接連動する。HBM認証、顧客拡大、汎用DRAM価格上昇は即時の好材料だが、メモリ価格ピークアウトや供給過剰の兆候が最大リスクとなる。"
+      },
+      "ihi_linkage": {
+        "ko": "삼성전자 주가의 핵심 축은 메모리 반도체다. 2026년 1분기 실적에서 DS 부문이 대부분의 이익을 만들었고, AI 서버 투자와 HBM 수요가 DRAM/NAND 가격까지 밀어 올렸다.\n\n비교군은 SK하이닉스, Micron, Western Digital이다. 특히 SK하이닉스는 HBM 경쟁력 측면에서 가장 직접적인 비교 대상이고, Micron은 글로벌 메모리 가격 사이클을 확인하는 기준점이다.\n\n이 섹터는 삼성전자 주가와 직접 연결된다. HBM 인증, 고객사 확대, 범용 DRAM 가격 상승은 즉각적인 호재지만, 메모리 가격 피크아웃이나 공급 과잉 조짐은 가장 큰 리스크다.",
+        "en": "Memory semiconductors are the core driver of Samsung’s share price. In Q1 2026, DS generated most of the profit, while AI-server capex and HBM demand lifted broader DRAM/NAND pricing.\n\nKey peers are SK hynix, Micron and Western Digital. SK hynix is the closest HBM competitiveness benchmark, while Micron is a useful global memory-cycle reference.\n\nThis segment has direct linkage to the stock. HBM qualification, customer expansion and commodity DRAM price increases are immediate positives, while memory price peak-out or oversupply risk is the biggest threat.",
+        "ja": "Samsung株価の中心軸はメモリ半導体である。2026年第1四半期ではDS部門が利益の大部分を生み、AIサーバー投資とHBM需要がDRAM/NAND価格も押し上げた。\n\n比較対象はSK hynix、Micron、Western Digitalである。特にSK hynixはHBM競争力の直接比較対象であり、Micronはグローバルメモリサイクルを確認する基準点である。\n\nこのセグメントは株価と直接連動する。HBM認証、顧客拡大、汎用DRAM価格上昇は即時の好材料だが、メモリ価格ピークアウトや供給過剰の兆候が最大リスクとなる。"
+      },
+      "tickers": [
+        "005930.KS",
+        "000660.KS",
+        "MU",
+        "WDC"
+      ],
+      "drivers": [
+        "AI data center capex",
+        "HBM supply",
+        "DRAM/NAND pricing",
+        "server demand"
+      ],
+      "risk_factors": [
+        "memory price peak-out",
+        "HBM qualification delay",
+        "capex oversupply"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "foundry",
+      "segment_name": {
+        "ko": "파운드리 / 시스템 LSI",
+        "en": "Foundry / System LSI",
+        "ja": "ファウンドリ / System LSI"
+      },
+      "company_relevance": "direct_adjacent",
+      "ihi_relevance": "direct_adjacent",
+      "segment_linkage": {
+        "ko": "파운드리와 시스템 LSI는 삼성전자의 장기 리레이팅 가능성을 결정하는 영역이다. 메모리만으로는 사이클 기업에 머물지만, 선단공정과 패키징 경쟁력이 회복되면 구조적 멀티플을 높일 수 있다.\n\nTSMC, Intel, Qualcomm, NVIDIA를 함께 봐야 한다. TSMC는 선단공정 기준점이고, NVIDIA와 Qualcomm은 고객 생태계와 AI 반도체 수요를 읽는 데 중요하다.\n\n단기 주가 연결성은 메모리보다 약하지만, 장기적으로는 PBR과 멀티플을 결정한다. 수율, 고객 다변화, 2나노/후공정 경쟁력이 확인되면 장기 투자 thesis가 강화된다.",
+        "en": "Foundry and System LSI determine Samsung’s long-term rerating potential. Memory alone leaves Samsung cyclical, but recovery in advanced nodes and packaging could lift structural multiples.\n\nTSMC, Intel, Qualcomm and NVIDIA should be monitored. TSMC is the advanced-node benchmark, while NVIDIA and Qualcomm help read customer ecosystem and AI-chip demand.\n\nNear-term stock linkage is weaker than memory, but long-term it affects PBR and multiples. Yield, customer diversification and 2nm/advanced packaging execution are key confirmation points.",
+        "ja": "ファウンドリとSystem LSIはSamsungの長期的な再評価可能性を決める領域である。メモリだけでは景気循環株にとどまるが、先端プロセスとパッケージング競争力が回復すれば構造的な倍率上昇が可能となる。\n\nTSMC、Intel、Qualcomm、NVIDIAを併せて見る必要がある。TSMCは先端プロセスの基準点であり、NVIDIAとQualcommは顧客エコシステムとAI半導体需要を読む上で重要である。\n\n短期株価連動はメモリより弱いが、長期的にはPBRと倍率を左右する。歩留まり、顧客多様化、2nm/先端パッケージングの実行力が確認点となる。"
+      },
+      "ihi_linkage": {
+        "ko": "파운드리와 시스템 LSI는 삼성전자의 장기 리레이팅 가능성을 결정하는 영역이다. 메모리만으로는 사이클 기업에 머물지만, 선단공정과 패키징 경쟁력이 회복되면 구조적 멀티플을 높일 수 있다.\n\nTSMC, Intel, Qualcomm, NVIDIA를 함께 봐야 한다. TSMC는 선단공정 기준점이고, NVIDIA와 Qualcomm은 고객 생태계와 AI 반도체 수요를 읽는 데 중요하다.\n\n단기 주가 연결성은 메모리보다 약하지만, 장기적으로는 PBR과 멀티플을 결정한다. 수율, 고객 다변화, 2나노/후공정 경쟁력이 확인되면 장기 투자 thesis가 강화된다.",
+        "en": "Foundry and System LSI determine Samsung’s long-term rerating potential. Memory alone leaves Samsung cyclical, but recovery in advanced nodes and packaging could lift structural multiples.\n\nTSMC, Intel, Qualcomm and NVIDIA should be monitored. TSMC is the advanced-node benchmark, while NVIDIA and Qualcomm help read customer ecosystem and AI-chip demand.\n\nNear-term stock linkage is weaker than memory, but long-term it affects PBR and multiples. Yield, customer diversification and 2nm/advanced packaging execution are key confirmation points.",
+        "ja": "ファウンドリとSystem LSIはSamsungの長期的な再評価可能性を決める領域である。メモリだけでは景気循環株にとどまるが、先端プロセスとパッケージング競争力が回復すれば構造的な倍率上昇が可能となる。\n\nTSMC、Intel、Qualcomm、NVIDIAを併せて見る必要がある。TSMCは先端プロセスの基準点であり、NVIDIAとQualcommは顧客エコシステムとAI半導体需要を読む上で重要である。\n\n短期株価連動はメモリより弱いが、長期的にはPBRと倍率を左右する。歩留まり、顧客多様化、2nm/先端パッケージングの実行力が確認点となる。"
+      },
+      "tickers": [
+        "005930.KS",
+        "TSM",
+        "INTC",
+        "QCOM",
+        "NVDA"
+      ],
+      "drivers": [
+        "advanced-node demand",
+        "AI accelerator ecosystem",
+        "chiplet packaging",
+        "customer diversification"
+      ],
+      "risk_factors": [
+        "yield gap vs TSMC",
+        "capex burden",
+        "customer concentration"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "mobile",
+      "segment_name": {
+        "ko": "MX / 모바일 디바이스",
+        "en": "Mobile / MX Devices",
+        "ja": "MX / モバイルデバイス"
+      },
+      "company_relevance": "direct",
+      "ihi_relevance": "direct",
+      "segment_linkage": {
+        "ko": "MX 모바일 사업은 삼성전자의 브랜드와 현금창출력을 유지하는 축이다. Galaxy 플래그십과 폴더블, 온디바이스 AI가 프리미엄 믹스를 방어한다.\n\nApple, Qualcomm, Sony, LG전자가 비교 대상이다. Apple은 프리미엄 스마트폰 수요와 생태계 기준점이고, Qualcomm은 모바일 AI 칩셋 및 Android 프리미엄 수요를 보여준다.\n\n주가 영향은 메모리보다 낮지만 실적 안정성에는 중요하다. 스마트폰 수요 둔화, 관세, 부품비 상승이 MX 마진을 압박하면 DS 호조 일부를 상쇄할 수 있다.",
+        "en": "MX mobile maintains Samsung’s brand strength and cash generation. Galaxy flagships, foldables and on-device AI defend the premium mix.\n\nPeers include Apple, Qualcomm, Sony and LG Electronics. Apple is the premium smartphone and ecosystem benchmark, while Qualcomm indicates mobile AI chipset and Android premium demand.\n\nStock impact is lower than memory, but it matters for earnings stability. Smartphone slowdown, tariffs and component costs can pressure MX margins and offset part of DS strength.",
+        "ja": "MXモバイル事業はSamsungのブランド力とキャッシュ創出力を維持する軸である。Galaxy旗艦機、折りたたみ端末、オンデバイスAIがプレミアムミックスを支える。\n\n比較対象はApple、Qualcomm、Sony、LG Electronicsである。Appleはプレミアムスマートフォンとエコシステムの基準点であり、QualcommはモバイルAIチップセットとAndroid高級機需要を示す。\n\n株価影響はメモリより低いが、利益安定性には重要である。スマートフォン需要鈍化、関税、部品費上昇がMXマージンを圧迫すれば、DS好調の一部を相殺し得る。"
+      },
+      "ihi_linkage": {
+        "ko": "MX 모바일 사업은 삼성전자의 브랜드와 현금창출력을 유지하는 축이다. Galaxy 플래그십과 폴더블, 온디바이스 AI가 프리미엄 믹스를 방어한다.\n\nApple, Qualcomm, Sony, LG전자가 비교 대상이다. Apple은 프리미엄 스마트폰 수요와 생태계 기준점이고, Qualcomm은 모바일 AI 칩셋 및 Android 프리미엄 수요를 보여준다.\n\n주가 영향은 메모리보다 낮지만 실적 안정성에는 중요하다. 스마트폰 수요 둔화, 관세, 부품비 상승이 MX 마진을 압박하면 DS 호조 일부를 상쇄할 수 있다.",
+        "en": "MX mobile maintains Samsung’s brand strength and cash generation. Galaxy flagships, foldables and on-device AI defend the premium mix.\n\nPeers include Apple, Qualcomm, Sony and LG Electronics. Apple is the premium smartphone and ecosystem benchmark, while Qualcomm indicates mobile AI chipset and Android premium demand.\n\nStock impact is lower than memory, but it matters for earnings stability. Smartphone slowdown, tariffs and component costs can pressure MX margins and offset part of DS strength.",
+        "ja": "MXモバイル事業はSamsungのブランド力とキャッシュ創出力を維持する軸である。Galaxy旗艦機、折りたたみ端末、オンデバイスAIがプレミアムミックスを支える。\n\n比較対象はApple、Qualcomm、Sony、LG Electronicsである。Appleはプレミアムスマートフォンとエコシステムの基準点であり、QualcommはモバイルAIチップセットとAndroid高級機需要を示す。\n\n株価影響はメモリより低いが、利益安定性には重要である。スマートフォン需要鈍化、関税、部品費上昇がMXマージンを圧迫すれば、DS好調の一部を相殺し得る。"
+      },
+      "tickers": [
+        "005930.KS",
+        "AAPL",
+        "QCOM",
+        "6758.T",
+        "066570.KS"
+      ],
+      "drivers": [
+        "Galaxy flagship sales",
+        "foldables",
+        "on-device AI",
+        "premium smartphone mix"
+      ],
+      "risk_factors": [
+        "tariff cost",
+        "smartphone saturation",
+        "component cost"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "display",
+      "segment_name": {
+        "ko": "디스플레이",
+        "en": "Display",
+        "ja": "ディスプレイ"
+      },
+      "company_relevance": "direct_adjacent",
+      "ihi_relevance": "direct_adjacent",
+      "segment_linkage": {
+        "ko": "디스플레이는 OLED와 프리미엄 패널 수요를 통해 삼성전자 생태계를 보완한다. 모바일, IT OLED, 폴더블 패널이 주요 동인이다.\n\nLG디스플레이, Apple, Sony를 함께 보면 고객 수요와 패널 가격 사이클을 읽을 수 있다. 중국 패널 업체와의 경쟁도 마진을 좌우한다.\n\n삼성전자 주가에는 보조적 영향이지만, 프리미엄 기기 생태계와 연결되어 있다. OLED 가격과 주요 고객사 주문이 좋아지면 수익성 방어에 기여한다.",
+        "en": "Display complements Samsung’s ecosystem through OLED and premium-panel demand. Mobile OLED, IT OLED and foldable panels are the main drivers.\n\nLG Display, Apple and Sony help read customer demand and panel-price cycles. Competition from Chinese panel makers remains a margin variable.\n\nThe stock impact is secondary, but the segment is linked to premium-device ecosystem strength. Better OLED pricing and major-customer orders support profitability.",
+        "ja": "ディスプレイはOLEDとプレミアムパネル需要を通じてSamsungのエコシステムを補完する。モバイルOLED、IT OLED、折りたたみパネルが主なドライバーである。\n\nLG Display、Apple、Sonyを併せて見ることで、顧客需要とパネル価格サイクルを把握できる。中国パネル企業との競争も利益率を左右する。\n\n株価影響は補助的だが、プレミアムデバイスエコシステムとつながっている。OLED価格と主要顧客注文が改善すれば収益性防衛に寄与する。"
+      },
+      "ihi_linkage": {
+        "ko": "디스플레이는 OLED와 프리미엄 패널 수요를 통해 삼성전자 생태계를 보완한다. 모바일, IT OLED, 폴더블 패널이 주요 동인이다.\n\nLG디스플레이, Apple, Sony를 함께 보면 고객 수요와 패널 가격 사이클을 읽을 수 있다. 중국 패널 업체와의 경쟁도 마진을 좌우한다.\n\n삼성전자 주가에는 보조적 영향이지만, 프리미엄 기기 생태계와 연결되어 있다. OLED 가격과 주요 고객사 주문이 좋아지면 수익성 방어에 기여한다.",
+        "en": "Display complements Samsung’s ecosystem through OLED and premium-panel demand. Mobile OLED, IT OLED and foldable panels are the main drivers.\n\nLG Display, Apple and Sony help read customer demand and panel-price cycles. Competition from Chinese panel makers remains a margin variable.\n\nThe stock impact is secondary, but the segment is linked to premium-device ecosystem strength. Better OLED pricing and major-customer orders support profitability.",
+        "ja": "ディスプレイはOLEDとプレミアムパネル需要を通じてSamsungのエコシステムを補完する。モバイルOLED、IT OLED、折りたたみパネルが主なドライバーである。\n\nLG Display、Apple、Sonyを併せて見ることで、顧客需要とパネル価格サイクルを把握できる。中国パネル企業との競争も利益率を左右する。\n\n株価影響は補助的だが、プレミアムデバイスエコシステムとつながっている。OLED価格と主要顧客注文が改善すれば収益性防衛に寄与する。"
+      },
+      "tickers": [
+        "005930.KS",
+        "034220.KS",
+        "AAPL",
+        "6758.T"
+      ],
+      "drivers": [
+        "OLED demand",
+        "premium panels",
+        "IT OLED adoption",
+        "foldable screens"
+      ],
+      "risk_factors": [
+        "panel oversupply",
+        "China competition",
+        "customer cycle"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "consumer",
+      "segment_name": {
+        "ko": "가전 / TV / 디지털 기기",
+        "en": "Consumer Electronics / TV",
+        "ja": "家電 / TV / デジタル機器"
+      },
+      "company_relevance": "adjacent",
+      "ihi_relevance": "adjacent",
+      "segment_linkage": {
+        "ko": "가전과 TV는 삼성전자의 안정적 매출 기반이다. AI 가전, 프리미엄 TV, 교체 수요가 주요 테마지만 반도체처럼 폭발적인 이익 레버리지는 작다.\n\nLG전자와 Sony가 핵심 비교군이다. 소비 경기, 유통 재고, 환율, 원가 부담이 이 사업의 수익성을 좌우한다.\n\n주가에는 직접 촉매보다 방어적 포트폴리오 역할이 크다. 반도체 사이클이 흔들릴 때 가전/TV의 안정성이 전체 이익 변동성을 낮추는지 확인해야 한다.",
+        "en": "Consumer electronics and TV provide Samsung’s stable revenue base. AI appliances, premium TVs and replacement demand are key themes, but earnings leverage is far smaller than semiconductors.\n\nLG Electronics and Sony are the main peers. Consumer cycle, retail inventory, FX and input costs determine profitability.\n\nFor the stock, this is more defensive portfolio support than a direct catalyst. When the semiconductor cycle weakens, CE/TV stability can reduce group earnings volatility.",
+        "ja": "家電とTVはSamsungの安定的な売上基盤である。AI家電、プレミアムTV、買い替え需要が主要テーマだが、半導体ほどの爆発的な利益レバレッジは小さい。\n\nLG ElectronicsとSonyが主な比較対象である。消費景気、流通在庫、為替、原価負担が収益性を左右する。\n\n株価には直接材料というより防御的ポートフォリオの役割が大きい。半導体サイクルが揺らぐ際、家電/TVの安定性が全体利益変動を抑えるか確認すべきである。"
+      },
+      "ihi_linkage": {
+        "ko": "가전과 TV는 삼성전자의 안정적 매출 기반이다. AI 가전, 프리미엄 TV, 교체 수요가 주요 테마지만 반도체처럼 폭발적인 이익 레버리지는 작다.\n\nLG전자와 Sony가 핵심 비교군이다. 소비 경기, 유통 재고, 환율, 원가 부담이 이 사업의 수익성을 좌우한다.\n\n주가에는 직접 촉매보다 방어적 포트폴리오 역할이 크다. 반도체 사이클이 흔들릴 때 가전/TV의 안정성이 전체 이익 변동성을 낮추는지 확인해야 한다.",
+        "en": "Consumer electronics and TV provide Samsung’s stable revenue base. AI appliances, premium TVs and replacement demand are key themes, but earnings leverage is far smaller than semiconductors.\n\nLG Electronics and Sony are the main peers. Consumer cycle, retail inventory, FX and input costs determine profitability.\n\nFor the stock, this is more defensive portfolio support than a direct catalyst. When the semiconductor cycle weakens, CE/TV stability can reduce group earnings volatility.",
+        "ja": "家電とTVはSamsungの安定的な売上基盤である。AI家電、プレミアムTV、買い替え需要が主要テーマだが、半導体ほどの爆発的な利益レバレッジは小さい。\n\nLG ElectronicsとSonyが主な比較対象である。消費景気、流通在庫、為替、原価負担が収益性を左右する。\n\n株価には直接材料というより防御的ポートフォリオの役割が大きい。半導体サイクルが揺らぐ際、家電/TVの安定性が全体利益変動を抑えるか確認すべきである。"
+      },
+      "tickers": [
+        "005930.KS",
+        "066570.KS",
+        "6758.T",
+        "AAPL"
+      ],
+      "drivers": [
+        "premium TV",
+        "AI appliances",
+        "replacement demand",
+        "retail cycle"
+      ],
+      "risk_factors": [
+        "weak consumer demand",
+        "margin pressure",
+        "FX volatility"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "network_ai_ecosystem",
+      "segment_name": {
+        "ko": "네트워크 / AI 디바이스 생태계",
+        "en": "Network / AI Device Ecosystem",
+        "ja": "ネットワーク / AIデバイスエコシステム"
+      },
+      "company_relevance": "comparison",
+      "ihi_relevance": "comparison",
+      "segment_linkage": {
+        "ko": "네트워크와 AI 디바이스 생태계는 삼성전자의 장기 옵션이다. 5G/6G, 엣지 AI, 온디바이스 AI가 모바일과 반도체를 연결한다.\n\nQualcomm, Ericsson, Nokia, Apple을 함께 보면 통신 투자와 디바이스 생태계 변화를 읽을 수 있다. 단기 실적보다는 장기 플랫폼 경쟁력 관점이 중요하다.\n\n주가 연결성은 간접적이다. 하지만 AI 디바이스 생태계가 커지면 메모리, 모바일, 파운드리 수요를 동시에 자극할 수 있어 장기 멀티플 방어에 기여한다.",
+        "en": "Network and AI-device ecosystem is a long-term option for Samsung. 5G/6G, edge AI and on-device AI connect mobile devices with semiconductors.\n\nQualcomm, Ericsson, Nokia and Apple help frame telecom investment and device-ecosystem changes. The focus is long-term platform competitiveness rather than near-term earnings.\n\nStock linkage is indirect. However, expansion of AI-device ecosystems can stimulate memory, mobile and foundry demand together, supporting long-term multiples.",
+        "ja": "ネットワークとAIデバイスエコシステムはSamsungの長期オプションである。5G/6G、エッジAI、オンデバイスAIがモバイルと半導体を結びつける。\n\nQualcomm、Ericsson、Nokia、Appleを併せて見ると、通信投資とデバイスエコシステムの変化を把握できる。短期業績より長期プラットフォーム競争力が重要である。\n\n株価連動は間接的である。ただしAIデバイスエコシステムが拡大すれば、メモリ、モバイル、ファウンドリ需要を同時に刺激し、長期倍率を支える。"
+      },
+      "ihi_linkage": {
+        "ko": "네트워크와 AI 디바이스 생태계는 삼성전자의 장기 옵션이다. 5G/6G, 엣지 AI, 온디바이스 AI가 모바일과 반도체를 연결한다.\n\nQualcomm, Ericsson, Nokia, Apple을 함께 보면 통신 투자와 디바이스 생태계 변화를 읽을 수 있다. 단기 실적보다는 장기 플랫폼 경쟁력 관점이 중요하다.\n\n주가 연결성은 간접적이다. 하지만 AI 디바이스 생태계가 커지면 메모리, 모바일, 파운드리 수요를 동시에 자극할 수 있어 장기 멀티플 방어에 기여한다.",
+        "en": "Network and AI-device ecosystem is a long-term option for Samsung. 5G/6G, edge AI and on-device AI connect mobile devices with semiconductors.\n\nQualcomm, Ericsson, Nokia and Apple help frame telecom investment and device-ecosystem changes. The focus is long-term platform competitiveness rather than near-term earnings.\n\nStock linkage is indirect. However, expansion of AI-device ecosystems can stimulate memory, mobile and foundry demand together, supporting long-term multiples.",
+        "ja": "ネットワークとAIデバイスエコシステムはSamsungの長期オプションである。5G/6G、エッジAI、オンデバイスAIがモバイルと半導体を結びつける。\n\nQualcomm、Ericsson、Nokia、Appleを併せて見ると、通信投資とデバイスエコシステムの変化を把握できる。短期業績より長期プラットフォーム競争力が重要である。\n\n株価連動は間接的である。ただしAIデバイスエコシステムが拡大すれば、メモリ、モバイル、ファウンドリ需要を同時に刺激し、長期倍率を支える。"
+      },
+      "tickers": [
+        "005930.KS",
+        "QCOM",
+        "ERIC",
+        "NOK",
+        "AAPL"
+      ],
+      "drivers": [
+        "5G/6G investment",
+        "edge AI",
+        "device ecosystem",
+        "enterprise connectivity"
+      ],
+      "risk_factors": [
+        "carrier capex delay",
+        "standard timing",
+        "ecosystem lock-in"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    }
+  ],
+  "segment_sector_map": [
+    {
+      "segment_id": "memory",
+      "segment_name": {
+        "ko": "메모리 반도체",
+        "en": "Memory Semiconductor",
+        "ja": "メモリ半導体"
+      },
+      "company_relevance": "direct",
+      "ihi_relevance": "direct",
+      "segment_linkage": {
+        "ko": "삼성전자 주가의 핵심 축은 메모리 반도체다. 2026년 1분기 실적에서 DS 부문이 대부분의 이익을 만들었고, AI 서버 투자와 HBM 수요가 DRAM/NAND 가격까지 밀어 올렸다.\n\n비교군은 SK하이닉스, Micron, Western Digital이다. 특히 SK하이닉스는 HBM 경쟁력 측면에서 가장 직접적인 비교 대상이고, Micron은 글로벌 메모리 가격 사이클을 확인하는 기준점이다.\n\n이 섹터는 삼성전자 주가와 직접 연결된다. HBM 인증, 고객사 확대, 범용 DRAM 가격 상승은 즉각적인 호재지만, 메모리 가격 피크아웃이나 공급 과잉 조짐은 가장 큰 리스크다.",
+        "en": "Memory semiconductors are the core driver of Samsung’s share price. In Q1 2026, DS generated most of the profit, while AI-server capex and HBM demand lifted broader DRAM/NAND pricing.\n\nKey peers are SK hynix, Micron and Western Digital. SK hynix is the closest HBM competitiveness benchmark, while Micron is a useful global memory-cycle reference.\n\nThis segment has direct linkage to the stock. HBM qualification, customer expansion and commodity DRAM price increases are immediate positives, while memory price peak-out or oversupply risk is the biggest threat.",
+        "ja": "Samsung株価の中心軸はメモリ半導体である。2026年第1四半期ではDS部門が利益の大部分を生み、AIサーバー投資とHBM需要がDRAM/NAND価格も押し上げた。\n\n比較対象はSK hynix、Micron、Western Digitalである。特にSK hynixはHBM競争力の直接比較対象であり、Micronはグローバルメモリサイクルを確認する基準点である。\n\nこのセグメントは株価と直接連動する。HBM認証、顧客拡大、汎用DRAM価格上昇は即時の好材料だが、メモリ価格ピークアウトや供給過剰の兆候が最大リスクとなる。"
+      },
+      "ihi_linkage": {
+        "ko": "삼성전자 주가의 핵심 축은 메모리 반도체다. 2026년 1분기 실적에서 DS 부문이 대부분의 이익을 만들었고, AI 서버 투자와 HBM 수요가 DRAM/NAND 가격까지 밀어 올렸다.\n\n비교군은 SK하이닉스, Micron, Western Digital이다. 특히 SK하이닉스는 HBM 경쟁력 측면에서 가장 직접적인 비교 대상이고, Micron은 글로벌 메모리 가격 사이클을 확인하는 기준점이다.\n\n이 섹터는 삼성전자 주가와 직접 연결된다. HBM 인증, 고객사 확대, 범용 DRAM 가격 상승은 즉각적인 호재지만, 메모리 가격 피크아웃이나 공급 과잉 조짐은 가장 큰 리스크다.",
+        "en": "Memory semiconductors are the core driver of Samsung’s share price. In Q1 2026, DS generated most of the profit, while AI-server capex and HBM demand lifted broader DRAM/NAND pricing.\n\nKey peers are SK hynix, Micron and Western Digital. SK hynix is the closest HBM competitiveness benchmark, while Micron is a useful global memory-cycle reference.\n\nThis segment has direct linkage to the stock. HBM qualification, customer expansion and commodity DRAM price increases are immediate positives, while memory price peak-out or oversupply risk is the biggest threat.",
+        "ja": "Samsung株価の中心軸はメモリ半導体である。2026年第1四半期ではDS部門が利益の大部分を生み、AIサーバー投資とHBM需要がDRAM/NAND価格も押し上げた。\n\n比較対象はSK hynix、Micron、Western Digitalである。特にSK hynixはHBM競争力の直接比較対象であり、Micronはグローバルメモリサイクルを確認する基準点である。\n\nこのセグメントは株価と直接連動する。HBM認証、顧客拡大、汎用DRAM価格上昇は即時の好材料だが、メモリ価格ピークアウトや供給過剰の兆候が最大リスクとなる。"
+      },
+      "tickers": [
+        "005930.KS",
+        "000660.KS",
+        "MU",
+        "WDC"
+      ],
+      "drivers": [
+        "AI data center capex",
+        "HBM supply",
+        "DRAM/NAND pricing",
+        "server demand"
+      ],
+      "risk_factors": [
+        "memory price peak-out",
+        "HBM qualification delay",
+        "capex oversupply"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "foundry",
+      "segment_name": {
+        "ko": "파운드리 / 시스템 LSI",
+        "en": "Foundry / System LSI",
+        "ja": "ファウンドリ / System LSI"
+      },
+      "company_relevance": "direct_adjacent",
+      "ihi_relevance": "direct_adjacent",
+      "segment_linkage": {
+        "ko": "파운드리와 시스템 LSI는 삼성전자의 장기 리레이팅 가능성을 결정하는 영역이다. 메모리만으로는 사이클 기업에 머물지만, 선단공정과 패키징 경쟁력이 회복되면 구조적 멀티플을 높일 수 있다.\n\nTSMC, Intel, Qualcomm, NVIDIA를 함께 봐야 한다. TSMC는 선단공정 기준점이고, NVIDIA와 Qualcomm은 고객 생태계와 AI 반도체 수요를 읽는 데 중요하다.\n\n단기 주가 연결성은 메모리보다 약하지만, 장기적으로는 PBR과 멀티플을 결정한다. 수율, 고객 다변화, 2나노/후공정 경쟁력이 확인되면 장기 투자 thesis가 강화된다.",
+        "en": "Foundry and System LSI determine Samsung’s long-term rerating potential. Memory alone leaves Samsung cyclical, but recovery in advanced nodes and packaging could lift structural multiples.\n\nTSMC, Intel, Qualcomm and NVIDIA should be monitored. TSMC is the advanced-node benchmark, while NVIDIA and Qualcomm help read customer ecosystem and AI-chip demand.\n\nNear-term stock linkage is weaker than memory, but long-term it affects PBR and multiples. Yield, customer diversification and 2nm/advanced packaging execution are key confirmation points.",
+        "ja": "ファウンドリとSystem LSIはSamsungの長期的な再評価可能性を決める領域である。メモリだけでは景気循環株にとどまるが、先端プロセスとパッケージング競争力が回復すれば構造的な倍率上昇が可能となる。\n\nTSMC、Intel、Qualcomm、NVIDIAを併せて見る必要がある。TSMCは先端プロセスの基準点であり、NVIDIAとQualcommは顧客エコシステムとAI半導体需要を読む上で重要である。\n\n短期株価連動はメモリより弱いが、長期的にはPBRと倍率を左右する。歩留まり、顧客多様化、2nm/先端パッケージングの実行力が確認点となる。"
+      },
+      "ihi_linkage": {
+        "ko": "파운드리와 시스템 LSI는 삼성전자의 장기 리레이팅 가능성을 결정하는 영역이다. 메모리만으로는 사이클 기업에 머물지만, 선단공정과 패키징 경쟁력이 회복되면 구조적 멀티플을 높일 수 있다.\n\nTSMC, Intel, Qualcomm, NVIDIA를 함께 봐야 한다. TSMC는 선단공정 기준점이고, NVIDIA와 Qualcomm은 고객 생태계와 AI 반도체 수요를 읽는 데 중요하다.\n\n단기 주가 연결성은 메모리보다 약하지만, 장기적으로는 PBR과 멀티플을 결정한다. 수율, 고객 다변화, 2나노/후공정 경쟁력이 확인되면 장기 투자 thesis가 강화된다.",
+        "en": "Foundry and System LSI determine Samsung’s long-term rerating potential. Memory alone leaves Samsung cyclical, but recovery in advanced nodes and packaging could lift structural multiples.\n\nTSMC, Intel, Qualcomm and NVIDIA should be monitored. TSMC is the advanced-node benchmark, while NVIDIA and Qualcomm help read customer ecosystem and AI-chip demand.\n\nNear-term stock linkage is weaker than memory, but long-term it affects PBR and multiples. Yield, customer diversification and 2nm/advanced packaging execution are key confirmation points.",
+        "ja": "ファウンドリとSystem LSIはSamsungの長期的な再評価可能性を決める領域である。メモリだけでは景気循環株にとどまるが、先端プロセスとパッケージング競争力が回復すれば構造的な倍率上昇が可能となる。\n\nTSMC、Intel、Qualcomm、NVIDIAを併せて見る必要がある。TSMCは先端プロセスの基準点であり、NVIDIAとQualcommは顧客エコシステムとAI半導体需要を読む上で重要である。\n\n短期株価連動はメモリより弱いが、長期的にはPBRと倍率を左右する。歩留まり、顧客多様化、2nm/先端パッケージングの実行力が確認点となる。"
+      },
+      "tickers": [
+        "005930.KS",
+        "TSM",
+        "INTC",
+        "QCOM",
+        "NVDA"
+      ],
+      "drivers": [
+        "advanced-node demand",
+        "AI accelerator ecosystem",
+        "chiplet packaging",
+        "customer diversification"
+      ],
+      "risk_factors": [
+        "yield gap vs TSMC",
+        "capex burden",
+        "customer concentration"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "mobile",
+      "segment_name": {
+        "ko": "MX / 모바일 디바이스",
+        "en": "Mobile / MX Devices",
+        "ja": "MX / モバイルデバイス"
+      },
+      "company_relevance": "direct",
+      "ihi_relevance": "direct",
+      "segment_linkage": {
+        "ko": "MX 모바일 사업은 삼성전자의 브랜드와 현금창출력을 유지하는 축이다. Galaxy 플래그십과 폴더블, 온디바이스 AI가 프리미엄 믹스를 방어한다.\n\nApple, Qualcomm, Sony, LG전자가 비교 대상이다. Apple은 프리미엄 스마트폰 수요와 생태계 기준점이고, Qualcomm은 모바일 AI 칩셋 및 Android 프리미엄 수요를 보여준다.\n\n주가 영향은 메모리보다 낮지만 실적 안정성에는 중요하다. 스마트폰 수요 둔화, 관세, 부품비 상승이 MX 마진을 압박하면 DS 호조 일부를 상쇄할 수 있다.",
+        "en": "MX mobile maintains Samsung’s brand strength and cash generation. Galaxy flagships, foldables and on-device AI defend the premium mix.\n\nPeers include Apple, Qualcomm, Sony and LG Electronics. Apple is the premium smartphone and ecosystem benchmark, while Qualcomm indicates mobile AI chipset and Android premium demand.\n\nStock impact is lower than memory, but it matters for earnings stability. Smartphone slowdown, tariffs and component costs can pressure MX margins and offset part of DS strength.",
+        "ja": "MXモバイル事業はSamsungのブランド力とキャッシュ創出力を維持する軸である。Galaxy旗艦機、折りたたみ端末、オンデバイスAIがプレミアムミックスを支える。\n\n比較対象はApple、Qualcomm、Sony、LG Electronicsである。Appleはプレミアムスマートフォンとエコシステムの基準点であり、QualcommはモバイルAIチップセットとAndroid高級機需要を示す。\n\n株価影響はメモリより低いが、利益安定性には重要である。スマートフォン需要鈍化、関税、部品費上昇がMXマージンを圧迫すれば、DS好調の一部を相殺し得る。"
+      },
+      "ihi_linkage": {
+        "ko": "MX 모바일 사업은 삼성전자의 브랜드와 현금창출력을 유지하는 축이다. Galaxy 플래그십과 폴더블, 온디바이스 AI가 프리미엄 믹스를 방어한다.\n\nApple, Qualcomm, Sony, LG전자가 비교 대상이다. Apple은 프리미엄 스마트폰 수요와 생태계 기준점이고, Qualcomm은 모바일 AI 칩셋 및 Android 프리미엄 수요를 보여준다.\n\n주가 영향은 메모리보다 낮지만 실적 안정성에는 중요하다. 스마트폰 수요 둔화, 관세, 부품비 상승이 MX 마진을 압박하면 DS 호조 일부를 상쇄할 수 있다.",
+        "en": "MX mobile maintains Samsung’s brand strength and cash generation. Galaxy flagships, foldables and on-device AI defend the premium mix.\n\nPeers include Apple, Qualcomm, Sony and LG Electronics. Apple is the premium smartphone and ecosystem benchmark, while Qualcomm indicates mobile AI chipset and Android premium demand.\n\nStock impact is lower than memory, but it matters for earnings stability. Smartphone slowdown, tariffs and component costs can pressure MX margins and offset part of DS strength.",
+        "ja": "MXモバイル事業はSamsungのブランド力とキャッシュ創出力を維持する軸である。Galaxy旗艦機、折りたたみ端末、オンデバイスAIがプレミアムミックスを支える。\n\n比較対象はApple、Qualcomm、Sony、LG Electronicsである。Appleはプレミアムスマートフォンとエコシステムの基準点であり、QualcommはモバイルAIチップセットとAndroid高級機需要を示す。\n\n株価影響はメモリより低いが、利益安定性には重要である。スマートフォン需要鈍化、関税、部品費上昇がMXマージンを圧迫すれば、DS好調の一部を相殺し得る。"
+      },
+      "tickers": [
+        "005930.KS",
+        "AAPL",
+        "QCOM",
+        "6758.T",
+        "066570.KS"
+      ],
+      "drivers": [
+        "Galaxy flagship sales",
+        "foldables",
+        "on-device AI",
+        "premium smartphone mix"
+      ],
+      "risk_factors": [
+        "tariff cost",
+        "smartphone saturation",
+        "component cost"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "display",
+      "segment_name": {
+        "ko": "디스플레이",
+        "en": "Display",
+        "ja": "ディスプレイ"
+      },
+      "company_relevance": "direct_adjacent",
+      "ihi_relevance": "direct_adjacent",
+      "segment_linkage": {
+        "ko": "디스플레이는 OLED와 프리미엄 패널 수요를 통해 삼성전자 생태계를 보완한다. 모바일, IT OLED, 폴더블 패널이 주요 동인이다.\n\nLG디스플레이, Apple, Sony를 함께 보면 고객 수요와 패널 가격 사이클을 읽을 수 있다. 중국 패널 업체와의 경쟁도 마진을 좌우한다.\n\n삼성전자 주가에는 보조적 영향이지만, 프리미엄 기기 생태계와 연결되어 있다. OLED 가격과 주요 고객사 주문이 좋아지면 수익성 방어에 기여한다.",
+        "en": "Display complements Samsung’s ecosystem through OLED and premium-panel demand. Mobile OLED, IT OLED and foldable panels are the main drivers.\n\nLG Display, Apple and Sony help read customer demand and panel-price cycles. Competition from Chinese panel makers remains a margin variable.\n\nThe stock impact is secondary, but the segment is linked to premium-device ecosystem strength. Better OLED pricing and major-customer orders support profitability.",
+        "ja": "ディスプレイはOLEDとプレミアムパネル需要を通じてSamsungのエコシステムを補完する。モバイルOLED、IT OLED、折りたたみパネルが主なドライバーである。\n\nLG Display、Apple、Sonyを併せて見ることで、顧客需要とパネル価格サイクルを把握できる。中国パネル企業との競争も利益率を左右する。\n\n株価影響は補助的だが、プレミアムデバイスエコシステムとつながっている。OLED価格と主要顧客注文が改善すれば収益性防衛に寄与する。"
+      },
+      "ihi_linkage": {
+        "ko": "디스플레이는 OLED와 프리미엄 패널 수요를 통해 삼성전자 생태계를 보완한다. 모바일, IT OLED, 폴더블 패널이 주요 동인이다.\n\nLG디스플레이, Apple, Sony를 함께 보면 고객 수요와 패널 가격 사이클을 읽을 수 있다. 중국 패널 업체와의 경쟁도 마진을 좌우한다.\n\n삼성전자 주가에는 보조적 영향이지만, 프리미엄 기기 생태계와 연결되어 있다. OLED 가격과 주요 고객사 주문이 좋아지면 수익성 방어에 기여한다.",
+        "en": "Display complements Samsung’s ecosystem through OLED and premium-panel demand. Mobile OLED, IT OLED and foldable panels are the main drivers.\n\nLG Display, Apple and Sony help read customer demand and panel-price cycles. Competition from Chinese panel makers remains a margin variable.\n\nThe stock impact is secondary, but the segment is linked to premium-device ecosystem strength. Better OLED pricing and major-customer orders support profitability.",
+        "ja": "ディスプレイはOLEDとプレミアムパネル需要を通じてSamsungのエコシステムを補完する。モバイルOLED、IT OLED、折りたたみパネルが主なドライバーである。\n\nLG Display、Apple、Sonyを併せて見ることで、顧客需要とパネル価格サイクルを把握できる。中国パネル企業との競争も利益率を左右する。\n\n株価影響は補助的だが、プレミアムデバイスエコシステムとつながっている。OLED価格と主要顧客注文が改善すれば収益性防衛に寄与する。"
+      },
+      "tickers": [
+        "005930.KS",
+        "034220.KS",
+        "AAPL",
+        "6758.T"
+      ],
+      "drivers": [
+        "OLED demand",
+        "premium panels",
+        "IT OLED adoption",
+        "foldable screens"
+      ],
+      "risk_factors": [
+        "panel oversupply",
+        "China competition",
+        "customer cycle"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "consumer",
+      "segment_name": {
+        "ko": "가전 / TV / 디지털 기기",
+        "en": "Consumer Electronics / TV",
+        "ja": "家電 / TV / デジタル機器"
+      },
+      "company_relevance": "adjacent",
+      "ihi_relevance": "adjacent",
+      "segment_linkage": {
+        "ko": "가전과 TV는 삼성전자의 안정적 매출 기반이다. AI 가전, 프리미엄 TV, 교체 수요가 주요 테마지만 반도체처럼 폭발적인 이익 레버리지는 작다.\n\nLG전자와 Sony가 핵심 비교군이다. 소비 경기, 유통 재고, 환율, 원가 부담이 이 사업의 수익성을 좌우한다.\n\n주가에는 직접 촉매보다 방어적 포트폴리오 역할이 크다. 반도체 사이클이 흔들릴 때 가전/TV의 안정성이 전체 이익 변동성을 낮추는지 확인해야 한다.",
+        "en": "Consumer electronics and TV provide Samsung’s stable revenue base. AI appliances, premium TVs and replacement demand are key themes, but earnings leverage is far smaller than semiconductors.\n\nLG Electronics and Sony are the main peers. Consumer cycle, retail inventory, FX and input costs determine profitability.\n\nFor the stock, this is more defensive portfolio support than a direct catalyst. When the semiconductor cycle weakens, CE/TV stability can reduce group earnings volatility.",
+        "ja": "家電とTVはSamsungの安定的な売上基盤である。AI家電、プレミアムTV、買い替え需要が主要テーマだが、半導体ほどの爆発的な利益レバレッジは小さい。\n\nLG ElectronicsとSonyが主な比較対象である。消費景気、流通在庫、為替、原価負担が収益性を左右する。\n\n株価には直接材料というより防御的ポートフォリオの役割が大きい。半導体サイクルが揺らぐ際、家電/TVの安定性が全体利益変動を抑えるか確認すべきである。"
+      },
+      "ihi_linkage": {
+        "ko": "가전과 TV는 삼성전자의 안정적 매출 기반이다. AI 가전, 프리미엄 TV, 교체 수요가 주요 테마지만 반도체처럼 폭발적인 이익 레버리지는 작다.\n\nLG전자와 Sony가 핵심 비교군이다. 소비 경기, 유통 재고, 환율, 원가 부담이 이 사업의 수익성을 좌우한다.\n\n주가에는 직접 촉매보다 방어적 포트폴리오 역할이 크다. 반도체 사이클이 흔들릴 때 가전/TV의 안정성이 전체 이익 변동성을 낮추는지 확인해야 한다.",
+        "en": "Consumer electronics and TV provide Samsung’s stable revenue base. AI appliances, premium TVs and replacement demand are key themes, but earnings leverage is far smaller than semiconductors.\n\nLG Electronics and Sony are the main peers. Consumer cycle, retail inventory, FX and input costs determine profitability.\n\nFor the stock, this is more defensive portfolio support than a direct catalyst. When the semiconductor cycle weakens, CE/TV stability can reduce group earnings volatility.",
+        "ja": "家電とTVはSamsungの安定的な売上基盤である。AI家電、プレミアムTV、買い替え需要が主要テーマだが、半導体ほどの爆発的な利益レバレッジは小さい。\n\nLG ElectronicsとSonyが主な比較対象である。消費景気、流通在庫、為替、原価負担が収益性を左右する。\n\n株価には直接材料というより防御的ポートフォリオの役割が大きい。半導体サイクルが揺らぐ際、家電/TVの安定性が全体利益変動を抑えるか確認すべきである。"
+      },
+      "tickers": [
+        "005930.KS",
+        "066570.KS",
+        "6758.T",
+        "AAPL"
+      ],
+      "drivers": [
+        "premium TV",
+        "AI appliances",
+        "replacement demand",
+        "retail cycle"
+      ],
+      "risk_factors": [
+        "weak consumer demand",
+        "margin pressure",
+        "FX volatility"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    },
+    {
+      "segment_id": "network_ai_ecosystem",
+      "segment_name": {
+        "ko": "네트워크 / AI 디바이스 생태계",
+        "en": "Network / AI Device Ecosystem",
+        "ja": "ネットワーク / AIデバイスエコシステム"
+      },
+      "company_relevance": "comparison",
+      "ihi_relevance": "comparison",
+      "segment_linkage": {
+        "ko": "네트워크와 AI 디바이스 생태계는 삼성전자의 장기 옵션이다. 5G/6G, 엣지 AI, 온디바이스 AI가 모바일과 반도체를 연결한다.\n\nQualcomm, Ericsson, Nokia, Apple을 함께 보면 통신 투자와 디바이스 생태계 변화를 읽을 수 있다. 단기 실적보다는 장기 플랫폼 경쟁력 관점이 중요하다.\n\n주가 연결성은 간접적이다. 하지만 AI 디바이스 생태계가 커지면 메모리, 모바일, 파운드리 수요를 동시에 자극할 수 있어 장기 멀티플 방어에 기여한다.",
+        "en": "Network and AI-device ecosystem is a long-term option for Samsung. 5G/6G, edge AI and on-device AI connect mobile devices with semiconductors.\n\nQualcomm, Ericsson, Nokia and Apple help frame telecom investment and device-ecosystem changes. The focus is long-term platform competitiveness rather than near-term earnings.\n\nStock linkage is indirect. However, expansion of AI-device ecosystems can stimulate memory, mobile and foundry demand together, supporting long-term multiples.",
+        "ja": "ネットワークとAIデバイスエコシステムはSamsungの長期オプションである。5G/6G、エッジAI、オンデバイスAIがモバイルと半導体を結びつける。\n\nQualcomm、Ericsson、Nokia、Appleを併せて見ると、通信投資とデバイスエコシステムの変化を把握できる。短期業績より長期プラットフォーム競争力が重要である。\n\n株価連動は間接的である。ただしAIデバイスエコシステムが拡大すれば、メモリ、モバイル、ファウンドリ需要を同時に刺激し、長期倍率を支える。"
+      },
+      "ihi_linkage": {
+        "ko": "네트워크와 AI 디바이스 생태계는 삼성전자의 장기 옵션이다. 5G/6G, 엣지 AI, 온디바이스 AI가 모바일과 반도체를 연결한다.\n\nQualcomm, Ericsson, Nokia, Apple을 함께 보면 통신 투자와 디바이스 생태계 변화를 읽을 수 있다. 단기 실적보다는 장기 플랫폼 경쟁력 관점이 중요하다.\n\n주가 연결성은 간접적이다. 하지만 AI 디바이스 생태계가 커지면 메모리, 모바일, 파운드리 수요를 동시에 자극할 수 있어 장기 멀티플 방어에 기여한다.",
+        "en": "Network and AI-device ecosystem is a long-term option for Samsung. 5G/6G, edge AI and on-device AI connect mobile devices with semiconductors.\n\nQualcomm, Ericsson, Nokia and Apple help frame telecom investment and device-ecosystem changes. The focus is long-term platform competitiveness rather than near-term earnings.\n\nStock linkage is indirect. However, expansion of AI-device ecosystems can stimulate memory, mobile and foundry demand together, supporting long-term multiples.",
+        "ja": "ネットワークとAIデバイスエコシステムはSamsungの長期オプションである。5G/6G、エッジAI、オンデバイスAIがモバイルと半導体を結びつける。\n\nQualcomm、Ericsson、Nokia、Appleを併せて見ると、通信投資とデバイスエコシステムの変化を把握できる。短期業績より長期プラットフォーム競争力が重要である。\n\n株価連動は間接的である。ただしAIデバイスエコシステムが拡大すれば、メモリ、モバイル、ファウンドリ需要を同時に刺激し、長期倍率を支える。"
+      },
+      "tickers": [
+        "005930.KS",
+        "QCOM",
+        "ERIC",
+        "NOK",
+        "AAPL"
+      ],
+      "drivers": [
+        "5G/6G investment",
+        "edge AI",
+        "device ecosystem",
+        "enterprise connectivity"
+      ],
+      "risk_factors": [
+        "carrier capex delay",
+        "standard timing",
+        "ecosystem lock-in"
+      ],
+      "price_linkage": {
+        "ko": "위 문단의 사업부 해석에 포함되어 있다.",
+        "en": "Included in the segment analysis above.",
+        "ja": "上記セグメント分析に含まれる。"
+      }
+    }
+  ],
+  "peer_group": [
+    {
+      "company": "Samsung Electronics",
+      "ticker": "005930.KS",
+      "region": "South Korea",
+      "price": 268500,
+      "currency": "KRW",
+      "market_cap": "KRW 1,736.02T",
+      "pe": 31.95,
+      "pbr": 4.01,
+      "roe": 18.1,
+      "one_year_context": {
+        "ko": "삼성전자는 메모리, 파운드리, 모바일, 디스플레이를 함께 가진 복합 기술주다. 2026년 주가의 중심은 AI 메모리와 DS 이익 레버리지다.\n\n현재 밸류에이션은 trailing PER보다 forward PER이 훨씬 낮아, 시장이 이익 급증을 빠르게 반영하고 있음을 보여준다. PBR은 높아졌지만 메모리 슈퍼사이클이 유지되면 정당화될 수 있다.\n\n핵심은 HBM 고객 확대와 메모리 가격 지속성이다. 파운드리 회복이 확인되면 단순 메모리 사이클주를 넘어 구조적 리레이팅이 가능하다.",
+        "en": "Samsung is a diversified technology stock spanning memory, foundry, mobile and display. In 2026, the share-price center is AI memory and DS earnings leverage.\n\nForward PER is far lower than trailing PER, showing that the market is rapidly pricing earnings acceleration. PBR has expanded, but can be justified if the memory supercycle persists.\n\nHBM customer expansion and memory-price durability are key. Foundry recovery would allow structural rerating beyond a memory-cycle stock.",
+        "ja": "Samsungはメモリ、ファウンドリ、モバイル、ディスプレイを併せ持つ複合テクノロジー株である。2026年の株価中心はAIメモリとDS利益レバレッジである。\n\nForward PERがTrailing PERより大幅に低く、市場が利益急拡大を織り込んでいることを示す。PBRは高まったが、メモリスーパーサイクルが続けば正当化され得る。\n\n鍵はHBM顧客拡大とメモリ価格の持続性である。ファウンドリ回復が確認されれば、単なるメモリサイクル株を超えた構造的再評価が可能となる。"
+      }
+    },
+    {
+      "company": "SK hynix",
+      "ticker": "000660.KS",
+      "region": "South Korea",
+      "price": 742000,
+      "currency": "KRW",
+      "market_cap": "KRW 540T+",
+      "pe": null,
+      "pbr": null,
+      "roe": null,
+      "one_year_context": {
+        "ko": "SK하이닉스는 삼성전자 메모리 사업의 가장 직접적인 비교군이다. HBM 경쟁력과 AI 서버 노출도 측면에서 시장의 기준점 역할을 한다.\n\nSK하이닉스가 높은 프리미엄을 유지하면 삼성전자도 HBM 격차 축소 여부에 따라 재평가 여지가 생긴다. 반대로 HBM 인증 지연은 삼성전자 상대 매력을 낮출 수 있다.\n\n삼성전자 분석에서 SK하이닉스는 단순 peer가 아니라 메모리 경쟁력의 기준이다. 두 종목의 상대수익률은 HBM 신뢰도 차이를 반영한다.",
+        "en": "SK hynix is Samsung’s closest memory peer. It serves as the market benchmark for HBM competitiveness and AI-server exposure.\n\nIf SK hynix maintains a premium, Samsung can rerate as the HBM gap narrows. Conversely, HBM qualification delays can reduce Samsung’s relative appeal.\n\nFor Samsung analysis, SK hynix is not just a peer; it is the benchmark for memory competitiveness. Relative performance reflects confidence in HBM execution.",
+        "ja": "SK hynixはSamsungメモリ事業の最も直接的な比較対象である。HBM競争力とAIサーバー露出度の市場基準点となる。\n\nSK hynixが高いプレミアムを維持すれば、SamsungもHBM格差縮小に応じて再評価余地が生じる。反対にHBM認証遅延はSamsungの相対魅力を低下させ得る。\n\nSamsung分析においてSK hynixは単なるpeerではなく、メモリ競争力の基準である。相対リターンはHBM実行信頼度の差を反映する。"
+      }
+    },
+    {
+      "company": "Micron Technology",
+      "ticker": "MU",
+      "region": "United States",
+      "price": 245.1,
+      "currency": "USD",
+      "market_cap": "USD 270B+",
+      "pe": null,
+      "pbr": null,
+      "roe": null,
+      "one_year_context": {
+        "ko": "Micron은 글로벌 DRAM/NAND 가격 사이클을 읽는 미국 메모리 peer다. 삼성전자와 SK하이닉스의 업황을 해외 투자자가 어떻게 보는지 확인하는 창이다.\n\nMicron 실적과 가이던스가 강하면 메모리 가격 상승의 글로벌 확산을 확인할 수 있다. 반대로 재고나 가격 둔화 코멘트는 삼성전자에도 부정적이다.\n\n삼성전자에는 직접 경쟁자이자 사이클 검증 지표다. Micron의 주가 반응은 한국 메모리주의 다음 수급 방향을 예고할 때가 많다.",
+        "en": "Micron is the US memory peer for reading global DRAM/NAND pricing cycles. It shows how overseas investors view the same cycle affecting Samsung and SK hynix.\n\nStrong Micron earnings and guidance confirm global memory-price strength. Inventory or pricing slowdown comments would be negative for Samsung as well.\n\nFor Samsung, Micron is both a competitor and a cycle-check indicator. Its share reaction often foreshadows the next flow in Korean memory names.",
+        "ja": "MicronはグローバルDRAM/NAND価格サイクルを読む米国メモリpeerである。SamsungとSK hynixに影響する同じサイクルを海外投資家がどう見るかを示す。\n\nMicronの業績と見通しが強ければ、メモリ価格上昇のグローバル拡散を確認できる。反対に在庫や価格鈍化コメントはSamsungにもマイナスである。\n\nSamsungにとってMicronは競合でありサイクル検証指標でもある。Micronの株価反応は韓国メモリ株の次の資金流入方向を示すことが多い。"
+      }
+    },
+    {
+      "company": "Taiwan Semiconductor Manufacturing",
+      "ticker": "TSM",
+      "region": "Taiwan/US ADR",
+      "price": 376.5,
+      "currency": "USD",
+      "market_cap": "USD 1.9T+",
+      "pe": null,
+      "pbr": null,
+      "roe": null,
+      "one_year_context": {
+        "ko": "TSMC는 파운드리 경쟁력의 절대 기준이다. 삼성전자 파운드리의 장기 thesis는 결국 TSMC와의 수율, 고객, 선단공정 격차를 얼마나 줄이는지에 달려 있다.\n\nTSMC가 높은 멀티플을 받는 이유는 고객 신뢰와 선단공정 실행력이다. 삼성전자가 이 영역에서 개선을 보여주면 메모리 외 멀티플 확장이 가능하다.\n\n삼성전자 주가에는 간접적이지만 중요하다. 메모리 랠리 이후 다음 리레이팅 논리는 파운드리 신뢰 회복에서 나올 수 있다.",
+        "en": "TSMC is the absolute benchmark for foundry competitiveness. Samsung’s foundry thesis depends on narrowing the gap in yield, customers and advanced-node execution.\n\nTSMC earns a high multiple because of customer trust and execution. If Samsung improves here, it can expand multiples beyond memory.\n\nThe linkage is indirect but important. After the memory rally, the next rerating argument may come from foundry credibility recovery.",
+        "ja": "TSMCはファウンドリ競争力の絶対基準である。Samsungファウンドリの長期シナリオは、歩留まり、顧客、先端プロセス実行力の差をどれだけ縮めるかにかかっている。\n\nTSMCが高い倍率を得る理由は顧客信頼と実行力である。Samsungがこの領域で改善を示せば、メモリ以外で倍率拡張が可能となる。\n\n株価への連動は間接的だが重要である。メモリラリー後の次の再評価論理はファウンドリ信頼回復から生まれ得る。"
+      }
+    },
+    {
+      "company": "NVIDIA",
+      "ticker": "NVDA",
+      "region": "United States",
+      "price": 262.3,
+      "currency": "USD",
+      "market_cap": "USD 6T+",
+      "pe": null,
+      "pbr": null,
+      "roe": null,
+      "one_year_context": {
+        "ko": "NVIDIA는 AI 반도체 수요의 최상위 지표다. 삼성전자 HBM과 고부가 메모리 수요는 NVIDIA GPU 플랫폼 투자와 강하게 연결된다.\n\nNVIDIA의 데이터센터 매출과 차세대 플랫폼 일정이 강하면 HBM 공급망 전체에 긍정적이다. 삼성전자가 NVIDIA 공급망 내 신뢰를 확대하면 주가 프리미엄은 더 커질 수 있다.\n\n삼성전자에 NVIDIA는 고객 생태계 지표다. NVIDIA 주가와 주문 흐름은 삼성전자 DS 실적 기대를 선행해서 움직일 수 있다.",
+        "en": "NVIDIA is the top indicator for AI semiconductor demand. Samsung’s HBM and high-value memory demand is strongly linked to NVIDIA GPU platform investment.\n\nStrong NVIDIA data-center revenue and platform roadmaps are positive for the HBM supply chain. If Samsung expands credibility within NVIDIA’s supply chain, its premium can rise.\n\nFor Samsung, NVIDIA is a customer-ecosystem indicator. NVIDIA orders and share movement can lead expectations for Samsung DS earnings.",
+        "ja": "NVIDIAはAI半導体需要の最上位指標である。SamsungのHBMと高付加価値メモリ需要はNVIDIA GPUプラットフォーム投資と強く結びつく。\n\nNVIDIAのデータセンター売上と次世代プラットフォーム日程が強ければ、HBMサプライチェーン全体にプラスである。SamsungがNVIDIAサプライチェーン内で信頼を拡大すれば、株価プレミアムはさらに高まる。\n\nSamsungにとってNVIDIAは顧客エコシステム指標である。NVIDIAの注文と株価はSamsung DS業績期待に先行することがある。"
+      }
+    },
+    {
+      "company": "Apple",
+      "ticker": "AAPL",
+      "region": "United States",
+      "price": 221.4,
+      "currency": "USD",
+      "market_cap": "USD 3T+",
+      "pe": null,
+      "pbr": null,
+      "roe": null,
+      "one_year_context": {
+        "ko": "Apple은 프리미엄 디바이스 생태계의 기준점이다. 삼성전자의 모바일, 디스플레이, 부품 수요를 해석할 때 Apple 수요와 제품 사이클은 중요하다.\n\nApple과 삼성전자는 직접 경쟁하면서도 공급망 측면에서는 연결되어 있다. 프리미엄 스마트폰 수요가 강하면 모바일과 OLED 부문에 우호적이다.\n\n다만 삼성전자 주가 핵심은 현재 메모리다. Apple은 보조적 안정성과 소비자 디바이스 사이클을 읽는 peer로 보는 것이 적절하다.",
+        "en": "Apple is the benchmark for premium device ecosystems. Its demand and product cycle matter for Samsung’s mobile, display and component exposure.\n\nApple and Samsung compete directly, but are also linked through supply chains. Strong premium smartphone demand supports mobile and OLED segments.\n\nHowever, Samsung’s current share-price core is memory. Apple is best treated as a peer for consumer-device cycle and portfolio stability.",
+        "ja": "Appleはプレミアムデバイスエコシステムの基準点である。Samsungのモバイル、ディスプレイ、部品需要を読む際、Apple需要と製品サイクルは重要である。\n\nAppleとSamsungは直接競合しつつ、サプライチェーン面でもつながっている。プレミアムスマートフォン需要が強ければ、モバイルとOLED部門にプラスである。\n\nただし現在のSamsung株価の中心はメモリである。Appleは消費者デバイスサイクルとポートフォリオ安定性を見るpeerとして扱うのが適切である。"
+      }
+    }
+  ],
+  "news_events": [
+    {
+      "date": "2026-05-08",
+      "title": "Samsung closed at KRW 268,500 after volatile AI-memory rally week",
+      "source": "Investing.com historical data",
+      "url": "https://jp.investing.com/equities/samsung-electronics-co-ltd-historical-data",
+      "related_tickers": [
+        "005930.KS"
+      ],
+      "sentiment": "mixed",
+      "impact_horizon": "short",
+      "price_linkage": {
+        "observed": "May 8 close -1.10% after May 6 +14.41% and May 7 +2.07%.",
+        "interpretation": {
+          "ko": "5월 8일 조정은 급등 후 숨고르기 성격이다. 5월 6-7일의 강한 상승이 AI 메모리 실적과 코스피 랠리를 반영했다면, 268,500원 부근은 단기 과열을 식히는 가격대다.",
+          "en": "The May 8 pullback looks like consolidation after a sharp rally. If the May 6-7 surge reflected AI-memory earnings and the KOSPI rally, KRW 268,500 is a cooling zone after short-term overheating.",
+          "ja": "5月8日の調整は急騰後の一服である。5月6-7日の強い上昇がAIメモリ業績とKOSPIラリーを反映したなら、268,500ウォン近辺は短期過熱を冷ます価格帯である。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "title": "Samsung reported record Q1 2026 revenue and operating profit",
+      "source": "Samsung Newsroom / Reuters",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-first-quarter-2026",
+      "related_tickers": [
+        "005930.KS",
+        "000660.KS",
+        "MU"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "medium",
+      "price_linkage": {
+        "observed": "Reuters reported Samsung shares rose 1.3% after the earnings announcement.",
+        "interpretation": {
+          "ko": "사상 최대 실적은 삼성전자 주가의 핵심 재료다. 특히 DS 부문이 이익 대부분을 만든 점은 시장이 스마트폰보다 AI 메모리 사이클을 중심으로 주가를 평가하게 만든다.",
+          "en": "Record earnings are the core catalyst. The fact that DS generated most of the profit pushes the market to value Samsung around the AI-memory cycle rather than smartphones.",
+          "ja": "過去最高業績はSamsung株の中核材料である。特にDS部門が利益の大部分を生んだ点は、市場がスマートフォンよりAIメモリサイクルを中心に評価する要因となる。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "title": "DS semiconductor division posted KRW 81.7T revenue and KRW 53.7T operating profit",
+      "source": "Aju Press",
+      "url": "https://www.ajupress.com/view/20260430121170625",
+      "related_tickers": [
+        "005930.KS",
+        "000660.KS",
+        "MU",
+        "NVDA"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "medium",
+      "price_linkage": {
+        "observed": "DS accounted for most of group operating profit in Q1 2026.",
+        "interpretation": {
+          "ko": "DS 이익 집중은 삼성전자의 투자 포인트를 명확하게 만든다. 주가는 모바일이나 가전보다 HBM, DRAM/NAND 가격, AI 서버 투자에 더 민감하게 움직일 가능성이 높다.",
+          "en": "DS profit concentration clarifies the investment case. The share price is likely to be more sensitive to HBM, DRAM/NAND pricing and AI-server capex than to mobile or appliances.",
+          "ja": "DS利益集中により投資ポイントは明確である。株価はモバイルや家電より、HBM、DRAM/NAND価格、AIサーバー投資に敏感に動きやすい。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "title": "Samsung guided continued memory strength as AI infrastructure investment expands",
+      "source": "Reuters / Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/samsung-elec-q1-profit-surges-eightfold-to-a-record-4647510",
+      "related_tickers": [
+        "005930.KS",
+        "000660.KS",
+        "MU"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "medium",
+      "price_linkage": {
+        "observed": "Management indicated Q2 improvement as AI infrastructure investment continues.",
+        "interpretation": {
+          "ko": "2분기 개선 기대는 단기 랠리의 연료다. 다만 이미 주가가 크게 오른 만큼, 다음 분기 실적이 기대를 충족하지 못하면 차익실현이 커질 수 있다.",
+          "en": "Q2 improvement expectations fuel the short-term rally. But after a large move, any miss versus expectations could trigger profit-taking.",
+          "ja": "第2四半期改善期待は短期ラリーの燃料である。ただし株価が大きく上昇した後だけに、期待未達なら利食いが強まる可能性がある。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "title": "HBM sales expected to triple in 2026 according to Korean press summary",
+      "source": "Aju Press",
+      "url": "https://www.ajupress.com/view/20260430121170625",
+      "related_tickers": [
+        "005930.KS",
+        "000660.KS",
+        "NVDA"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "long",
+      "price_linkage": {
+        "observed": "HBM growth narrative supports Samsung’s forward PER compression.",
+        "interpretation": {
+          "ko": "HBM 매출 3배 기대는 삼성전자의 멀티플을 방어하는 장기 재료다. SK하이닉스 대비 HBM 신뢰도가 회복될수록 삼성전자의 상대수익률 개선 여지가 커진다.",
+          "en": "The expectation for HBM sales to triple is long-term multiple support. As confidence in Samsung’s HBM execution recovers versus SK hynix, relative performance can improve.",
+          "ja": "HBM売上3倍期待はSamsungの倍率を支える長期材料である。SK hynix比でHBM実行信頼が回復するほど、相対パフォーマンス改善余地は大きくなる。"
+        }
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "title": "South Korea market rally accelerated as Samsung approached trillion-dollar market cap",
+      "source": "MarketWatch",
+      "url": "https://www.marketwatch.com/story/this-chart-tells-the-story-of-the-hottest-stock-market-in-the-world-as-samsung-electronics-reaches-1-trillion-in-market-cap-1bd7892b",
+      "related_tickers": [
+        "005930.KS",
+        "000660.KS"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "medium",
+      "price_linkage": {
+        "observed": "Samsung and memory names drove a sharp KOSPI rally in early May.",
+        "interpretation": {
+          "ko": "코스피 랠리와 삼성전자 시총 확대는 외국인/패시브 수급을 자극한다. 다만 시장 전체 과열이 커지면 삼성전자도 개별 실적과 무관하게 변동성이 커질 수 있다.",
+          "en": "The KOSPI rally and Samsung market-cap expansion can attract foreign and passive flows. But if the overall market overheats, Samsung may face higher volatility regardless of company fundamentals.",
+          "ja": "KOSPIラリーとSamsung時価総額拡大は外国人・パッシブ資金を刺激する。ただし市場全体の過熱が強まれば、個別業績と無関係に変動性が高まり得る。"
+        }
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Goldman Sachs raised bullish view on South Korea market amid AI memory boom",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/goldman-sachs-south-korea-kospi-stock-market-outlook-ai-boom-2026-5",
+      "related_tickers": [
+        "005930.KS",
+        "000660.KS"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "medium",
+      "price_linkage": {
+        "observed": "Brokerage optimism supports Korea semiconductor rerating narrative.",
+        "interpretation": {
+          "ko": "글로벌 투자은행의 한국 시장 상향은 삼성전자에 수급 측면 호재다. 특히 AI 메모리 이익 전망이 코리아 디스카운트 축소와 결합하면 밸류에이션 부담을 일부 상쇄한다.",
+          "en": "Global investment-bank optimism is a flow catalyst for Samsung. If AI-memory earnings combine with Korea-discount reduction, valuation concerns can be partly offset.",
+          "ja": "グローバル投資銀行の韓国市場強気見方はSamsungに需給面でプラスである。AIメモリ利益見通しがコリアディスカウント縮小と結びつけば、バリュエーション負担を一部相殺できる。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "title": "Samsung announced Q1 2026 earnings guidance of KRW 133T sales and KRW 57.2T operating profit",
+      "source": "Samsung Global Newsroom",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-first-quarter-2026",
+      "related_tickers": [
+        "005930.KS"
+      ],
+      "sentiment": "positive",
+      "impact_horizon": "short",
+      "price_linkage": {
+        "observed": "Guidance confirmed a step-change in earnings before final results.",
+        "interpretation": {
+          "ko": "4월 초 가이던스는 랠리의 첫 확인 신호였다. 이후 최종 실적이 가이던스와 부합하면서 시장은 이익 레벨의 지속성으로 관심을 옮겼다.",
+          "en": "The early-April guidance was the first confirmation signal for the rally. After final results matched guidance, attention shifted to earnings durability.",
+          "ja": "4月初のガイダンスはラリーの最初の確認シグナルであった。最終業績がガイダンスに沿った後、市場の関心は利益水準の持続性へ移った。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "title": "MX and DX profits improved less than semiconductors due to cost and tariff pressure",
+      "source": "Samsung Newsroom Canada / Aju Press",
+      "url": "https://news.samsung.com/ca/samsung-electronics-announces-first-quarter-2026-results",
+      "related_tickers": [
+        "005930.KS",
+        "AAPL",
+        "QCOM"
+      ],
+      "sentiment": "mixed",
+      "impact_horizon": "medium",
+      "price_linkage": {
+        "observed": "Finished-goods businesses lagged DS despite flagship smartphone sales.",
+        "interpretation": {
+          "ko": "모바일과 가전의 마진 압박은 삼성전자가 완전한 전사 리레이팅을 받기 어려운 이유다. DS가 강해도 DX 수익성이 약하면 주가는 메모리 사이클 의존도가 더 높아진다.",
+          "en": "Margin pressure in mobile and appliances limits a full-company rerating. Even with strong DS, weak DX profitability makes the stock more dependent on the memory cycle.",
+          "ja": "モバイルと家電の利益率圧迫は、全社的な再評価を難しくする要因である。DSが強くてもDX収益性が弱ければ、株価はメモリサイクル依存度を高める。"
+        }
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "title": "Potential labor dispute and bonus demands emerged after record profit",
+      "source": "Notebookcheck / WSJ summary",
+      "url": "https://www.notebookcheck.net/Samsung-posts-record-31.8-billion-Q1-2026-profit-as-AI-chip-demand-surges.1286417.0.html",
+      "related_tickers": [
+        "005930.KS"
+      ],
+      "sentiment": "mixed",
+      "impact_horizon": "short",
+      "price_linkage": {
+        "observed": "Labor headlines can create execution and cost-risk concerns despite strong earnings.",
+        "interpretation": {
+          "ko": "사상 최대 실적 이후 노무 이슈가 부각되면 단기 투자심리에 부담이 될 수 있다. 다만 생산 차질이 현실화되지 않는 한 장기 thesis를 바꾸는 재료는 아니다.",
+          "en": "Labor issues after record profits can weigh on short-term sentiment. Unless production disruption materializes, they do not change the long-term thesis.",
+          "ja": "過去最高益後の労務問題は短期投資心理の負担となり得る。ただし生産支障が現実化しない限り、長期シナリオを変える材料ではない。"
+        }
+      }
+    }
+  ],
+  "technical_view": {
+    "support_zones": [
+      232500,
+      260000,
+      251000
+    ],
+    "resistance_zones": [
+      270000,
+      277000,
+      300000
+    ],
+    "trend_state": {
+      "ko": "현재 삼성전자는 강한 상승 추세 안에서 단기 과열을 식히는 구간이다. 5월 6일 14%대 급등과 5월 7일 추가 상승 뒤 5월 8일 소폭 조정했지만, 가격은 여전히 260,000원 위에 머물러 있다.\n\n기술적으로 260,000원은 단기 지지선이고, 251,000원은 급등일 저가로서 중요한 무효화 기준이다. 위쪽으로는 270,000원과 277,000원이 즉시 저항이며, 이 구간을 거래량과 함께 돌파하면 300,000원 라운드 넘버가 다음 목표가 된다.\n\n거래량은 5월 6일과 7일에 크게 증가했다. 이 수급이 유지되면 랠리 지속 가능성이 있지만, 거래량 감소와 함께 260,000원을 하회하면 단기 차익실현 구간으로 전환될 수 있다.",
+      "en": "Samsung is in a strong uptrend while cooling short-term overheating. After a 14% surge on May 6 and follow-through on May 7, the May 8 pullback was modest, and price still held above KRW 260,000.\n\nTechnically, KRW 260,000 is near-term support, while KRW 251,000, the May 6 low, is an important invalidation reference. Upside resistance is KRW 270,000 and KRW 277,000; a volume-backed break opens the KRW 300,000 round-number target.\n\nVolume expanded sharply on May 6-7. If this demand persists, the rally can continue; if volume fades and price breaks below KRW 260,000, the stock may enter a short-term profit-taking phase.",
+      "ja": "Samsungは強い上昇トレンドの中で短期過熱を冷ましている。5月6日の14%台急騰と5月7日の続伸後、5月8日は小幅調整したが、価格はなお260,000ウォン上を維持している。\n\nテクニカル面では260,000ウォンが短期支持線であり、5月6日安値の251,000ウォンが重要な無効化基準である。上値では270,000ウォンと277,000ウォンが直近抵抗線であり、出来高を伴って突破すれば300,000ウォンのラウンドナンバーが次の目標となる。\n\n出来高は5月6日と7日に大きく増加した。この需給が維持されればラリー継続余地があるが、出来高が減少し260,000ウォンを下回れば短期利食い局面に移行し得る。"
+    },
+    "risk_state": {
+      "ko": "251,000원 이탈 시 단기 상승 시나리오는 약해진다. 반대로 277,000원 돌파 후 지지 전환이 확인되면 300,000원 테스트 가능성이 열린다.",
+      "en": "A break below KRW 251,000 weakens the short-term bullish setup. A break above KRW 277,000 followed by support conversion opens a test of KRW 300,000.",
+      "ja": "251,000ウォン割れで短期強気シナリオは弱まる。一方、277,000ウォン突破後に支持線化すれば300,000ウォン試しが見えてくる。"
+    }
+  },
+  "trading_scenarios": {
+    "short_term": {
+      "ko": "단기는 260,000원 지지와 277,000원 돌파 여부를 본다. 이미 급등한 구간이므로 추격매수보다 눌림 확인 또는 돌파 후 지지 전환 확인이 더 안정적이다.\n\n거래량이 유지되면서 270,000원 이상에서 가격이 버티면 단기 수급은 여전히 강하다. 반대로 거래량 감소와 함께 260,000원을 이탈하면 차익실현이 우세해질 수 있다.\n\n무효화 기준은 251,000원 이탈이다. 공격적 접근은 277,000원 돌파와 거래량 유지, 보수적 접근은 260,000원 부근 지지 확인이다.",
+      "en": "Short-term focus is whether KRW 260,000 holds and KRW 277,000 breaks. After a sharp rally, confirmation on pullback or support after breakout is safer than chasing.\n\nIf volume remains strong and price holds above KRW 270,000, short-term demand remains healthy. If volume fades and KRW 260,000 breaks, profit-taking can dominate.\n\nThe invalidation line is below KRW 251,000. Aggressive entry requires a volume-backed break above KRW 277,000; conservative entry waits for support near KRW 260,000.",
+      "ja": "短期では260,000ウォン支持と277,000ウォン突破の有無を見る。既に急騰したため、追いかけ買いより押し目確認または突破後の支持線化確認が安定的である。\n\n出来高が維持され270,000ウォン以上で価格が保たれれば短期需給は強い。反対に出来高減少と260,000ウォン割れが重なれば利食い優勢となり得る。\n\n無効化基準は251,000ウォン割れである。攻撃的には277,000ウォン突破と出来高維持、保守的には260,000ウォン近辺の支持確認を待つ。"
+    },
+    "medium_term": {
+      "ko": "중기는 2분기 실적과 HBM 고객 확대가 핵심이다. 1분기 실적이 매우 강했기 때문에 시장은 이제 일회성 급등이 아니라 이익 레벨의 지속성을 확인하려 한다.\n\n메모리 가격 상승과 HBM 출하 확대가 유지되면 Forward PER 부담은 빠르게 낮아진다. 반대로 HBM 인증이나 파운드리 수율 뉴스가 약하면 SK하이닉스 대비 상대 매력이 떨어질 수 있다.\n\n중기 접근은 분할이 적합하다. 실적 추정치 상향, 외국인 수급, DRAM/HBM 가격 지표를 확인하면서 비중을 조절한다.",
+      "en": "Medium-term focus is Q2 earnings and HBM customer expansion. After a very strong Q1, the market now wants proof that the new earnings level is sustainable.\n\nIf memory prices and HBM shipments remain strong, forward valuation pressure falls quickly. If HBM qualification or foundry-yield news disappoints, relative appeal versus SK hynix may weaken.\n\nA staged approach is preferable. Position size should be adjusted with earnings upgrades, foreign flows and DRAM/HBM pricing indicators.",
+      "ja": "中期では第2四半期業績とHBM顧客拡大が焦点である。第1四半期が非常に強かったため、市場は一過性ではなく新しい利益水準の持続性を確認しようとする。\n\nメモリ価格上昇とHBM出荷拡大が続けばForward PER負担は急速に低下する。反対にHBM認証やファウンドリ歩留まりニュースが弱ければ、SK hynix比の相対魅力は低下し得る。\n\n中期は分割アプローチが適する。業績予想上方修正、外国人需給、DRAM/HBM価格指標を確認しながら比率を調整する。"
+    },
+    "long_term": {
+      "ko": "장기는 AI 메모리, HBM, 파운드리, 온디바이스 AI 생태계를 함께 보는 구조다. 삼성전자가 메모리 슈퍼사이클만이 아니라 선단공정과 AI 디바이스 생태계에서도 신뢰를 회복하면 멀티플 확장이 가능하다.\n\n장기 보유 관점에서는 고점 추격보다 실적 확인형 분할 접근이 적절하다. 주가가 이미 큰 폭 상승했기 때문에, FY2026/FY2027 이익 추정치와 현금흐름이 계속 상향되는지 봐야 한다.\n\n장기 리스크는 메모리 가격 피크아웃, HBM 경쟁 열위, 파운드리 투자 부담, 모바일 수요 둔화다. 장기 thesis가 유지되려면 DS 이익뿐 아니라 파운드리 신뢰와 전사 현금흐름이 함께 개선되어야 한다.",
+      "en": "Long-term thesis combines AI memory, HBM, foundry and on-device AI ecosystems. If Samsung regains credibility not only in memory but also in advanced nodes and AI-device ecosystems, multiple expansion is possible.\n\nFor long-term holding, staged entry after execution proof is preferable to chasing highs. Since the stock has already risen sharply, FY2026/FY2027 earnings estimates and cash flow must keep improving.\n\nLong-term risks are memory price peak-out, HBM competitive weakness, foundry investment burden and mobile-demand slowdown. The thesis requires not only DS profit but also foundry credibility and group cash-flow improvement.",
+      "ja": "長期シナリオはAIメモリ、HBM、ファウンドリ、オンデバイスAIエコシステムを併せて見る構造である。Samsungがメモリだけでなく先端プロセスとAIデバイスエコシステムでも信頼を回復すれば、倍率拡張が可能となる。\n\n長期保有では高値追いよりも実績確認型の分割アプローチが適する。株価は既に大きく上昇しているため、FY2026/FY2027利益予想とキャッシュフローが継続的に上方修正されるかを見るべきである。\n\n長期リスクはメモリ価格ピークアウト、HBM競争劣位、ファウンドリ投資負担、モバイル需要鈍化である。長期シナリオ維持にはDS利益だけでなく、ファウンドリ信頼と全社キャッシュフロー改善が必要である。"
+    }
+  },
+  "sources": [
+    {
+      "title": "Samsung Q1 2026 earnings guidance",
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-earnings-guidance-for-first-quarter-2026",
+      "publisher": "Samsung Global Newsroom",
+      "used_for": "Q1 2026 guidance and official earnings context"
+    },
+    {
+      "title": "Samsung Q1 2026 results summary",
+      "url": "https://news.samsung.com/ca/samsung-electronics-announces-first-quarter-2026-results",
+      "publisher": "Samsung Newsroom Canada",
+      "used_for": "segment results and management commentary"
+    },
+    {
+      "title": "StockAnalysis KRX 005930 overview",
+      "url": "https://stockanalysis.com/quote/krx/005930/",
+      "publisher": "StockAnalysis",
+      "used_for": "market cap, valuation, dividend and profile snapshot"
+    },
+    {
+      "title": "Investing.com historical data 005930",
+      "url": "https://jp.investing.com/equities/samsung-electronics-co-ltd-historical-data",
+      "publisher": "Investing.com",
+      "used_for": "May 2026 OHLCV snapshot"
+    },
+    {
+      "title": "Reuters Q1 2026 earnings report",
+      "url": "https://www.investing.com/news/stock-market-news/samsung-elec-q1-profit-surges-eightfold-to-a-record-4647510",
+      "publisher": "Reuters via Investing.com",
+      "used_for": "earnings reaction and AI memory context"
+    },
+    {
+      "title": "Aju Press Samsung DS Q1 2026",
+      "url": "https://www.ajupress.com/view/20260430121170625",
+      "publisher": "Aju Press",
+      "used_for": "DS division revenue and operating profit context"
+    },
+    {
+      "title": "MarketWatch Korea rally context",
+      "url": "https://www.marketwatch.com/story/this-chart-tells-the-story-of-the-hottest-stock-market-in-the-world-as-samsung-electronics-reaches-1-trillion-in-market-cap-1bd7892b",
+      "publisher": "MarketWatch",
+      "used_for": "Korea market rally and Samsung market cap context"
+    },
+    {
+      "title": "Business Insider Goldman Korea outlook",
+      "url": "https://www.businessinsider.com/goldman-sachs-south-korea-kospi-stock-market-outlook-ai-boom-2026-5",
+      "publisher": "Business Insider",
+      "used_for": "Korea equity market and AI memory macro context"
+    }
+  ],
+  "data_quality": {
+    "status": "partial",
+    "missing_fields": [
+      "full 60-day OHLCV from official KRX feed",
+      "DART XBRL parsed balance sheet"
+    ],
+    "stale_fields": [],
+    "notes": [
+      "Static first-pass dataset for GitHub Pages rendering. Some valuation fields use public market-data snapshots and estimates."
+    ],
+    "source_confidence": "medium"
+  },
+  "disclaimer": {
+    "ko": "본 자료는 투자 조언이 아닌 리서치/웹페이지 시각화용 정적 분석 데이터다. 투자 결정은 사용자의 책임이다.",
+    "en": "This is static research and visualization data, not investment advice. Investment decisions remain the user's responsibility.",
+    "ja": "本資料は投資助言ではなく、リサーチおよびWeb表示用の静的分析データである。投資判断は利用者自身の責任で行う。"
+  }
+}

@@ -114,6 +114,8 @@ analysis/NYSELMT/NYSELMT.html
 }
 ```
 
+The updater must not modify the site root `index.html` by default. Create or update the standalone analysis page only. Add index/home links only when the user explicitly requests them.
+
 ## GitHub Pages URL Rule
 
 The final page must be reachable as:
