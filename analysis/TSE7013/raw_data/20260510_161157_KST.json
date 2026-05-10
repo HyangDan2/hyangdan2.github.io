@@ -1,0 +1,145 @@
+﻿{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-10T16:11:57+09:00",
+  "as_of": {
+    "page_date": "2026-05-10",
+    "market_data_date": "2026-05-08",
+    "timezone": "Asia/Seoul",
+    "note": {
+      "ko": "2026-05-10은 일요일이므로 가격 데이터는 확인 가능한 최신 거래일인 2026-05-08 종가를 기준으로 작성했다.",
+      "en": "Because 2026-05-10 is a Sunday, market data uses the latest confirmed trading close available: 2026-05-08.",
+      "ja": "2026年5月10日は日曜日のため、株価データは確認可能な最新取引日である2026年5月8日の終値を基準にした。"
+    }
+  },
+  "target": {
+    "company": "IHI Corporation",
+    "ticker": "7013.T",
+    "security_code": "7013",
+    "exchange": "Tokyo Stock Exchange Prime Market",
+    "currency": "JPY",
+    "business_tags": ["aero engines", "space", "defense", "energy systems", "social infrastructure"],
+    "identity_note": {
+      "ko": "TSE 7013은 IHI Corporation이며, Mitsubishi Heavy Industries는 TSE 7011이다.",
+      "en": "TSE 7013 is IHI Corporation; Mitsubishi Heavy Industries is TSE 7011.",
+      "ja": "TSE 7013はIHI Corporationであり、三菱重工業はTSE 7011である。"
+    }
+  },
+  "price_snapshot": {
+    "source": "Kabutan",
+    "date": "2026-05-08",
+    "open": 3098,
+    "high": 3323,
+    "low": 3001,
+    "close": 3059,
+    "change": 14,
+    "change_percent": 0.46,
+    "volume": 69373000,
+    "fifty_two_week_high": { "price": 4698, "date": "2026-02-10" },
+    "fifty_two_week_low": { "price": 1742.1, "date": "2025-05-09" },
+    "interpretation": {
+      "ko": "5월 8일 종가는 전일 급등 후 보합권으로 마감했다. 2월 고점 대비로는 조정 구간이지만, 4월 저점 이후 반등 시도가 확인된다.",
+      "en": "The May 8 close was nearly flat after the previous day's sharp rebound. The stock remains in correction versus the February high, but has attempted to rebound from the April low.",
+      "ja": "5月8日の終値は前日の急反発後に小幅高で終了した。2月高値からは調整局面にあるが、4月安値からの反発が確認される。"
+    }
+  },
+  "recent_prices": [
+    { "date": "2026-03-04", "open": 3998, "high": 4067, "low": 3753, "close": 3902, "volume": 28182200 },
+    { "date": "2026-03-05", "open": 4042, "high": 4095, "low": 3821, "close": 3921, "volume": 23894800 },
+    { "date": "2026-03-06", "open": 3851, "high": 3884, "low": 3736, "close": 3815, "volume": 16447900 },
+    { "date": "2026-03-09", "open": 3605, "high": 3780, "low": 3572, "close": 3751, "volume": 22141000 },
+    { "date": "2026-03-10", "open": 3791, "high": 3972, "low": 3731, "close": 3835, "volume": 21950000 },
+    { "date": "2026-03-11", "open": 3898, "high": 3920, "low": 3758, "close": 3781, "volume": 14966500 },
+    { "date": "2026-03-12", "open": 3727, "high": 3916, "low": 3701, "close": 3824, "volume": 21179800 },
+    { "date": "2026-03-13", "open": 3650, "high": 3763, "low": 3612, "close": 3734, "volume": 16674300 },
+    { "date": "2026-03-16", "open": 3693, "high": 3786, "low": 3648, "close": 3731, "volume": 12738800 },
+    { "date": "2026-03-17", "open": 3801, "high": 3888, "low": 3744, "close": 3781, "volume": 12352900 },
+    { "date": "2026-03-18", "open": 3851, "high": 3930, "low": 3772, "close": 3930, "volume": 11733900 },
+    { "date": "2026-03-19", "open": 3830, "high": 3902, "low": 3769, "close": 3769, "volume": 13628000 },
+    { "date": "2026-03-23", "open": 3655, "high": 3669, "low": 3467, "close": 3470, "volume": 18015100 },
+    { "date": "2026-03-24", "open": 3559, "high": 3572, "low": 3343, "close": 3419, "volume": 16531000 },
+    { "date": "2026-03-25", "open": 3522, "high": 3568, "low": 3477, "close": 3510, "volume": 13676600 },
+    { "date": "2026-03-26", "open": 3521, "high": 3604, "low": 3445, "close": 3487, "volume": 11214000 },
+    { "date": "2026-03-27", "open": 3417, "high": 3500, "low": 3397, "close": 3500, "volume": 10433600 },
+    { "date": "2026-03-30", "open": 3288, "high": 3332, "low": 3226, "close": 3308, "volume": 13829500 },
+    { "date": "2026-04-24", "open": 3071, "high": 3075, "low": 2969, "close": 2995, "volume": 14535100 },
+    { "date": "2026-04-27", "open": 2924, "high": 2941, "low": 2811, "close": 2901, "volume": 21920300 },
+    { "date": "2026-04-28", "open": 2948, "high": 3020, "low": 2905, "close": 2959.5, "volume": 18091200 },
+    { "date": "2026-04-30", "open": 2962, "high": 2988, "low": 2832.5, "close": 2853, "volume": 21212200 },
+    { "date": "2026-05-01", "open": 2876.5, "high": 2920, "low": 2827.5, "close": 2880, "volume": 15600000 },
+    { "date": "2026-05-07", "open": 2880, "high": 3068, "low": 2838, "close": 3045, "volume": 25106600 },
+    { "date": "2026-05-08", "open": 3098, "high": 3323, "low": 3001, "close": 3059, "volume": 69373000 }
+  ],
+  "monthly_prices": [
+    { "month": "2025-05", "close": 1998 }, { "month": "2025-06", "close": 2234 }, { "month": "2025-07", "close": 2426 },
+    { "month": "2025-08", "close": 2210 }, { "month": "2025-09", "close": 2760 }, { "month": "2025-10", "close": 3215 },
+    { "month": "2025-11", "close": 2786 }, { "month": "2025-12", "close": 2754 }, { "month": "2026-01", "close": 3568 },
+    { "month": "2026-02", "close": 4303 }, { "month": "2026-03", "close": 3138 }, { "month": "2026-04", "close": 2853 },
+    { "month": "2026-05", "close": 3059 }
+  ],
+  "financials": {
+    "source": "IHI Consolidated Financial Results FY ended March 31, 2026",
+    "fiscal_year": "FY2025 ended 2026-03-31",
+    "unit": "JPY millions",
+    "revenue": 1643402,
+    "revenue_yoy_percent": 1.0,
+    "operating_profit": 165534,
+    "operating_profit_yoy_percent": 15.3,
+    "profit_before_tax": 185490,
+    "profit_before_tax_yoy_percent": 33.9,
+    "profit_attributable_to_owners": 160992,
+    "profit_attributable_yoy_percent": 42.8,
+    "basic_eps_yen": 151.88,
+    "roe_percent": 28.4,
+    "operating_margin_percent": 10.1,
+    "total_assets": 2428559,
+    "total_equity": 681531,
+    "equity_ratio_percent": 26.9,
+    "orders_received": 1954700,
+    "cash_flow_from_operations": 121360,
+    "forecast_fy2026": { "revenue": 1830000, "revenue_yoy_percent": 11.4, "operating_profit": 240000, "operating_profit_yoy_percent": 45.0, "profit_attributable_to_owners": 165000, "profit_attributable_yoy_percent": 2.5, "eps_yen": 155.09, "orders": 1760000 },
+    "analysis": {
+      "ko": "FY2025는 매출 성장률은 낮았지만 영업이익률과 ROE가 개선됐다. 회사는 FY2026에 민항 엔진과 방산 사업 성장을 바탕으로 매출 11.4%, 영업이익 45.0% 증가를 제시했다.",
+      "en": "FY2025 revenue growth was modest, but operating margin and ROE improved. Management guides FY2026 revenue up 11.4% and operating profit up 45.0%, driven by civil aero engines and defense.",
+      "ja": "FY2025は売上成長こそ小幅だったが、営業利益率とROEは改善した。会社は民間航空エンジンと防衛事業を背景に、FY2026の売上高11.4%増、営業利益45.0%増を見込む。"
+    }
+  },
+  "peer_group": [
+    { "company": "IHI Corporation", "ticker": "7013.T", "region": "Japan", "price": 3059, "currency": "JPY", "market_cap": "JPY 3.23T", "pe": 26.68, "revenue_ttm": "JPY 1.61T", "rsi": 42.57, "one_year_context": "Up strongly YoY but in correction from Feb 2026 high" },
+    { "company": "Mitsubishi Heavy Industries", "ticker": "7011.T", "region": "Japan", "price": 4498, "currency": "JPY", "market_cap": "JPY 15.21T", "pe": 48.90, "revenue_ttm": "JPY 5.31T", "rsi": 47.29, "one_year_context": "Large-cap Japan defense and energy prime; valuation premium remains high" },
+    { "company": "Kawasaki Heavy Industries", "ticker": "7012.T", "region": "Japan", "price": 3254, "currency": "JPY", "market_cap": "JPY 2.72T", "pe": 24.78, "revenue_ttm": "JPY 2.28T", "rsi": null, "one_year_context": "Close Japan heavy-industry peer with aerospace, rolling stock, energy and defense exposure" },
+    { "company": "Lockheed Martin", "ticker": "LMT", "region": "United States", "price": 506.51, "currency": "USD", "market_cap": "USD 118.14B", "pe": 24.94, "revenue_ttm": "USD 75.11B", "rsi": null, "one_year_context": "Global prime defense contractor; stock pulled back after Q1 miss despite missile and F-35 demand" },
+    { "company": "Hanwha Aerospace", "ticker": "012450.KS", "region": "South Korea", "price": 1317000, "currency": "KRW", "market_cap": "KRW 67.76T", "pe": 46.16, "revenue_ttm": "KRW 26.70T", "rsi": 40.26, "one_year_context": "K-defense export platform with elevated growth expectations and valuation sensitivity" },
+    { "company": "Rheinmetall", "ticker": "RHM.DE", "region": "Germany", "price": 1341.6, "currency": "EUR", "market_cap": "EUR 66.88B", "pe": 64.68, "revenue_ttm": "EUR 9.94B", "rsi": 39.05, "one_year_context": "European rearmament leader; backlog is strong but market is penalizing execution and timing risk" }
+  ],
+  "news_events": [
+    { "date": "2026-05-08", "title": "IHI released FY2025 consolidated financial results", "source": "IHI IR", "related_tickers": ["7013.T"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": { "observed": "May 8 close +0.46%; May 7 close +5.73%", "interpretation": { "ko": "실적 발표 전후로 거래량이 급증했고, FY2026 영업이익 45% 증가 가이던스가 단기 하방을 완화했다. 다만 2월 고점 대비 조정폭이 커서 확인 매수가 필요한 구간이다.", "en": "Trading volume surged around earnings. FY2026 guidance for 45% operating profit growth helped stabilize downside, but the stock remains well below its February high.", "ja": "決算前後で出来高が急増した。FY2026の営業利益45%増見通しは下値を支えたが、2月高値からの調整幅は大きく、確認買いが必要な局面である。" } } },
+    { "date": "2026-05-07", "title": "Rheinmetall Q1: sales up, backlog at EUR 73B, guidance reaffirmed", "source": "Rheinmetall", "related_tickers": ["RHM.DE", "7013.T", "7011.T", "LMT"], "sentiment": "mixed", "impact_horizon": "medium", "price_linkage": { "observed": "Rheinmetall fell sharply despite backlog growth because sales missed expectations.", "interpretation": { "ko": "글로벌 방산 수요는 강하지만, 시장은 생산능력과 매출 인식 속도를 더 엄격하게 보기 시작했다. IHI에도 수주 자체보다 방산 매출 전환 속도가 중요하다는 시사점이 있다.", "en": "Defense demand remains strong, but the market is increasingly focused on production capacity and revenue conversion, not only backlog. This is a direct read-through for IHI.", "ja": "防衛需要は強いが、市場は受注残だけでなく生産能力と売上化の速度を重視し始めている。IHIにも同じ示唆がある。" } } },
+    { "date": "2026-04-23", "title": "Lockheed Martin Q1 earnings missed expectations while missile and F-35 demand stayed elevated", "source": "Investors Business Daily", "related_tickers": ["LMT", "7013.T"], "sentiment": "mixed", "impact_horizon": "short", "price_linkage": { "observed": "LMT retreated after earnings despite elevated defense demand.", "interpretation": { "ko": "방산 테마만으로는 주가 상승이 지속되지 않고, 마진과 납품 실적이 필요하다는 신호다. IHI의 FY2026 가이던스도 분기별 진행률 확인이 중요하다.", "en": "Theme strength alone is not enough; margin and delivery execution matter. IHI's FY2026 guidance should be checked against quarterly progress.", "ja": "防衛テーマだけでは株価上昇は続かず、利益率と納入実績が重要である。IHIのFY2026見通しも四半期ごとの進捗確認が必要だ。" } } },
+    { "date": "2026-04-30", "title": "Hanwha Aerospace Q1 2026: operating profit growth with export volumes expected from Q2", "source": "StockAnalysis transcript summary", "related_tickers": ["012450.KS", "7013.T"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": { "observed": "Hanwha remains a high-growth but high-expectation peer.", "interpretation": { "ko": "한국 방산 수출 사이클은 글로벌 피어 밸류에이션을 지지하지만, 고PER 종목은 실적 발표 때 변동성이 크다. IHI 비교 시 성장률 대비 밸류에이션 부담을 같이 봐야 한다.", "en": "K-defense exports support global peer valuation, but high-P/E stocks remain volatile around results. IHI should be compared on growth versus valuation burden.", "ja": "韓国防衛輸出サイクルはグローバル同業のバリュエーションを支えるが、高PER銘柄は決算時の変動が大きい。IHIは成長率とバリュエーション負担を併せて見る必要がある。" } } },
+    { "date": "2025-12-26", "title": "Japan approved a record defense budget above JPY 9T", "source": "The Guardian / AP context", "related_tickers": ["7013.T", "7011.T", "7012.T"], "sentiment": "positive", "impact_horizon": "long", "price_linkage": { "observed": "Japanese defense primes have rerated since 2024-2026 amid defense budget expansion.", "interpretation": { "ko": "일본 방위비 확대는 IHI의 장기 프리미엄을 지지한다. 단기 주가는 실적과 차트에 흔들리지만, 장기 내러티브는 여전히 방산/항공우주 증설이다.", "en": "Japan's defense spending expansion supports IHI's long-term premium. Short-term price action may follow earnings and technicals, but the structural narrative remains defense and aerospace expansion.", "ja": "日本の防衛費拡大はIHIの長期プレミアムを支える。短期株価は決算とテクニカルに左右されるが、構造的テーマは防衛・航空宇宙の拡大である。" } } }
+  ],
+  "technical_view": {
+    "support_zones": [2811, 2853, 3000],
+    "resistance_zones": [3300, 3500, 3930, 4698],
+    "trend_state": { "ko": "중기 하락 추세 안의 단기 반등. 3,300엔 돌파와 거래량 유지가 확인되면 반등 신뢰도가 올라간다.", "en": "Short-term rebound inside a medium-term correction. A break above JPY 3,300 with sustained volume would improve confidence.", "ja": "中期調整局面の中での短期反発。3,300円突破と出来高維持が確認されれば反発の信頼度が高まる。" },
+    "risk_state": { "ko": "2,800엔대 이탈 시 4월 저점 재확인 가능성이 커진다.", "en": "A break below the JPY 2,800 area would raise the risk of retesting the April low.", "ja": "2,800円台を割り込むと、4月安値を再確認するリスクが高まる。" }
+  },
+  "trading_scenarios": {
+    "short_term": { "ko": "단기는 3,000엔 지지 확인 후 3,300엔 돌파 여부를 본다. 2,850엔 이탈 시 손절 또는 비중 축소가 합리적이다.", "en": "For short-term trading, watch whether JPY 3,000 holds and whether JPY 3,300 breaks. A move below JPY 2,850 favors stop-loss or position reduction.", "ja": "短期では3,000円の支持と3,300円突破を確認する。2,850円割れでは損切りまたはポジション縮小が合理的だ。" },
+    "medium_term": { "ko": "중기는 FY2026 가이던스의 분기 진행률, 방산 매출 전환, 민항 엔진 정비 비용 완화 여부가 핵심이다. 3,500엔 회복 시 추세 복원 가능성이 열린다.", "en": "Medium-term focus is FY2026 guidance progress, defense revenue conversion, and easing civil engine maintenance costs. A recovery above JPY 3,500 would reopen trend-repair potential.", "ja": "中期ではFY2026見通しの進捗、防衛売上への転換、民間エンジン整備費の緩和が焦点。3,500円回復でトレンド修復の可能性が開く。" },
+    "long_term": { "ko": "장기는 일본 방위비 확대, 항공 엔진 애프터마켓, 우주/SMR/에너지 전환 테마를 본다. 단, 이미 리레이팅된 섹터라 고점 추격보다 실적 확인형 분할 접근이 적합하다.", "en": "Long-term thesis rests on Japan defense spending, aero-engine aftermarket, space, SMR, and energy transition. Because the sector has rerated, staged entry after execution proof is preferable to chasing highs.", "ja": "長期では日本の防衛費拡大、航空エンジンのアフターマーケット、宇宙、SMR、エネルギー転換が軸となる。ただしセクターは既に再評価されており、高値追いより実績確認型の分割投資が適する。" }
+  },
+  "sources": [
+    { "title": "IHI official stock information", "url": "https://www.ihi.co.jp/en/ir/stock/information/", "used_for": "ticker identity and exchange confirmation" },
+    { "title": "IHI FY2025 consolidated financial results", "url": "https://www.ihi.co.jp/en/ir/library/statements/index.html", "used_for": "official FY2025 financial results and FY2026 forecast" },
+    { "title": "Kabutan IHI historical prices", "url": "https://en.kabutan.com/jp/stocks/7013/historical_prices/daily", "used_for": "latest May 8, 2026 close and daily OHLCV" },
+    { "title": "StockAnalysis IHI overview and financials", "url": "https://stockanalysis.com/quote/tyo/7013/", "used_for": "market cap, valuation, RSI, peer snapshot" },
+    { "title": "StockAnalysis MHI 7011 overview", "url": "https://stockanalysis.com/quote/tyo/7011/", "used_for": "Japanese peer comparison" },
+    { "title": "StockAnalysis Kawasaki Heavy 7012 market cap", "url": "https://stockanalysis.com/quote/tyo/7012/market-cap/", "used_for": "Japanese peer comparison" },
+    { "title": "StockAnalysis Lockheed Martin overview", "url": "https://stockanalysis.com/stocks/lmt/", "used_for": "global peer comparison" },
+    { "title": "StockAnalysis Hanwha Aerospace overview", "url": "https://stockanalysis.com/quote/krx/012450/", "used_for": "global peer comparison" },
+    { "title": "Rheinmetall Q1 2026 press release", "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/05/2026-05-07-rheinmetall-news-quarterly-statement-q1", "used_for": "global defense trend and order backlog analysis" },
+    { "title": "AP: Japan deploys first long-range missiles", "url": "https://apnews.com/article/40322ab51735b2ce17ce6f02d224d14f", "used_for": "Japan defense posture context" }
+  ],
+  "disclaimer": { "ko": "본 자료는 투자 조언이 아닌 리서치/웹페이지 시각화용 정적 분석 데이터다. 투자 결정은 사용자의 책임이다.", "en": "This is static research and visualization data, not investment advice. Investment decisions remain the user's responsibility.", "ja": "本資料は投資助言ではなく、リサーチおよびWeb表示用の静的分析データである。投資判断は利用者自身の責任で行う。" }
+}
