@@ -148,7 +148,6 @@ let priceChart;
 
 const formatNumber = (value) => new Intl.NumberFormat().format(value);
 const money = (value, currency) => `${formatNumber(value)} ${currency}`;
-const jpyB = (value) => `KRW ${(value / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 })}B`;
 
 async function loadData() {
     const latestResponse = await fetch("latest.json");
@@ -194,7 +193,7 @@ function renderSummary() {
     const financials = pageData.financials;
     document.getElementById("asOf").textContent = `${pageData.as_of.page_date} / Market ${pageData.as_of.market_data_date}`;
     document.getElementById("marketNote").textContent = pageData.as_of.note[activeLang];
-    document.getElementById("latestClose").textContent = money(snapshot.close, "JPY");
+    document.getElementById("latestClose").textContent = money(snapshot.close, snapshot.currency || pageData.identity.currency || "KRW");
     document.getElementById("latestMove").textContent = `${snapshot.change >= 0 ? "+" : ""}${snapshot.change} (${snapshot.change_percent}%) / Vol ${formatNumber(snapshot.volume)}`;
     document.getElementById("marketCap").textContent = targetPeer.market_cap || pageData.financials.market_cap;
     document.getElementById("valuationLine").textContent = `PER ${pageData.financials.per} / PBR ${pageData.financials.pbr}`;
@@ -272,8 +271,9 @@ function renderFinancials() {
 function renderTechnicals() {
     document.getElementById("technicalTrend").textContent = pageData.technical_view.trend_state[activeLang];
     document.getElementById("technicalRisk").textContent = pageData.technical_view.risk_state[activeLang];
-    const supports = pageData.technical_view.support_zones.map((v) => `<span class="level">${labels[activeLang].support} ${money(v, "JPY")}</span>`);
-    const resistances = pageData.technical_view.resistance_zones.map((v) => `<span class="level">${labels[activeLang].resistance} ${money(v, "JPY")}</span>`);
+    const currency = pageData.identity.currency || pageData.price_snapshot.currency || "KRW";
+    const supports = pageData.technical_view.support_zones.map((v) => `<span class="level">${labels[activeLang].support} ${money(v, currency)}</span>`);
+    const resistances = pageData.technical_view.resistance_zones.map((v) => `<span class="level">${labels[activeLang].resistance} ${money(v, currency)}</span>`);
     document.getElementById("levels").innerHTML = [...supports, ...resistances].join("");
 }
 

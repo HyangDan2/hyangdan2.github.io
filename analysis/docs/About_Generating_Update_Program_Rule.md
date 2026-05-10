@@ -278,6 +278,25 @@ If the analysis date falls on a weekend or market holiday, use the latest confir
 - volume
 - currency
 
+The page renderer must use the currency from raw JSON, not a hard-coded formatter. Never reuse a formatter such as `jpyB()` or a literal `"JPY"`/`"KRW"` from another market page unless the target market currency has been verified.
+
+Currency lookup priority for display:
+
+1. `price_snapshot.currency`
+2. `identity.currency`
+3. `target.currency`
+4. market-derived fallback only after validation
+
+Market-derived fallback examples:
+
+- `KRX` -> `KRW`
+- `TSE` -> `JPY`
+- `NYSE` / `NASDAQ` -> `USD`
+- `XETRA` / `EPA` / `BIT` -> `EUR`
+- `LSE` -> `GBP` or `GBX`, depending on source data
+
+All displayed price levels, support/resistance zones, EPS/BPS, dividends, and market-cap values must be checked for currency consistency before the run is marked complete.
+
 `recent_prices` should include enough OHLCV rows to draw a useful chart. Prefer at least 60 trading days when available.
 
 `monthly_prices` should include at least 12 months when available.
@@ -479,6 +498,15 @@ The generated HTML page should:
 - render chart, financials, segment map, peers, news, technical view, trading scenarios, sources, and disclaimer
 - show a clear error message if opened through `file://`
 - degrade gracefully if a CDN chart library fails
+- avoid market-specific hard-coded units in shared templates
+
+Renderer formatting rules:
+
+- Use a generic `formatMoney(value, currency)` helper.
+- Use a generic large-number formatter that accepts both `value` and `currency`.
+- Do not leave source-market formatter names such as `jpyB`, `krwT`, or `usdB` in generic pages unless they are wrapped by a currency-aware dispatcher.
+- When cloning an existing page, search the new JS/CSS/HTML for old market currency strings before validation.
+- Validation must fail if a page for `KRX` contains display literals like `JPY`, or if a page for `TSE` contains display literals like `KRW`, unless they appear inside peer descriptions or source text where the foreign currency is intentional.
 
 No private API key may be embedded in client-side JavaScript.
 
