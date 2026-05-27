@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.2.0",
+  "generated_at": "2026-05-27T22:15:54+09:00",
+  "input": {
+    "market": "KRX",
+    "ticker": "0162L0",
+    "asset_type": "etf",
+    "fund_hint": "KODEX China AI Semiconductor TOP10 ETF",
+    "analysis_date": "2026-05-27",
+    "language_set": ["ko", "en", "ja"],
+    "output_base_dir": "analysis"
+  },
+  "identity": {
+    "asset_type": "ETF",
+    "name": "KODEX China AI Semiconductor TOP10 ETF",
+    "name_ko": "KODEX 차이나AI반도체TOP10",
+    "ticker": "0162L0",
+    "market": "KRX",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "issuer": "Samsung Asset Management",
+    "brand": "KODEX",
+    "benchmark": "Indxx China AI Semiconductor Top 10 Index (Price Return)",
+    "replication_method": "physical passive",
+    "listing_date": "2026-02-26",
+    "isin": "KR70162L0003",
+    "asset_class": "Equity",
+    "category": "China AI semiconductor thematic ETF",
+    "website": "https://www.k-etf.com/etf/0162L0",
+    "identity_note": {
+      "ko": "KRX 0162L0은 개별 회사 주식이 아니라 삼성자산운용이 운용하는 KODEX 차이나AI반도체TOP10 ETF다.",
+      "en": "KRX 0162L0 is not a common stock; it is the KODEX China AI Semiconductor TOP10 ETF managed by Samsung Asset Management.",
+      "ja": "KRX 0162L0は個別株ではなく、Samsung Asset Managementが運用するKODEX China AI Semiconductor TOP10 ETFである。"
+    }
+  },
+  "target": {
+    "company": "KODEX China AI Semiconductor TOP10 ETF",
+    "ticker": "0162L0",
+    "security_code": "0162L0",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "business_tags": ["ETF", "China AI semiconductor", "thematic equity", "physical passive"]
+  },
+  "as_of": {
+    "page_date": "2026-05-27",
+    "market_data_date": "2026-05-22",
+    "profile_data_date": "2026-05-27",
+    "timezone": "Asia/Seoul",
+    "note": {
+      "ko": "가격 차트는 확인 가능한 2026-05-22 종가를 최신 확정 거래가격으로 사용했고, ETF 프로필과 보유종목은 2026-05-27 접근 가능한 공개 스냅샷을 함께 반영했다.",
+      "en": "The price chart uses the confirmed May 22, 2026 close, while ETF profile and holdings fields also reflect publicly available snapshots accessed on May 27, 2026.",
+      "ja": "価格チャートは確認可能な2026年5月22日の終値を最新確定価格として使用し、ETFプロファイルと保有銘柄は2026年5月27日に確認できた公開スナップショットも反映した。"
+    }
+  },
+  "price_snapshot": {
+    "source": "StockAnalysis historical data",
+    "date": "2026-05-22",
+    "open": 15175,
+    "high": 15760,
+    "low": 15070,
+    "close": 15750,
+    "change": 480,
+    "change_percent": 3.14,
+    "volume": 721579,
+    "currency": "KRW",
+    "interpretation": {
+      "ko": "5월 22일 종가는 15,750원으로 5월 중순 조정 이후 재반등했다. 다만 ETF는 상장 후 이력이 짧아 가격 판단은 NAV, 보유종목, 중국 AI 반도체 테마 흐름과 함께 봐야 한다.",
+      "en": "The May 22 close was KRW 15,750, rebounding after a mid-May pullback. Because the ETF has a short listing history, price action should be read with NAV, holdings and China AI semiconductor theme context.",
+      "ja": "5月22日の終値は15,750ウォンで、5月中旬の調整後に反発した。上場後の履歴が短いため、価格判断はNAV、保有銘柄、中国AI半導体テーマと併せて見る必要がある。"
+    }
+  },
+  "recent_prices": [
+    {"date": "2026-03-12", "open": 9865, "high": 10025, "low": 9605, "close": 9700, "volume": 160956},
+    {"date": "2026-03-13", "open": 9695, "high": 9865, "low": 9650, "close": 9775, "volume": 326618},
+    {"date": "2026-03-16", "open": 9775, "high": 9970, "low": 9590, "close": 9950, "volume": 119818},
+    {"date": "2026-03-17", "open": 9950, "high": 10030, "low": 9670, "close": 9675, "volume": 155141},
+    {"date": "2026-03-18", "open": 9630, "high": 9930, "low": 9605, "close": 9930, "volume": 187055},
+    {"date": "2026-03-19", "open": 9850, "high": 9980, "low": 9760, "close": 9790, "volume": 117775},
+    {"date": "2026-03-20", "open": 9710, "high": 10015, "low": 9680, "close": 9900, "volume": 257000},
+    {"date": "2026-03-23", "open": 9600, "high": 9785, "low": 9390, "close": 9475, "volume": 239497},
+    {"date": "2026-03-24", "open": 9695, "high": 9695, "low": 9165, "close": 9555, "volume": 178889},
+    {"date": "2026-03-25", "open": 9600, "high": 9905, "low": 9590, "close": 9815, "volume": 247641},
+    {"date": "2026-03-26", "open": 9835, "high": 9915, "low": 9630, "close": 9650, "volume": 155246},
+    {"date": "2026-03-27", "open": 9650, "high": 9650, "low": 9345, "close": 9560, "volume": 117259},
+    {"date": "2026-03-30", "open": 9510, "high": 9560, "low": 9335, "close": 9530, "volume": 68589},
+    {"date": "2026-03-31", "open": 9500, "high": 9590, "low": 9290, "close": 9340, "volume": 65087},
+    {"date": "2026-04-01", "open": 9510, "high": 9680, "low": 9245, "close": 9640, "volume": 323932},
+    {"date": "2026-04-02", "open": 9730, "high": 9730, "low": 9350, "close": 9415, "volume": 157718},
+    {"date": "2026-04-03", "open": 9675, "high": 9675, "low": 9345, "close": 9490, "volume": 181437},
+    {"date": "2026-04-06", "open": 9500, "high": 9510, "low": 9465, "close": 9465, "volume": 37999},
+    {"date": "2026-04-07", "open": 9550, "high": 9750, "low": 9530, "close": 9700, "volume": 203115},
+    {"date": "2026-04-08", "open": 9655, "high": 10242, "low": 9625, "close": 10175, "volume": 167633},
+    {"date": "2026-04-09", "open": 10200, "high": 10405, "low": 10045, "close": 10305, "volume": 134489},
+    {"date": "2026-04-10", "open": 10295, "high": 10735, "low": 10250, "close": 10710, "volume": 158211},
+    {"date": "2026-04-13", "open": 10710, "high": 10985, "low": 10645, "close": 10825, "volume": 140935},
+    {"date": "2026-04-14", "open": 10860, "high": 11185, "low": 10825, "close": 10950, "volume": 225384},
+    {"date": "2026-04-15", "open": 11275, "high": 11315, "low": 11025, "close": 11040, "volume": 366656},
+    {"date": "2026-04-16", "open": 11120, "high": 11200, "low": 11020, "close": 11195, "volume": 118991},
+    {"date": "2026-04-17", "open": 11350, "high": 11685, "low": 11285, "close": 11610, "volume": 181190},
+    {"date": "2026-04-20", "open": 11650, "high": 11825, "low": 11570, "close": 11670, "volume": 154816},
+    {"date": "2026-04-21", "open": 11735, "high": 11780, "low": 11385, "close": 11550, "volume": 258537},
+    {"date": "2026-04-22", "open": 11580, "high": 11965, "low": 11515, "close": 11955, "volume": 166531},
+    {"date": "2026-04-23", "open": 11960, "high": 12190, "low": 11685, "close": 11795, "volume": 267452},
+    {"date": "2026-04-24", "open": 11850, "high": 11990, "low": 11565, "close": 11985, "volume": 340150},
+    {"date": "2026-04-27", "open": 12000, "high": 12285, "low": 11910, "close": 12165, "volume": 456696},
+    {"date": "2026-04-28", "open": 12150, "high": 12225, "low": 11920, "close": 11920, "volume": 210372},
+    {"date": "2026-04-29", "open": 11920, "high": 12055, "low": 11680, "close": 12045, "volume": 155368},
+    {"date": "2026-04-30", "open": 12055, "high": 12900, "low": 12030, "close": 12860, "volume": 545302},
+    {"date": "2026-05-04", "open": 12885, "high": 13585, "low": 12810, "close": 12920, "volume": 446548},
+    {"date": "2026-05-06", "open": 13385, "high": 13920, "low": 12770, "close": 13435, "volume": 722046},
+    {"date": "2026-05-07", "open": 13995, "high": 13995, "low": 13270, "close": 13770, "volume": 473995},
+    {"date": "2026-05-08", "open": 13695, "high": 13770, "low": 13245, "close": 13450, "volume": 252740},
+    {"date": "2026-05-11", "open": 13460, "high": 14285, "low": 13460, "close": 14225, "volume": 738980},
+    {"date": "2026-05-12", "open": 14375, "high": 14825, "low": 14260, "close": 14685, "volume": 736601},
+    {"date": "2026-05-13", "open": 14640, "high": 15150, "low": 14330, "close": 15145, "volume": 1053173},
+    {"date": "2026-05-14", "open": 15705, "high": 15955, "low": 14710, "close": 15060, "volume": 1271584},
+    {"date": "2026-05-15", "open": 14845, "high": 15060, "low": 14252, "close": 14360, "volume": 991871},
+    {"date": "2026-05-18", "open": 14360, "high": 15055, "low": 14205, "close": 14530, "volume": 737243},
+    {"date": "2026-05-19", "open": 14550, "high": 14925, "low": 14005, "close": 14925, "volume": 723288},
+    {"date": "2026-05-20", "open": 15200, "high": 15675, "low": 14975, "close": 15490, "volume": 831350},
+    {"date": "2026-05-21", "open": 15700, "high": 16050, "low": 15270, "close": 15270, "volume": 828961},
+    {"date": "2026-05-22", "open": 15175, "high": 15760, "low": 15070, "close": 15750, "volume": 721579}
+  ],
+  "monthly_prices": [
+    {"month": "2026-03", "close": 9340},
+    {"month": "2026-04", "close": 12860},
+    {"month": "2026-05", "close": 15750}
+  ],
+  "financials": {},
+  "etf_profile": {
+    "source": "K-ETF, StockAnalysis, GoInsider public ETF snapshots",
+    "fund_name": "KODEX China AI Semiconductor TOP10 ETF",
+    "issuer": "Samsung Asset Management",
+    "brand": "KODEX",
+    "benchmark": "Indxx China AI Semiconductor Top 10 Index (Price Return)",
+    "benchmark_description": {
+      "ko": "중국 및 홍콩 주식시장 상장 기업 중 AI 반도체 관련 10종목으로 구성된 지수",
+      "en": "An index composed of ten AI semiconductor-related companies listed in China and Hong Kong.",
+      "ja": "中国および香港市場に上場するAI半導体関連10銘柄で構成される指数。"
+    },
+    "replication_method": "physical passive",
+    "listing_date": "2026-02-26",
+    "isin": "KR70162L0003",
+    "nav": 16789,
+    "market_price": 15750,
+    "premium_discount_percent": -6.19,
+    "aum": "KRW 42.13B to 59.94B across public source snapshots",
+    "market_cap": "KRW 59.94B",
+    "trading_value": "KRW 47.01B",
+    "trading_volume": 2702583,
+    "listed_shares": 3550000,
+    "total_expense_ratio_percent": 0.55,
+    "real_expense_ratio_percent": 0.5816,
+    "distribution_policy": "Quarterly distribution cycle reported by ETF data source; first recorded distribution KRW 6",
+    "latest_distribution": {"ex_date": "2026-04-29", "amount": 6, "pay_date": "2026-05-06", "currency": "KRW"},
+    "distribution_yield_percent": 0.04,
+    "holdings_count": 11,
+    "rebalance_frequency": "Quarterly index rebalance referenced for the product lineup: March, June, September and December",
+    "tax_notes": {
+      "ko": "분배금과 매매차익 과세는 투자자 계좌 유형과 보유기간 과세 여부에 따라 달라질 수 있다.",
+      "en": "Distribution and capital-gains tax treatment can vary by account type and holding-period taxation rules.",
+      "ja": "分配金と売買益の課税は口座区分や保有期間課税の適用により異なる可能性がある。"
+    },
+    "analysis": {
+      "ko": "0162L0은 중국 및 홍콩 상장 AI 반도체 관련 종목 10개 내외를 담는 주식형 테마 ETF다. 기초지수는 Indxx China AI Semiconductor Top 10 Index (Price Return)이고, 운용 방식은 실물 패시브로 확인된다. 따라서 투자 논리는 삼성자산운용의 실적이 아니라 중국 AI 서버, 네트워크, 스토리지, 반도체 밸류체인의 가격 흐름에 좌우된다.\n\nNAV는 공개 스냅샷 기준 16,789원이고, 5월 22일 확정 종가는 15,750원이다. 시점 차이가 있어 괴리율은 엄밀한 당일 괴리율이 아니라 참고용으로만 봐야 한다. 보수는 총보수 0.55%, 실질보수 0.5816%가 관찰되며, 신규 상장 ETF치고 거래량과 거래대금은 빠르게 늘어난 편이지만 소스별 AUM 수치 차이는 확인해야 한다.\n\n가장 큰 리스크는 압축 포트폴리오와 중국 기술주 변동성이다. 상위 10개 종목 비중이 높아 개별 편입종목 급락, 위안/홍콩달러와 원화 환율, 미중 반도체 규제, 중국 정책 기대 변화가 ETF 가격과 NAV에 동시에 반영될 수 있다.",
+      "en": "0162L0 is an equity thematic ETF holding roughly ten China and Hong Kong-listed AI semiconductor-related names. Its benchmark is the Indxx China AI Semiconductor Top 10 Index (Price Return), and the product is identified as a physical passive ETF. The investment case therefore depends on China AI server, networking, storage and semiconductor value-chain prices rather than Samsung Asset Management's corporate earnings.\n\nPublic snapshots show NAV at KRW 16,789 and the confirmed May 22 close at KRW 15,750. Because these observations come from different timestamps, the implied discount should be treated as indicative only. The listed total expense ratio is 0.55%, real expense ratio is observed at 0.5816%, and trading activity has scaled quickly for a newly listed product, although AUM figures differ across public sources.\n\nThe main risk is concentrated exposure to volatile Chinese technology stocks. Large top-holding weights mean single-name drawdowns, CNY/HKD-to-KRW translation, US-China semiconductor controls and shifts in China policy sentiment can move both ETF price and NAV.",
+      "ja": "0162L0は、中国および香港上場のAI半導体関連銘柄をおよそ10銘柄保有する株式型テーマETFである。基準指数はIndxx China AI Semiconductor Top 10 Index (Price Return)で、実物パッシブ型として確認される。したがって投資論点はSamsung Asset Managementの企業業績ではなく、中国AIサーバー、ネットワーク、ストレージ、半導体バリューチェーンの価格動向に左右される。\n\n公開スナップショットではNAVが16,789ウォン、確認済みの5月22日終値が15,750ウォンである。時点が異なるため、推定ディスカウントは参考値として扱う必要がある。総経費率は0.55%、実質経費率は0.5816%が確認され、新規上場ETFとしては売買活動が急速に増えているが、AUMは公開ソース間で差がある。\n\n主なリスクは、中国テクノロジー株への集中投資である。上位組入銘柄の比重が高いため、個別銘柄の急落、人民元・香港ドルからウォンへの換算、米中半導体規制、中国政策期待の変化がETF価格とNAVの双方に影響し得る。"
+    }
+  },
+  "holdings": [
+    {"rank": 1, "name": "Hygon Information Technology Co.", "isin": "CNE100005PT2", "country": "China", "currency": "CNY", "sector": "AI processors", "weight": 14.63, "market_value_krw": 125968195, "weight_change_percent_points": -0.03, "interpretation": {"ko": "중국 AI 연산 인프라 노출을 대표하는 상위 편입종목이다.", "en": "A leading holding representing China AI compute infrastructure exposure.", "ja": "中国AI演算インフラへのエクスポージャーを代表する上位組入銘柄。"}},
+    {"rank": 2, "name": "Cambricon Technologies Corp.", "isin": "CNE1000041R8", "country": "China", "currency": "CNY", "sector": "AI accelerators", "weight": 14.26, "market_value_krw": 122748499, "weight_change_percent_points": -0.03, "interpretation": {"ko": "AI 가속기와 국산 AI 반도체 기대를 ETF 가격에 크게 연결한다.", "en": "Links the ETF strongly to AI accelerator and domestic AI chip expectations.", "ja": "AIアクセラレータと国産AI半導体期待をETF価格に強く結び付ける。"}},
+    {"rank": 3, "name": "Zhongji Innolight Co.", "isin": "CNE100001CY9", "country": "China", "currency": "CNY", "sector": "Optical modules", "weight": 13.17, "market_value_krw": 113370766, "weight_change_percent_points": -0.03, "interpretation": {"ko": "AI 데이터센터 네트워크와 광모듈 수요를 반영하는 핵심 보유종목이다.", "en": "A key holding tied to AI data-center networking and optical module demand.", "ja": "AIデータセンターのネットワークおよび光モジュール需要に連動する主要保有銘柄。"}},
+    {"rank": 4, "name": "Eoptolink Technology Inc.", "isin": "CNE100002615", "country": "China", "currency": "CNY", "sector": "Optical modules", "weight": 11.36, "market_value_krw": 97849761, "weight_change_percent_points": -0.03, "interpretation": {"ko": "광통신 장비 사이클과 AI 네트워크 투자에 민감하다.", "en": "Sensitive to optical communication cycles and AI networking capex.", "ja": "光通信機器サイクルとAIネットワーク投資に敏感。"}},
+    {"rank": 5, "name": "SMIC", "isin": "KYG8020E1199", "country": "China/Hong Kong", "currency": "HKD", "sector": "Foundry", "weight": 10.84, "market_value_krw": 93377688, "weight_change_percent_points": 0.20, "interpretation": {"ko": "중국 파운드리 국산화와 규제 리스크를 동시에 담는 편입종목이다.", "en": "Represents both China foundry localization and regulatory risk.", "ja": "中国ファウンドリ国産化と規制リスクの双方を反映する保有銘柄。"}},
+    {"rank": 6, "name": "Guangdong Shengyi Science", "isin": "CNE000000XL5", "country": "China", "currency": "CNY", "sector": "Semiconductor materials", "weight": 9.06, "market_value_krw": 77989112, "weight_change_percent_points": -0.02, "interpretation": {"ko": "AI 서버용 기판과 소재 수요에 연결된다.", "en": "Connected to substrate and materials demand for AI servers.", "ja": "AIサーバー向け基板・材料需要に連動する。"}},
+    {"rank": 7, "name": "Piotech Inc.", "isin": "CNE100005998", "country": "China", "currency": "CNY", "sector": "Semiconductor equipment", "weight": 7.70, "market_value_krw": 66332353, "weight_change_percent_points": -0.02, "interpretation": {"ko": "중국 반도체 장비 국산화 테마를 보완한다.", "en": "Adds China semiconductor equipment localization exposure.", "ja": "中国半導体装置の国産化テーマを補完する。"}},
+    {"rank": 8, "name": "GigaDevice Semiconductor", "isin": "CNE1000030S9", "country": "China", "currency": "CNY", "sector": "Memory and MCU", "weight": 7.37, "market_value_krw": 63462161, "weight_change_percent_points": -0.02, "interpretation": {"ko": "메모리와 MCU 수요 변화에 민감한 보유종목이다.", "en": "Sensitive to memory and MCU demand changes.", "ja": "メモリとMCU需要の変化に敏感な保有銘柄。"}},
+    {"rank": 9, "name": "Montage Technology", "isin": "CNE100003MN7", "country": "China", "currency": "CNY", "sector": "Memory interface chips", "weight": 5.96, "market_value_krw": 51297059, "weight_change_percent_points": -0.01, "interpretation": {"ko": "AI 서버 메모리 인터페이스와 데이터센터 투자 흐름에 연결된다.", "en": "Tied to AI server memory interface and data-center investment.", "ja": "AIサーバーのメモリインターフェースとデータセンター投資に連動する。"}},
+    {"rank": 10, "name": "VeriSilicon Microelectronics", "isin": "CNE100004413", "country": "China", "currency": "CNY", "sector": "Semiconductor IP", "weight": 5.59, "market_value_krw": 48133899, "weight_change_percent_points": -0.01, "interpretation": {"ko": "반도체 IP와 설계 생태계 노출을 제공한다.", "en": "Provides semiconductor IP and design ecosystem exposure.", "ja": "半導体IPと設計エコシステムへのエクスポージャーを提供する。"}}
+  ],
+  "theme_exposure_map": [
+    {
+      "theme_id": "ai_compute",
+      "theme_name": {"ko": "중국 AI 연산 반도체", "en": "China AI Compute Chips", "ja": "中国AI演算半導体"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Hygon과 Cambricon 비중이 높아 ETF는 중국 AI 가속기와 서버 연산 투자 기대에 직접 노출된다.", "en": "High Hygon and Cambricon weights give the ETF direct exposure to China AI accelerator and server-compute expectations.", "ja": "HygonとCambriconの比重が高く、中国AIアクセラレータとサーバー演算投資期待に直接さらされる。"},
+      "representative_holdings": ["Hygon Information Technology", "Cambricon Technologies"],
+      "drivers": ["AI server demand", "domestic substitution", "China policy support"],
+      "risk_factors": ["valuation compression", "export controls", "single-name volatility"],
+      "price_linkage": {"ko": "AI 칩 기대가 강해지면 NAV와 ETF 가격이 함께 오르기 쉽지만, 규제 뉴스에는 빠르게 흔들릴 수 있다.", "en": "Stronger AI chip expectations can lift both NAV and ETF price, but regulatory news can quickly pressure the basket.", "ja": "AIチップ期待が強まればNAVとETF価格は上昇しやすいが、規制ニュースには敏感に反応し得る。"}
+    },
+    {
+      "theme_id": "ai_networking",
+      "theme_name": {"ko": "AI 네트워크와 광모듈", "en": "AI Networking and Optical Modules", "ja": "AIネットワーク・光モジュール"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Zhongji Innolight와 Eoptolink 비중이 높아 AI 데이터센터 네트워크 증설 사이클이 ETF 성과에 직접 반영된다.", "en": "Zhongji Innolight and Eoptolink weights make AI data-center networking capex a direct ETF driver.", "ja": "Zhongji InnolightとEoptolinkの比重により、AIデータセンターのネットワーク投資がETFの直接的なドライバーとなる。"},
+      "representative_holdings": ["Zhongji Innolight", "Eoptolink Technology"],
+      "drivers": ["optical module demand", "data-center capex", "cloud AI networking"],
+      "risk_factors": ["order cycle slowdown", "margin pressure", "customer concentration"],
+      "price_linkage": {"ko": "광모듈 업황이 강하면 ETF가 반도체 장비주보다 더 빠르게 움직일 수 있다.", "en": "Strong optical-module conditions can make the ETF move faster than broader semiconductor equipment baskets.", "ja": "光モジュール市況が強い場合、ETFは広範な半導体装置バスケットより速く動く可能性がある。"}
+    },
+    {
+      "theme_id": "foundry_localization",
+      "theme_name": {"ko": "중국 파운드리 국산화", "en": "China Foundry Localization", "ja": "中国ファウンドリ国産化"},
+      "exposure_type": "policy",
+      "portfolio_linkage": {"ko": "SMIC와 장비/소재 편입종목은 중국 반도체 자립 정책과 연결된다.", "en": "SMIC plus equipment and materials holdings link the ETF to China semiconductor self-sufficiency policy.", "ja": "SMICと装置・材料銘柄は中国半導体自立政策に結び付く。"},
+      "representative_holdings": ["SMIC", "Piotech", "Guangdong Shengyi Science"],
+      "drivers": ["localization policy", "capex cycle", "wafer capacity"],
+      "risk_factors": ["US export controls", "yield risk", "policy disappointment"],
+      "price_linkage": {"ko": "정책 기대는 프리미엄을 만들 수 있지만, 수출통제와 기술격차 뉴스는 NAV 할인 요인이다.", "en": "Policy optimism can support a premium, while export controls and technology-gap news can pressure NAV.", "ja": "政策期待はプレミアム要因になり得るが、輸出規制や技術格差のニュースはNAVの圧迫要因となる。"}
+    },
+    {
+      "theme_id": "currency_tracking",
+      "theme_name": {"ko": "환율과 추적 품질", "en": "Currency and Tracking Quality", "ja": "為替とトラッキング品質"},
+      "exposure_type": "tracking",
+      "portfolio_linkage": {"ko": "KRW로 거래되지만 보유자산은 중국 본토와 홍콩 주식이므로 환율과 시장 휴장 차이가 괴리율에 영향을 줄 수 있다.", "en": "The ETF trades in KRW while holdings are China and Hong Kong equities, so FX and market-calendar gaps can affect premium/discount.", "ja": "ETFはKRWで取引される一方、保有資産は中国本土・香港株であるため、為替と市場休場日の差が乖離率に影響し得る。"},
+      "representative_holdings": ["KRW cash", "China A-shares", "Hong Kong shares"],
+      "drivers": ["CNY/KRW", "HKD/KRW", "market holidays", "ETF liquidity"],
+      "risk_factors": ["wide premium/discount", "tracking error", "thin liquidity"],
+      "price_linkage": {"ko": "가격이 NAV보다 빠르게 움직이는 날에는 체결가보다 괴리율 확인이 더 중요하다.", "en": "On days when market price moves faster than NAV, premium/discount checks matter more than the last traded price alone.", "ja": "市場価格がNAVより速く動く日には、約定価格だけでなく乖離率の確認がより重要になる。"}
+    }
+  ],
+  "business_segment_map": [],
+  "peer_group": [
+    {"fund_name": "KODEX China AI Semiconductor TOP10", "company": "KODEX China AI Semiconductor TOP10", "ticker": "0162L0", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China/Hong Kong", "benchmark": "Indxx China AI Semiconductor Top 10 Index", "currency": "KRW", "price": 15750, "nav": 16789, "aum": "KRW 42.13B to 59.94B", "expense_ratio": 0.55, "distribution_yield": 0.04, "one_year_context": {"ko": "신규 상장 ETF라 1년 수익률 비교는 제한적이다. 핵심은 압축된 중국 AI 반도체 TOP10 노출이다.", "en": "One-year comparison is limited because the ETF is newly listed. Its core trait is concentrated China AI semiconductor TOP10 exposure.", "ja": "新規上場ETFのため1年比較は限定的。特徴は中国AI半導体TOP10への集中投資である。"}},
+    {"fund_name": "TIGER China Semiconductor FactSet", "company": "TIGER China Semiconductor FactSet", "ticker": "396520", "market": "KRX", "issuer": "Mirae Asset", "region": "China", "benchmark": "China semiconductor thematic index", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 218.35B snapshot in ETF weekly source", "expense_ratio": 0.49, "distribution_yield": null, "one_year_context": {"ko": "더 오래된 중국 반도체 ETF 비교군이다. 0162L0보다 테마가 넓고 AUM이 큰 편이어서 유동성 비교 기준으로 유용하다.", "en": "An older China semiconductor ETF peer. It is broader and larger than 0162L0 in the cited snapshot, making it useful for liquidity comparison.", "ja": "より長い実績を持つ中国半導体ETFの比較対象。0162L0よりテーマが広く、引用スナップショットではAUMも大きいため流動性比較に有用。"}},
+    {"fund_name": "KODEX China AI Tech Active", "company": "KODEX China AI Tech Active", "ticker": "428510", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China", "benchmark": "Active China AI technology strategy", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 46.53B snapshot in ETF weekly source", "expense_ratio": 0.50, "distribution_yield": null, "one_year_context": {"ko": "같은 KODEX 브랜드의 중국 AI 액티브 ETF다. 0162L0은 패시브 TOP10 압축형, 428510은 액티브 AI 테크 노출이라는 차이가 있다.", "en": "A same-brand China AI active ETF. 0162L0 is a passive TOP10 basket, while 428510 provides active China AI technology exposure.", "ja": "同じKODEXブランドの中国AIアクティブETF。0162L0はパッシブTOP10集中型、428510はアクティブな中国AIテックエクスポージャーである。"}},
+    {"fund_name": "RISE China AI Semiconductor TOP4 Plus", "company": "RISE China AI Semiconductor TOP4 Plus", "ticker": "0164G0", "market": "KRX", "issuer": "KB Asset Management", "region": "China", "benchmark": "China AI semiconductor concentrated strategy", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 15.63B snapshot in ETF weekly source", "expense_ratio": 0.45, "distribution_yield": null, "one_year_context": {"ko": "더 압축적인 중국 AI 반도체 비교군이다. 0162L0과 함께 상위 종목 집중도와 보수 차이를 비교할 수 있다.", "en": "A more concentrated China AI semiconductor peer. It helps compare concentration and fee differences against 0162L0.", "ja": "より集中度の高い中国AI半導体ETFの比較対象。0162L0との集中度とコスト差を比較できる。"}}
+  ],
+  "news_events": [
+    {"date": "2026-02-26", "title": "KODEX China AI Semiconductor TOP10 listed as a new ETF lineup product", "source": "Kiwoom ETF Issue Brief", "url": "https://bbn.kiwoom.com/rfTP727", "related_tickers": ["0162L0"], "sentiment": "positive", "impact_horizon": "long", "price_linkage": {"observed": "Pre-listing product information; no event-study price reaction.", "interpretation": {"ko": "상장 자체는 유동성 형성의 출발점이다. 초기 가격은 기초지수와 중국 AI 반도체 테마 수급에 더 크게 좌우된다.", "en": "The listing is the starting point for liquidity formation. Early price action depends more on the benchmark and China AI semiconductor theme flows.", "ja": "上場は流動性形成の出発点である。初期価格は基準指数と中国AI半導体テーマの需給により左右される。"}}},
+    {"date": "2026-04-29", "title": "First recorded KRW 6 distribution ex-date", "source": "StockAnalysis dividend history", "url": "https://stockanalysis.com/quote/krx/0162L0/", "related_tickers": ["0162L0"], "sentiment": "neutral", "impact_horizon": "short", "price_linkage": {"observed": "May 6 pay date is recorded; the amount is small relative to price.", "interpretation": {"ko": "분배금 6원은 가격 방향을 바꿀 촉매라기보다 ETF 운용 이력 확인 항목에 가깝다.", "en": "The KRW 6 distribution is more of an operating-history marker than a price-changing catalyst.", "ja": "6ウォンの分配金は価格方向を変える材料というより、運用履歴を確認する項目に近い。"}}},
+    {"date": "2026-05-08", "title": "ETF pulled back to KRW 13,450 after early May rally", "source": "StockAnalysis historical data", "url": "https://stockanalysis.com/quote/krx/0162L0/history/", "related_tickers": ["0162L0"], "sentiment": "mixed", "impact_horizon": "short", "price_linkage": {"observed": "May 8 close was KRW 13,450, down 2.32%.", "interpretation": {"ko": "5월 초 급등 후 숨고르기가 나타났지만, 이후 5월 22일까지 다시 15,750원으로 반등했다.", "en": "The ETF consolidated after the early May rise, then recovered to KRW 15,750 by May 22.", "ja": "5月初めの上昇後に調整したが、その後5月22日までに15,750ウォンへ反発した。"}}},
+    {"date": "2026-05-22", "title": "Confirmed close reached KRW 15,750 with 721,579 shares traded", "source": "StockAnalysis historical data", "url": "https://stockanalysis.com/quote/krx/0162L0/history/", "related_tickers": ["0162L0"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": {"observed": "May 22 close rose 3.14% from the prior close.", "interpretation": {"ko": "거래량을 동반한 15,000원대 회복은 단기 추세 복원 신호지만, 16,050원 이상 안착 여부가 다음 확인 지점이다.", "en": "A volume-backed recovery into the KRW 15,000 area is constructive, but sustained trade above KRW 16,050 is the next confirmation point.", "ja": "出来高を伴う15,000ウォン台回復は短期トレンド修復の兆しだが、16,050ウォン超の定着が次の確認点である。"}}},
+    {"date": "2026-05-27", "title": "Top holdings snapshot shows concentrated China AI compute and optical-module exposure", "source": "GoInsider holdings snapshot", "url": "https://goinsider.kr/en/etf/0162L0", "related_tickers": ["0162L0", "Hygon", "Cambricon", "Zhongji Innolight", "Eoptolink", "SMIC"], "sentiment": "mixed", "impact_horizon": "medium", "price_linkage": {"observed": "Top five holdings account for roughly 64% in the available snapshot.", "interpretation": {"ko": "상위 5개 보유종목 집중도가 높아 테마 상승기에는 탄력이 크지만, 개별 종목 조정 때 ETF 변동성도 커진다.", "en": "High top-five concentration can amplify upside in theme rallies but also increases ETF volatility during single-name pullbacks.", "ja": "上位5銘柄への集中度が高いため、テーマ上昇局面では弾力が大きい一方、個別銘柄調整時のETF変動性も高まる。"}}},
+    {"date": "2026-05-27", "title": "K-ETF profile confirms NAV, total fee, listing date and benchmark identity", "source": "K-ETF", "url": "https://www.k-etf.com/etf/0162L0", "related_tickers": ["0162L0"], "sentiment": "neutral", "impact_horizon": "long", "price_linkage": {"observed": "Profile data supports ETF identity and NAV checks rather than a direct event price reaction.", "interpretation": {"ko": "NAV와 보수, 기초지수 확인은 가격 촉매보다 검증 항목이다. 특히 ETF 가격이 빠르게 움직일 때 괴리율 확인에 중요하다.", "en": "NAV, fee and benchmark confirmation are verification items rather than direct catalysts, but they matter when market price moves quickly.", "ja": "NAV、費用、基準指数の確認は直接の材料ではなく検証項目だが、市場価格が急変する局面では重要である。"}}}
+  ],
+  "technical_view": {
+    "support_zones": [14500, 15000],
+    "resistance_zones": [16050, 17205],
+    "trend_state": {
+      "ko": "0162L0은 3월 말 9,340원에서 5월 22일 15,750원까지 빠르게 상승했다. 5월 14일 15,955원 고점 이후 조정이 있었지만, 5월 20일과 22일에 다시 15,000원대 중반을 회복해 단기 상승 구조가 유지된다.\n\n단기 지지권은 14,500원과 15,000원 부근이다. 14,500원 이탈은 5월 중순 반등 구조 약화를 의미하고, 16,050원 돌파 후 유지되면 17,205원 52주 고가권 재시험 가능성이 열린다.\n\n상장 이력이 짧아 60일/120일 평균과 RSI는 신뢰도가 낮다. 확인 가능한 구간에서는 5일 평균 15,193원, 20일 평균 13,789원으로 단기 가격이 중기 평균 위에 있어 모멘텀은 우상향이나, 테마 ETF 특성상 거래량 급증 후 되돌림을 함께 봐야 한다.",
+      "en": "0162L0 rose quickly from KRW 9,340 at the end of March to KRW 15,750 on May 22. After the May 14 high near KRW 15,955, the ETF pulled back but recovered to the mid-KRW 15,000 area on May 20 and May 22, keeping the short-term uptrend intact.\n\nShort-term support is near KRW 14,500 and KRW 15,000. A break below KRW 14,500 would weaken the May rebound structure, while a sustained break above KRW 16,050 would reopen a test of the KRW 17,205 52-week high area.\n\nBecause the ETF is newly listed, 60-day/120-day averages and RSI have limited reliability. In the confirmed window, the 5-day average is KRW 15,193 and the 20-day average is KRW 13,789, so price remains above the intermediate average; however, volume spikes and reversals must be watched closely for a thematic ETF.",
+      "ja": "0162L0は3月末の9,340ウォンから5月22日の15,750ウォンまで急速に上昇した。5月14日の15,955ウォン近辺の高値後に調整したが、5月20日と22日に15,000ウォン台半ばを回復し、短期上昇構造は維持されている。\n\n短期支持は14,500ウォンと15,000ウォン近辺である。14,500ウォン割れは5月反発構造の弱化を示し、16,050ウォンを上回って定着すれば17,205ウォンの52週高値圏の再試験が視野に入る。\n\n上場履歴が短いため、60日・120日移動平均とRSIの信頼度は低い。確認可能な範囲では5日平均が15,193ウォン、20日平均が13,789ウォンで、価格は中期平均を上回る。ただしテーマETFのため、出来高急増後の反落も確認する必要がある。"
+    },
+    "risk_state": {
+      "ko": "무효화 구간은 14,500원 이탈, 다음 상승 확인 구간은 16,050원 이상 안착이다. ETF 특성상 가격만 보지 말고 NAV 괴리, 중국/홍콩 시장 동시 움직임, 원화 환산 영향을 함께 확인해야 한다.",
+      "en": "The invalidation zone is a break below KRW 14,500, while the next upside confirmation is sustained trade above KRW 16,050. For an ETF, price should be checked together with NAV discount/premium, China/Hong Kong market movement and KRW translation.",
+      "ja": "無効化ゾーンは14,500ウォン割れ、次の上昇確認ゾーンは16,050ウォン超の定着である。ETFでは価格だけでなく、NAV乖離、中国・香港市場の同時動向、ウォン換算の影響を併せて確認すべきである。"
+    },
+    "moving_averages": {"ma5": 15193, "ma20": 13789.25, "ma60": null, "ma120": null},
+    "rsi": null,
+    "volume_state": "May volume increased materially versus March and April, but listing history is too short for a full liquidity cycle.",
+    "method_note": "Early chart-structure analysis. ETF listing history is insufficient for 60-day/120-day indicators."
+  },
+  "trading_scenarios": {
+    "short_term": {
+      "ko": "단기 관찰은 15,000원 지지와 16,050원 돌파 여부에 둔다. 15,000원 위에서 거래량이 유지되면 5월 중순 조정 후 반등이 이어지는 구조로 볼 수 있다.\n\n공격적인 접근은 16,050원 돌파 후 눌림에서 지지가 확인될 때가 더 안정적이다. 보수적인 접근은 14,500~15,000원 구간에서 가격과 NAV 괴리가 과도하지 않은지 확인하는 방식이 맞다.\n\n리스크는 중국 AI 반도체 테마 급락, 상위 보유종목 조정, ETF 괴리율 확대다. 14,500원 이탈과 거래량 위축이 동시에 나오면 단기 반등 시나리오는 약해진다.",
+      "en": "Short-term observation should focus on KRW 15,000 support and a KRW 16,050 breakout. If volume holds above KRW 15,000, the post-pullback rebound structure remains intact.\n\nAn aggressive setup is cleaner after a breakout above KRW 16,050 followed by support on a pullback. A conservative setup waits near KRW 14,500-15,000 while checking that price-to-NAV discount or premium is not excessive.\n\nRisks include a China AI semiconductor theme reversal, top-holding pullbacks and wider ETF premium/discount. A break below KRW 14,500 with fading volume weakens the short-term rebound case.",
+      "ja": "短期では15,000ウォンの支持と16,050ウォン突破の有無を見る。15,000ウォン上で出来高が維持されれば、5月中旬調整後の反発構造は保たれる。\n\n積極的には16,050ウォン突破後の押し目で支持を確認する形が安定的である。保守的には14,500~15,000ウォン付近で価格とNAVの乖離が過度でないかを確認する。\n\nリスクは中国AI半導体テーマの急落、上位保有銘柄の調整、ETF乖離率の拡大である。14,500ウォン割れと出来高減少が同時に出れば短期反発シナリオは弱まる。"
+    },
+    "medium_term": {
+      "ko": "중기는 중국 AI 반도체 TOP10 압축 포트폴리오가 벤치마크를 잘 따라가는지, 그리고 거래량이 유지되는지가 핵심이다. NAV와 시장가격이 같은 방향으로 움직이면 ETF로서의 추적 신뢰도가 높아진다.\n\n상위 보유종목 중 Hygon, Cambricon, Zhongji Innolight, Eoptolink, SMIC가 함께 강하면 ETF의 테마 순도가 장점으로 작동한다. 반대로 일부 종목만 급등하고 나머지가 약하면 압축 포트폴리오의 변동성이 먼저 나타날 수 있다.\n\n중기 리스크는 6월 정기변경, 중국 정책 기대 둔화, 미중 규제 뉴스, 환율이다. ETF 가격만 보고 판단하기보다 NAV, 보유종목 비중 변화, 괴리율을 함께 보는 방식이 적합하다.",
+      "en": "Medium-term focus is whether the concentrated China AI semiconductor TOP10 portfolio tracks its benchmark well and whether liquidity remains healthy. When NAV and market price move in the same direction, tracking confidence improves.\n\nIf Hygon, Cambricon, Zhongji Innolight, Eoptolink and SMIC strengthen together, the ETF's thematic purity becomes an advantage. If only a few names rally while others lag, concentration volatility may appear first.\n\nMedium-term risks include the June rebalance, weaker China policy expectations, US-China regulatory headlines and FX. Price should be judged with NAV, holding-weight changes and premium/discount rather than in isolation.",
+      "ja": "中期では、中国AI半導体TOP10の集中ポートフォリオが基準指数を適切に追随するか、流動性が維持されるかが重要である。NAVと市場価格が同方向に動けば、ETFとしてのトラッキング信頼度は高まる。\n\nHygon、Cambricon、Zhongji Innolight、Eoptolink、SMICが同時に強ければ、ETFのテーマ純度は強みになる。逆に一部銘柄だけが上昇し他が弱い場合、集中ポートフォリオの変動性が先に表れる。\n\n中期リスクは6月の定期入替、中国政策期待の鈍化、米中規制ニュース、為替である。ETF価格だけでなく、NAV、保有比率変化、乖離率を併せて判断するのが適切である。"
+    },
+    "long_term": {
+      "ko": "장기는 중국 AI 반도체 자립과 AI 데이터센터 투자 사이클을 ETF 단위로 보유하는 시나리오다. 0162L0은 개별 기업 실적보다 중국 AI 인프라 밸류체인에 대한 압축 노출을 제공한다.\n\n장기 접근은 고점 추격보다 정기 리밸런싱과 NAV 괴리, 보수, 유동성, 분배 이력을 확인하면서 분할 관찰하는 방식이 적합하다. 상장 이력이 짧기 때문에 1년 이상 추적오차와 실제 보수, AUM 안정성을 확인할 시간이 필요하다.\n\n장기 리스크는 미중 기술 규제, 중국 주식시장 정책 리스크, 특정 대형 편입종목 의존도, 원화 환산 손실이다. 장기 thesis가 유지되려면 AI 반도체 수요와 중국 국산화 흐름뿐 아니라 ETF 자체의 유동성과 추적 품질도 안정적으로 확인돼야 한다.",
+      "en": "The long-term scenario is ownership of the China AI semiconductor self-sufficiency and AI data-center capex cycle through an ETF wrapper. 0162L0 provides concentrated value-chain exposure rather than single-company earnings exposure.\n\nFor long-term positioning, staged observation around rebalances, NAV premium/discount, fees, liquidity and distribution history is preferable to chasing highs. Because the ETF is newly listed, tracking error, real expenses and AUM stability need time to prove themselves.\n\nLong-term risks include US-China technology controls, China equity policy risk, dependence on several large holdings and KRW translation losses. The thesis requires not only AI semiconductor demand and localization momentum, but also stable ETF liquidity and tracking quality.",
+      "ja": "長期では、中国AI半導体自立とAIデータセンター投資サイクルをETF単位で保有するシナリオである。0162L0は個別企業業績ではなく、中国AIインフラのバリューチェーンへの集中エクスポージャーを提供する。\n\n長期では高値追いより、定期リバランス、NAV乖離、費用、流動性、分配履歴を確認しながら段階的に観察する方が適切である。上場履歴が短いため、1年以上のトラッキングエラー、実質費用、AUM安定性を確認する時間が必要である。\n\n長期リスクは米中技術規制、中国株政策リスク、一部大型保有銘柄への依存、ウォン換算損失である。長期シナリオ維持には、AI半導体需要と中国国産化の流れだけでなく、ETF自体の流動性と追随品質も安定的に確認される必要がある。"
+    }
+  },
+  "sources": [
+    {"title": "K-ETF KODEX China AI Semiconductor TOP10", "url": "https://www.k-etf.com/etf/0162L0", "publisher": "K-ETF", "used_for": "ETF identity, benchmark, issuer, fee, listing date, ISIN, NAV and market profile", "data_date": "2026-05-27 snapshot", "access_date": "2026-05-27"},
+    {"title": "GoInsider SAMSUNG KODEX China AI Semiconductor TOP10 ETF", "url": "https://goinsider.kr/en/etf/0162L0", "publisher": "GoInsider", "used_for": "holdings, real expense ratio, distribution, tracking and ETF structure snapshot", "data_date": "2026-05-27 snapshot", "access_date": "2026-05-27"},
+    {"title": "StockAnalysis KRX 0162L0 overview", "url": "https://stockanalysis.com/quote/krx/0162L0/", "publisher": "StockAnalysis", "used_for": "ETF overview, AUM, expense ratio, dividend and index-tracking description", "data_date": "2026-05-21 snapshot", "access_date": "2026-05-27"},
+    {"title": "StockAnalysis KRX 0162L0 historical prices", "url": "https://stockanalysis.com/quote/krx/0162L0/history/", "publisher": "StockAnalysis", "used_for": "daily OHLCV price history through May 22, 2026", "data_date": "2026-05-22", "access_date": "2026-05-27"},
+    {"title": "Kiwoom ETF Issue Brief 2026-02-26", "url": "https://bbn.kiwoom.com/rfTP727", "publisher": "Kiwoom Securities", "used_for": "new ETF lineup, replication method, fee, benchmark, holdings count and rebalance schedule", "data_date": "2026-02-26", "access_date": "2026-05-27"},
+    {"title": "Hana Global ETF Weekly 2026-04-13", "url": "https://file.hanaw.com/download/research/FileServer/WEB/strategy/market/2026/04/13/Global_ETF_260413.pdf", "publisher": "Hana Securities", "used_for": "China/AI/semiconductor ETF peer context and AUM snapshots", "data_date": "2026-04-10", "access_date": "2026-05-27"}
+  ],
+  "data_quality": {
+    "status": "partial",
+    "missing_fields": [
+      "official KRX daily OHLCV after 2026-05-22",
+      "official same-day market price and NAV pair for precise premium/discount",
+      "full official issuer holdings file with all security identifiers",
+      "long enough history for 60-day and 120-day indicators"
+    ],
+    "stale_fields": [
+      "some AUM and market price values differ across public snapshots"
+    ],
+    "notes": [
+      "ETF page uses asset_type=ETF and does not treat Samsung Asset Management financials as ETF fundamentals.",
+      "Confirmed price chart data is available through 2026-05-22 from StockAnalysis; K-ETF and GoInsider fields reflect public snapshots accessed on 2026-05-27.",
+      "Premium/discount is indicative because market price and NAV are from different source timestamps.",
+      "News flow is limited because the ETF was listed in February 2026."
+    ],
+    "source_confidence": "medium"
+  },
+  "disclaimer": {
+    "ko": "본 자료는 투자 조언이 아닌 리서치/웹페이지 시각화용 정적 ETF 분석 데이터다. ETF 가격, NAV, 괴리율, 보유종목은 소스 시점에 따라 달라질 수 있으며 투자 결정은 사용자 책임이다.",
+    "en": "This is static ETF research and visualization data, not investment advice. ETF price, NAV, premium/discount and holdings can vary by source timestamp, and investment decisions remain the user's responsibility.",
+    "ja": "本資料は投資助言ではなく、リサーチおよびWeb表示用の静的ETF分析データである。ETF価格、NAV、乖離率、保有銘柄はソース時点により変わる可能性があり、投資判断は利用者自身の責任で行う。"
+  }
+}

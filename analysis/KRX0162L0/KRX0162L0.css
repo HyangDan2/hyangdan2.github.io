@@ -1,0 +1,435 @@
+:root {
+    color-scheme: light dark;
+    --color-bg: #f4f7f8;
+    --color-surface: #ffffff;
+    --color-surface-2: #e9f0f2;
+    --color-text: #122025;
+    --color-muted: #52666d;
+    --color-border: #c9d6da;
+    --color-accent: #cf4f1f;
+    --color-accent-2: #0d8f83;
+    --color-positive: #167b47;
+    --color-negative: #c3343d;
+    --color-warning: #9a6500;
+    --shadow: 0 18px 50px rgba(20, 42, 49, 0.08);
+}
+
+[data-theme="dark"] {
+    --color-bg: #081014;
+    --color-surface: #111b20;
+    --color-surface-2: #162329;
+    --color-text: #eef6f6;
+    --color-muted: #9fb3b6;
+    --color-border: #28404a;
+    --color-accent: #ff7a1a;
+    --color-accent-2: #49c2b2;
+    --color-positive: #67d391;
+    --color-negative: #ff5a67;
+    --color-warning: #ffc857;
+    --shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, "Noto Sans KR", "Noto Sans JP", sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 14px clamp(18px, 4vw, 48px);
+    background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+    border-bottom: 1px solid var(--color-border);
+    backdrop-filter: blur(10px);
+}
+
+.brand {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.controls,
+.lang-switch {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.theme-btn,
+.lang-btn {
+    min-width: 44px;
+    min-height: 36px;
+    padding: 8px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-surface);
+    color: var(--color-muted);
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.theme-btn {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.theme-btn:hover,
+.theme-btn:focus-visible,
+.lang-btn.active,
+.lang-btn:hover,
+.lang-btn:focus-visible {
+    border-color: var(--color-accent);
+    color: var(--color-text);
+    outline: none;
+}
+
+main {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 28px 0 64px;
+}
+
+.hero {
+    min-height: 320px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    align-items: end;
+    gap: 28px;
+    padding: 54px 0 34px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: var(--color-accent-2);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+h1, h2, h3, p, dd { overflow-wrap: anywhere; }
+
+h1 {
+    max-width: 840px;
+    margin: 0;
+    font-size: clamp(34px, 6vw, 66px);
+    line-height: 1.03;
+    letter-spacing: 0;
+}
+
+h2 {
+    margin: 0 0 16px;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+}
+
+.hero-copy {
+    max-width: 790px;
+    margin: 18px 0 0;
+    color: var(--color-muted);
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+.status-panel,
+.metric,
+.panel {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface);
+    box-shadow: var(--shadow);
+}
+
+.status-panel { padding: 20px; }
+
+.status-panel span,
+.metric span,
+.metric small,
+.status-panel small { color: var(--color-muted); }
+
+.status-panel strong {
+    display: block;
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.metric {
+    padding: 18px;
+    min-height: 124px;
+}
+
+.metric strong {
+    display: block;
+    margin: 12px 0 8px;
+    font-size: 23px;
+}
+
+.panel {
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+
+.section-head span {
+    color: var(--color-muted);
+    font-size: 13px;
+}
+
+.chart-wrap {
+    position: relative;
+    height: 380px;
+}
+
+.chart-fallback {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 8px;
+    align-items: end;
+    padding-top: 24px;
+}
+
+.fallback-bar {
+    min-width: 0;
+    display: grid;
+    gap: 6px;
+    justify-items: center;
+    color: var(--color-muted);
+    font-size: 11px;
+}
+
+.fallback-bar span {
+    width: 100%;
+    max-width: 28px;
+    border-radius: 4px 4px 0 0;
+    background: linear-gradient(180deg, var(--color-accent-2), color-mix(in srgb, var(--color-accent-2) 22%, transparent));
+}
+
+.fallback-bar strong {
+    color: var(--color-text);
+    font-size: 11px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.analysis-copy,
+.risk-copy {
+    color: var(--color-muted);
+    line-height: 1.7;
+    white-space: pre-line;
+}
+
+.risk-copy { color: var(--color-negative); }
+
+.mini-table {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.mini-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.mini-row span { color: var(--color-muted); }
+.mini-row strong { text-align: right; }
+
+.levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.level {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: var(--color-surface-2);
+}
+
+.peer-grid,
+.holdings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.segment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.peer-card,
+.segment-card,
+.holding-card,
+.strategy-card,
+.news-item {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface-2);
+    padding: 16px;
+}
+
+.peer-card dl,
+.holding-card dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 7px 12px;
+    margin: 0 0 12px;
+}
+
+.peer-card dt,
+.holding-card dt {
+    color: var(--color-muted);
+}
+
+.peer-card dd,
+.holding-card dd {
+    margin: 0;
+    text-align: right;
+}
+
+.peer-card p,
+.segment-card p,
+.holding-card p,
+.news-item p,
+.strategy-card p {
+    color: var(--color-muted);
+    line-height: 1.65;
+    white-space: pre-line;
+}
+
+.segment-meta,
+.ticker-row,
+.news-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.segment-meta strong {
+    flex-basis: 100%;
+    font-size: 13px;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 5px 8px;
+    border-radius: 999px;
+    background: var(--color-surface);
+    color: var(--color-muted);
+    font-size: 12px;
+}
+
+.pill.positive { color: var(--color-positive); }
+.pill.negative { color: var(--color-negative); }
+.pill.mixed { color: var(--color-warning); }
+.pill.neutral { color: var(--color-muted); }
+
+.news-list,
+.strategy-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.source-panel ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--color-muted);
+    line-height: 1.75;
+}
+
+.source-panel a {
+    color: var(--color-accent-2);
+}
+
+.disclaimer {
+    margin-top: 18px;
+    color: var(--color-muted);
+    line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+    .hero,
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-grid,
+    .peer-grid,
+    .holdings-grid,
+    .segment-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .topbar {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .summary-grid,
+    .peer-grid,
+    .holdings-grid,
+    .segment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-wrap {
+        height: 320px;
+    }
+
+    .metric strong {
+        font-size: 21px;
+    }
+}

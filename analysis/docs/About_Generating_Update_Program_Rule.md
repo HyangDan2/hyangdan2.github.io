@@ -30,6 +30,7 @@ The updater must accept an input object similar to:
 {
   "market": "TSE",
   "ticker": "7013",
+  "asset_type": "stock",
   "company_hint": "IHI Corporation",
   "analysis_date": "2026-05-10",
   "language_set": ["ko", "en", "ja"],
@@ -46,12 +47,16 @@ Required fields:
 
 Optional fields:
 
+- `asset_type` (`stock`, `etf`; infer from verified identity when omitted)
 - `company_hint`
+- `fund_hint`
 - `language_set`
 - `peer_hints`
 - `segment_hints`
 - `source_hints`
 - `force_refresh`
+
+If `asset_type` is omitted, the updater must verify whether the target is a listed company, ETF, ETN, fund, preferred share, warrant, or another listed instrument before selecting the generation rules. Do not assume every ticker is common stock.
 
 ## Market And Ticker Normalization Rule
 
@@ -166,7 +171,7 @@ For future expansion, the updater may support local-language sets, but `ko/en/ja
 
 Before generating analysis, the updater must verify the target identity from trusted sources.
 
-Required identity fields:
+Required stock identity fields:
 
 - company name
 - market
@@ -176,7 +181,25 @@ Required identity fields:
 - sector or industry
 - official company website or IR page, when available
 
+Required ETF identity fields:
+
+- fund name
+- market
+- ticker
+- exchange
+- currency
+- asset type (`ETF`)
+- issuer or asset manager
+- brand, when available
+- benchmark or comparison index
+- replication method, when available
+- listing date, when available
+- ISIN, when available
+- official fund page, when available
+
 If `company_hint` conflicts with verified identity, the updater must stop or write a clear failure report. Do not silently proceed with a mismatched company.
+
+If a ticker verifies as an ETF, the updater must not generate company financial-statement analysis for the issuer or asset manager. The issuer is a product provider, not the investment target.
 
 Examples:
 
@@ -184,6 +207,7 @@ Examples:
 - `TSE 7011` must verify as Mitsubishi Heavy Industries.
 - `KRX 012450` must verify as Hanwha Aerospace.
 - `NYSE LMT` must verify as Lockheed Martin.
+- `KRX 0162L0` must verify as KODEX China AI Semiconductor TOP10 ETF, not a common stock.
 
 ## Market-Specific Source Rule
 
@@ -202,6 +226,7 @@ KRX / Korea:
 - Company IR
 - DART
 - KRX
+- KRX ETF, K-ETF, issuer ETF pages, and ETF disclosures for ETF products
 - Naver Finance / FnGuide / other auditable market-data pages
 - Korean reputable news sources
 
@@ -235,6 +260,9 @@ Each raw data JSON must include:
   "recent_prices": [],
   "monthly_prices": [],
   "financials": {},
+  "etf_profile": {},
+  "holdings": [],
+  "theme_exposure_map": [],
   "business_segment_map": [],
   "peer_group": [],
   "news_events": [],
@@ -251,6 +279,13 @@ Backward compatibility:
 - Existing pages may use `target` instead of `identity`.
 - Existing pages may use `segment_sector_map` instead of `business_segment_map`.
 - New updaters should prefer `identity` and `business_segment_map`, but may emit aliases if the current page renderer requires them.
+
+Asset-type handling:
+
+- For `asset_type: "stock"`, `financials`, `business_segment_map`, and company peer rules are required.
+- For `asset_type: "etf"`, `etf_profile`, `holdings`, `theme_exposure_map`, and ETF peer rules are required.
+- ETF raw JSON may leave stock-only fields empty only when the renderer can clearly hide or relabel those sections.
+- The page must display the verified asset type near the title or summary so users do not mistake an ETF for a company stock.
 
 ## Date Rule
 
@@ -305,6 +340,8 @@ If complete price history is unavailable, the updater must record the limitation
 
 ## Financial Rule
 
+This rule applies to `asset_type: "stock"`.
+
 The updater must extract, estimate, or clearly mark unavailable:
 
 - revenue
@@ -332,6 +369,109 @@ The financial analysis text must be generated as three short paragraphs in each 
 1. earnings quality and forecast momentum
 2. valuation using PER, PBR, EPS, and BPS
 3. balance-sheet risk using equity ratio, debt ratio, cash flow, and order or revenue conversion
+
+## ETF Profile Rule
+
+This rule applies to `asset_type: "etf"`.
+
+The updater must extract, estimate, or clearly mark unavailable:
+
+- fund name
+- issuer or asset manager
+- brand
+- benchmark or comparison index
+- benchmark index type, such as price return or total return, when known
+- replication method, such as physical passive, synthetic, or active
+- listing date
+- ISIN
+- NAV
+- market price
+- premium or discount to NAV, if available
+- assets under management or net assets
+- market capitalization, when reported separately
+- trading value
+- trading volume
+- listed shares or units
+- total expense ratio
+- real expense ratio or other expenses, if available
+- distribution policy
+- latest distribution and distribution yield, if available
+- holdings count
+- rebalance frequency
+- tax notes, when material
+
+ETF analysis text must be generated as three short paragraphs in each requested language:
+
+1. ETF structure, benchmark, issuer, replication method, and what exposure the product is designed to provide
+2. NAV, market price, premium or discount, liquidity, fee, distribution, and tracking-quality interpretation
+3. portfolio concentration, currency, country, sector, policy, and benchmark risks
+
+The updater must not use company metrics such as EPS, BPS, PER, PBR, ROE, revenue, operating profit, debt ratio, or cash flow as ETF-level fundamentals unless they are explicitly calculated as portfolio aggregate metrics and labeled as such.
+
+Example ETF identity for `KRX 0162L0`:
+
+```json
+{
+  "asset_type": "ETF",
+  "market": "KRX",
+  "ticker": "0162L0",
+  "name": "KODEX China AI Semiconductor TOP10 ETF",
+  "issuer": "Samsung Asset Management",
+  "brand": "KODEX",
+  "benchmark": "Indxx China AI Semiconductor Top 10 Index (Price Return)",
+  "replication_method": "physical passive",
+  "listing_date": "2026-02-26",
+  "currency": "KRW",
+  "isin": "KR70162L0003"
+}
+```
+
+## ETF Holdings Rule
+
+This rule applies to `asset_type: "etf"`.
+
+The updater must fetch the most recent available holdings snapshot from official ETF disclosures first, then auditable ETF-data pages if official holdings are unavailable or incomplete.
+
+Each holding should include:
+
+- rank
+- name
+- ticker or local code, when available
+- ISIN, when available
+- exchange or market, when available
+- country or region
+- currency
+- sector or theme
+- weight
+- market value, when available
+- shares or quantity, when available
+- previous weight or weight change, when available
+- holding-level multilingual interpretation
+
+For concentrated thematic ETFs, the updater must identify the top holdings and explain whether the ETF is driven by a few dominant positions or a broad basket. If a holdings source does not provide weights, quantities, or dates, record the limitation in `data_quality.notes`.
+
+## Theme Exposure Map Rule
+
+This rule applies to `asset_type: "etf"`.
+
+The updater must generate a theme exposure map based on the ETF's benchmark methodology, holdings, and product objective.
+
+Each item must include:
+
+- `theme_id`
+- `theme_name.ko/en/ja`
+- `exposure_type` (`direct`, `indirect`, `currency`, `policy`, `liquidity`, `tracking`)
+- `portfolio_linkage.ko/en/ja`
+- `representative_holdings`
+- `drivers`
+- `risk_factors`
+- `price_linkage.ko/en/ja`
+
+The theme analysis must be written as approximately three paragraphs:
+
+1. what part of the theme the ETF actually owns through its holdings
+2. macro, policy, currency, sector, and benchmark drivers
+3. how the theme can affect ETF price, NAV, liquidity, premium or discount, and tracking quality
 
 ## Business Segment Map Rule
 
@@ -371,6 +511,8 @@ But new generic pages should use `business_segment_map`, `company_relevance`, an
 
 ## Peer Group Rule
 
+For `asset_type: "stock"`:
+
 The updater must build peers from three layers:
 
 1. same-market peers
@@ -399,6 +541,38 @@ Each peer analysis must be approximately three paragraphs:
 3. read-through to the target stock price or sector narrative
 
 Do not hard-code IHI peers for unrelated companies. Use IHI/MHI/Kawasaki only when analyzing Japanese heavy industry or when they are genuinely relevant.
+
+For `asset_type: "etf"`:
+
+The updater must build ETF peers from three layers:
+
+1. same-market ETFs with similar benchmark, theme, geography, or asset class
+2. global ETFs with similar exposure, when relevant and tradable/comparable
+3. adjacent theme ETFs that can explain sector rotation or investor preference
+
+Each ETF peer should include:
+
+- fund name
+- ticker
+- market or exchange
+- issuer
+- region or country exposure
+- benchmark or strategy
+- currency
+- price
+- NAV, if available
+- AUM or net assets
+- total expense ratio
+- real expense ratio, if available
+- distribution yield, if available
+- 1-week, 1-month, 3-month, YTD, and 1-year returns when available
+- short multilingual peer analysis
+
+ETF peer analysis must be approximately three paragraphs:
+
+1. exposure difference versus the target ETF
+2. cost, liquidity, AUM, tracking, distribution, and performance comparison
+3. read-through to the target ETF's theme narrative, risk, or relative attractiveness
 
 ## News And Price Linkage Rule
 
@@ -439,6 +613,26 @@ The price linkage must explain whether the event is:
 
 When possible, connect event dates to nearby 1-day, 5-day, and 20-day price movement. If exact event-study data is unavailable, say so plainly.
 
+For ETF products, news events may come from:
+
+- ETF issuer announcements and disclosures
+- benchmark index methodology or rebalance announcements
+- top holding company news
+- sector, policy, trade, regulation, currency, and macro news linked to the ETF exposure
+- peer ETF flows, fee changes, or distribution announcements
+
+ETF news linkage must explain whether the event affects:
+
+- ETF market price directly
+- NAV through holdings
+- premium or discount
+- liquidity and trading volume
+- tracking error
+- currency translation
+- theme sentiment
+
+Do not describe every top-holding news item as a direct ETF catalyst. Weight, benchmark relevance, and market timing must be stated.
+
 ## Technical Analysis Rule
 
 The updater must compute or infer:
@@ -464,6 +658,16 @@ If full calculation data is not available, the updater must use observed price z
 
 `technical_view.risk_state.ko/en/ja` may be shorter, but must clearly state the invalidation price zone and next upside confirmation zone.
 
+For ETF products, technical analysis must distinguish:
+
+- ETF market price trend
+- NAV trend, if available
+- premium or discount behavior, if available
+- trading-volume and liquidity state
+- benchmark or major-holdings trend, when ETF price history is too short
+
+If the ETF is newly listed and does not have enough trading history for moving averages or RSI, the updater must clearly label the result as early chart-structure analysis and use benchmark/holdings context only as supporting evidence.
+
 ## Trading Scenario Rule
 
 The updater must produce three scenarios:
@@ -488,6 +692,18 @@ Each scenario body must be approximately three paragraphs:
 
 Never present scenarios as guaranteed outcomes. Use research wording, not instruction wording.
 
+For ETF products, each scenario must include ETF-specific risk and confirmation logic:
+
+- NAV or benchmark confirmation
+- premium or discount condition
+- liquidity or trading-volume condition
+- fee and distribution considerations, when relevant
+- currency exposure
+- concentration risk from top holdings
+- policy, regulation, or index-rebalance risk
+
+ETF scenarios must not be written as if the ETF has company earnings, management guidance, operating margin, or balance-sheet catalysts.
+
 ## Static Page Rendering Rule
 
 The generated HTML page should:
@@ -495,6 +711,7 @@ The generated HTML page should:
 - load `latest.json`
 - load the referenced raw JSON
 - support language switching
+- support Light Theme and Dark Theme switching
 - render chart, financials, segment map, peers, news, technical view, trading scenarios, sources, and disclaimer
 - show a clear error message if opened through `file://`
 - degrade gracefully if a CDN chart library fails
@@ -509,6 +726,41 @@ Renderer formatting rules:
 - Validation must fail if a page for `KRX` contains display literals like `JPY`, or if a page for `TSE` contains display literals like `KRW`, unless they appear inside peer descriptions or source text where the foreign currency is intentional.
 
 No private API key may be embedded in client-side JavaScript.
+
+## Theme Rendering Rule
+
+The generated page must support both Light Theme and Dark Theme.
+
+Theme requirements:
+
+- Provide a visible theme toggle in the page chrome.
+- Use `data-theme="light"` and `data-theme="dark"` on the document root or body.
+- Respect the user's system preference through `prefers-color-scheme` on first load.
+- Persist the user's explicit choice in `localStorage`.
+- Avoid a flash of the wrong theme by applying the saved or preferred theme before the main page renders.
+- The theme toggle must be keyboard accessible and expose an accessible label.
+- Theme labels should be multilingual when visible (`ko/en/ja`).
+- Charts, fallback charts, tables, badges, links, borders, focus states, and error states must be legible in both themes.
+- Do not encode theme colors directly inside generated data JSON. Theme is a renderer concern.
+- Use CSS custom properties for color tokens rather than duplicating full style blocks.
+
+Minimum token set:
+
+```css
+:root {
+  --color-bg: ...;
+  --color-surface: ...;
+  --color-text: ...;
+  --color-muted: ...;
+  --color-border: ...;
+  --color-accent: ...;
+  --color-positive: ...;
+  --color-negative: ...;
+  --color-warning: ...;
+}
+```
+
+Validation must check both themes before the run is marked complete. The page must not rely on a single dark-only or light-only palette, and text must meet readable contrast against its background in both themes.
 
 ## GitHub Pages Rule
 
@@ -562,6 +814,7 @@ Each source item should include:
 ## Things The Updater Must Not Do
 
 - It must not confuse tickers or companies.
+- It must not confuse ETFs, ETNs, funds, preferred shares, warrants, or common stocks.
 - It must not drop leading zeros in tickers such as KRX `012450`.
 - It must not fabricate prices, earnings, or source names.
 - It must not overwrite historical raw data files.
@@ -570,21 +823,25 @@ Each source item should include:
 - It must not output only one language for user-facing analysis when the requested language set has multiple languages.
 - It must not use a fixed peer list for every company.
 - It must not treat all news as direct catalysts.
+- It must not generate issuer company financials as ETF fundamentals.
+- It must not ship a page that is readable in only Light Theme or only Dark Theme.
 
 ## Recommended Run Order
 
 1. Normalize `market + ticker`.
 2. Build `{MARKET}{TICKER}` output paths.
-3. Verify target identity.
+3. Verify target identity and asset type.
 4. Fetch latest market date and price snapshot.
 5. Fetch recent chart data.
-6. Fetch latest official financials.
-7. Build the business segment map.
-8. Build same-market, global, and segment peer groups.
-9. Fetch recent company, sector, and macro news.
-10. Link news to price movement where possible.
-11. Generate multilingual financial, segment, peer, technical, and scenario analysis.
-12. Validate JSON schema.
+6. Branch by asset type:
+   - For stocks, fetch latest official financials, build business segment map, and build company peer groups.
+   - For ETFs, fetch ETF profile, NAV, fees, distributions, holdings, benchmark, tracking data, and ETF peer groups.
+7. Fetch recent company, ETF, sector, benchmark, holdings, and macro news as appropriate for the asset type.
+8. Link news to price, NAV, holdings, benchmark, or theme movement where possible.
+9. Generate multilingual stock or ETF analysis, technical view, and scenarios.
+10. Validate JSON schema and asset-type-specific required fields.
+11. Validate currency, unit, source, and auditability rules.
+12. Validate Light Theme and Dark Theme rendering.
 13. Write timestamped raw data.
 14. Update `latest.json` only after successful validation.
 15. Optionally update or generate the static HTML/CSS/JS page.
