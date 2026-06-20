@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung Electronics KRX005930 Analysis</title>
+    <script>
+        (() => {
+            const saved = localStorage.getItem("theme");
+            const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            document.documentElement.dataset.theme = saved || preferred;
+        })();
+    </script>
     <link rel="stylesheet" href="KRX005930.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <header class="topbar"><a class="brand" href="../../index.html">HD2Lab</a><nav class="lang-switch" aria-label="Language selector"><button class="lang-btn active" data-lang="ko">KOR</button><button class="lang-btn" data-lang="en">ENG</button><button class="lang-btn" data-lang="ja">JPN</button></nav></header>
+    <header class="topbar">
+        <a class="brand" href="../../index.html">HD2Lab</a>
+        <nav class="controls" aria-label="Page controls">
+            <a class="home-link" href="../../analysis.html">Home</a>
+            <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+            <div class="lang-switch" aria-label="Language selector">
+                <button class="lang-btn active" data-lang="ko" type="button">KOR</button>
+                <button class="lang-btn" data-lang="en" type="button">ENG</button>
+                <button class="lang-btn" data-lang="ja" type="button">JPN</button>
+            </div>
+        </nav>
+    </header>
     <main>
         <section class="hero"><div><p class="eyebrow">KRX 005930</p><h1 data-i18n="heroTitle">삼성전자 글로벌 반도체/AI 메모리 분석</h1><p class="hero-copy" data-i18n="heroCopy">삼성전자를 중심으로 AI 메모리, 파운드리, 모바일, 디스플레이, 글로벌 반도체 피어를 함께 보는 정적 분석 페이지입니다.</p></div><div class="status-panel"><span data-i18n="dataStatus">데이터 기준</span><strong id="asOf">-</strong><small id="marketNote">-</small></div></section>
         <section class="summary-grid"><article class="metric"><span data-i18n="latestClose">최신 종가</span><strong id="latestClose">-</strong><small id="latestMove">-</small></article><article class="metric"><span data-i18n="marketCap">시가총액</span><strong id="marketCap">-</strong><small id="valuationLine">-</small></article><article class="metric"><span data-i18n="qRevenue">Q1 매출</span><strong id="qRevenue">-</strong><small id="qProfit">-</small></article><article class="metric"><span data-i18n="viewState">현재 판단</span><strong id="viewState">-</strong><small data-i18n="viewStateSub">AI 메모리 랠리 확인 구간</small></article></section>

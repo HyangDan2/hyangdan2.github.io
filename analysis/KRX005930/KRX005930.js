@@ -319,6 +319,13 @@ document.querySelectorAll(".lang-btn").forEach((button) => {
     });
 });
 
+document.getElementById("themeToggle").addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("theme", next);
+    renderChart();
+});
+
 loadData().catch((error) => {
     document.getElementById("asOf").textContent = "Data load failed";
     const isFile = window.location.protocol === "file:";

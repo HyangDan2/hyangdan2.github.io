@@ -1,19 +1,30 @@
 ﻿<!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IHI 7013.T Global Analysis</title>
+    <script>
+        (() => {
+            const saved = localStorage.getItem("theme");
+            const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            document.documentElement.dataset.theme = saved || preferred;
+        })();
+    </script>
     <link rel="stylesheet" href="TSE7013.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header class="topbar">
         <a class="brand" href="../../index.html">HD2Lab</a>
-        <nav class="lang-switch" aria-label="Language selector">
-            <button class="lang-btn active" data-lang="ko">KOR</button>
-            <button class="lang-btn" data-lang="en">ENG</button>
-            <button class="lang-btn" data-lang="ja">JPN</button>
+        <nav class="controls" aria-label="Page controls">
+            <a class="home-link" href="../../analysis.html">Home</a>
+            <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+            <div class="lang-switch" aria-label="Language selector">
+                <button class="lang-btn active" data-lang="ko" type="button">KOR</button>
+                <button class="lang-btn" data-lang="en" type="button">ENG</button>
+                <button class="lang-btn" data-lang="ja" type="button">JPN</button>
+            </div>
         </nav>
     </header>
 

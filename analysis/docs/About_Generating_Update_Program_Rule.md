@@ -915,6 +915,20 @@ analysis/manifest.json
 
 The updater must not modify the root `index.html` when creating or updating the analysis index unless the user explicitly requests a root-site navigation change.
 
+Navigation requirements:
+
+- Root `index.html` may link to `analysis.html` only when the user explicitly requests a root-site navigation change.
+- When present, the root navigation entry should use the label `Stock analysis Technology (AI-Driven)` and link to `analysis.html`.
+- `analysis.html` must keep its root-site return link pointed at `index.html`; the visible label should be `About`.
+- Every detail analysis page must provide a `Home` link to the analysis index:
+  - from `analysis/{KEY}/{KEY}.html`, use `../../analysis.html`;
+  - the `HD2Lab` brand link must remain pointed at `../../index.html`.
+- Stock and ETF detail pages must use the same header structure:
+  - left: `HD2Lab` brand link;
+  - right controls: `Home`, Light/Dark theme toggle, and `KOR / ENG / JPN` language buttons.
+- Do not create a detail analysis page that is reachable only from a deep URL and not reachable from the analysis index.
+- Do not rename the detail-page `Home` link to `About`; `About` is reserved for the analysis index link back to the root page.
+
 `analysis/manifest.json` is the source of truth for the index. GitHub Pages cannot perform server-side directory scans, so the index must use a static manifest and browser-side `fetch()`.
 
 Manifest item example:
@@ -965,6 +979,10 @@ Index UI requirements:
 - Provide search over ticker, key, name, Korean name, theme, issuer, sector, and benchmark.
 - Provide sorting by latest update date, market, asset type, and name.
 - Support Light Theme and Dark Theme using the same theme rendering rules.
+- Keep the index navigation consistent with the detail-page navigation rule:
+  - root page -> `analysis.html` is the public entry point for the analysis library;
+  - `analysis.html` -> `index.html` uses the `About` label;
+  - detail pages -> `analysis.html` use the `Home` label.
 - Render usable cards even when raw data fetch fails.
 - Never require a backend server.
 
@@ -1066,6 +1084,7 @@ Each source item should include:
 - It must not ship a page that is readable in only Light Theme or only Dark Theme.
 - It must not regenerate full analysis text during `holdings_only` mode unless explicitly requested.
 - It must not hide a valid analysis page from `analysis/manifest.json` when creating or updating the analysis index.
+- It must not let stock pages and ETF pages drift into incompatible header/navigation structures.
 
 ## Recommended Run Order
 
@@ -1088,12 +1107,17 @@ Each source item should include:
 11. For `full`, generate multilingual stock or ETF analysis, technical view, and scenarios.
 12. Validate JSON schema and asset-type-specific required fields.
 13. Validate currency, unit, source, auditability, and update-mode constraints.
-14. Validate Light Theme and Dark Theme rendering when HTML/CSS/JS changes.
-15. Write timestamped raw data when the update mode changes target data.
-16. Update `latest.json` only after successful validation.
-17. Update `analysis/manifest.json` when a full target update creates or materially changes a page.
-18. Optionally update or generate the static HTML/CSS/JS page.
-19. Optionally commit and push.
+14. Validate navigation paths:
+   - root `index.html` entry to `analysis.html`, when requested;
+   - `analysis.html` `About` link to `index.html`;
+   - every detail page `Home` link to `../../analysis.html`;
+   - every detail page brand link to `../../index.html`.
+15. Validate Light Theme and Dark Theme rendering when HTML/CSS/JS changes.
+16. Write timestamped raw data when the update mode changes target data.
+17. Update `latest.json` only after successful validation.
+18. Update `analysis/manifest.json` when a full target update creates or materially changes a page.
+19. Optionally update or generate the static HTML/CSS/JS page.
+20. Optionally commit and push.
 
 ## Backward Compatibility Notes
 
