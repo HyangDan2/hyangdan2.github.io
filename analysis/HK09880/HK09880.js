@@ -14,6 +14,14 @@ const labels = {
         financialTitle: "재무와 성장성",
         technicalEyebrow: "Technical",
         technicalTitle: "기술적 관점",
+        backgroundEyebrow: "Background",
+        backgroundTitle: "기업 배경과 시장 관심",
+        technologyEyebrow: "Technology Map",
+        technologyTitle: "기술과 제품별 주가 연결",
+        developmentEyebrow: "Recent Developments",
+        developmentTitle: "최근 동향과 신뢰도",
+        thesisEyebrow: "Investment Thesis",
+        thesisTitle: "강세 / 약세 / 확인 포인트",
         segmentEyebrow: "Business Segment Map",
         segmentTitle: "사업부와 로봇 생태계",
         peerEyebrow: "Peers",
@@ -33,6 +41,14 @@ const labels = {
         drivers: "동인",
         risks: "리스크",
         relevance: "노출",
+        summary: "요약",
+        whyMarketCares: "시장 관심",
+        businessModel: "사업 모델",
+        proofPoints: "확인 근거",
+        bullCase: "강세 논리",
+        bearCase: "약세 논리",
+        checkpoints: "확인 포인트",
+        confidence: "신뢰도",
         themeToggle: "테마 전환"
     },
     en: {
@@ -50,6 +66,14 @@ const labels = {
         financialTitle: "Financials and Growth",
         technicalEyebrow: "Technical",
         technicalTitle: "Technical View",
+        backgroundEyebrow: "Background",
+        backgroundTitle: "Company Background and Market Interest",
+        technologyEyebrow: "Technology Map",
+        technologyTitle: "Technology and Product Price Linkage",
+        developmentEyebrow: "Recent Developments",
+        developmentTitle: "Recent Developments and Confidence",
+        thesisEyebrow: "Investment Thesis",
+        thesisTitle: "Bull / Bear / Checkpoints",
         segmentEyebrow: "Business Segment Map",
         segmentTitle: "Business and Robotics Ecosystem",
         peerEyebrow: "Peers",
@@ -69,6 +93,14 @@ const labels = {
         drivers: "Drivers",
         risks: "Risks",
         relevance: "Exposure",
+        summary: "Summary",
+        whyMarketCares: "Why Market Cares",
+        businessModel: "Business Model",
+        proofPoints: "Proof Points",
+        bullCase: "Bull Case",
+        bearCase: "Bear Case",
+        checkpoints: "Checkpoints",
+        confidence: "Confidence",
         themeToggle: "Toggle theme"
     },
     ja: {
@@ -86,6 +118,14 @@ const labels = {
         financialTitle: "財務と成長性",
         technicalEyebrow: "Technical",
         technicalTitle: "テクニカル見解",
+        backgroundEyebrow: "Background",
+        backgroundTitle: "企業背景と市場の関心",
+        technologyEyebrow: "Technology Map",
+        technologyTitle: "技術・製品別の株価連動",
+        developmentEyebrow: "Recent Developments",
+        developmentTitle: "最近の動向と信頼度",
+        thesisEyebrow: "Investment Thesis",
+        thesisTitle: "強気 / 弱気 / 確認ポイント",
         segmentEyebrow: "Business Segment Map",
         segmentTitle: "事業とロボット生態系",
         peerEyebrow: "Peers",
@@ -105,6 +145,14 @@ const labels = {
         drivers: "ドライバー",
         risks: "リスク",
         relevance: "エクスポージャー",
+        summary: "要約",
+        whyMarketCares: "市場の関心",
+        businessModel: "事業モデル",
+        proofPoints: "確認根拠",
+        bullCase: "強気論",
+        bearCase: "弱気論",
+        checkpoints: "確認ポイント",
+        confidence: "信頼度",
         themeToggle: "テーマ切替"
     }
 };
@@ -115,6 +163,8 @@ let priceChart;
 
 const formatNumber = (value, options = {}) => value === null || value === undefined ? "-" : new Intl.NumberFormat(undefined, options).format(value);
 const money = (value, currency) => value === null || value === undefined ? "-" : `${formatNumber(value)} ${currency || ""}`.trim();
+const levelValue = (zone) => typeof zone === "number" ? zone : zone.level;
+const levelType = (zone) => typeof zone === "number" ? "" : ` · ${zone.level_type}`;
 
 function cssVar(name) {
     return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -150,6 +200,10 @@ function render() {
     renderChart();
     renderFinancials();
     renderTechnicals();
+    renderBackground();
+    renderTechnologyMap();
+    renderDevelopments();
+    renderThesis();
     renderSegments();
     renderPeers();
     renderNews();
@@ -221,9 +275,46 @@ function renderTechnicals() {
     document.getElementById("technicalTrend").textContent = pageData.technical_view.trend_state[activeLang];
     document.getElementById("technicalRisk").textContent = pageData.technical_view.risk_state[activeLang];
     const currency = pageData.price_snapshot.currency;
-    const supports = pageData.technical_view.support_zones.map((v) => `<span class="level">${labels[activeLang].support} ${money(v, currency)}</span>`);
-    const resistances = pageData.technical_view.resistance_zones.map((v) => `<span class="level">${labels[activeLang].resistance} ${money(v, currency)}</span>`);
+    const supports = pageData.technical_view.support_zones.map((v) => `<span class="level">${labels[activeLang].support} ${money(levelValue(v), currency)}${levelType(v)}</span>`);
+    const resistances = pageData.technical_view.resistance_zones.map((v) => `<span class="level">${labels[activeLang].resistance} ${money(levelValue(v), currency)}${levelType(v)}</span>`);
     document.getElementById("levels").innerHTML = [...supports, ...resistances].join("");
+}
+
+function renderBackground() {
+    const b = pageData.company_background;
+    if (!b) return;
+    const cards = [
+        [labels[activeLang].summary, b.summary[activeLang]],
+        [labels[activeLang].whyMarketCares, b.why_market_cares[activeLang]],
+        [labels[activeLang].businessModel, b.business_model[activeLang]]
+    ];
+    document.getElementById("backgroundGrid").innerHTML = cards.map(([title, copy]) => `<article class="context-card"><h3>${title}</h3><p>${copy}</p></article>`).join("");
+}
+
+function renderTechnologyMap() {
+    const items = pageData.technology_or_product_map || [];
+    document.getElementById("technologyGrid").innerHTML = items.map((item) => {
+        const proof = item.proof_points.map((point) => `<span class="pill positive">${point}</span>`).join("");
+        const risks = item.risks.map((risk) => `<span class="pill mixed">${risk}</span>`).join("");
+        return `<article class="segment-card"><h3>${item.theme_name[activeLang]}</h3><span class="pill">${labels[activeLang].relevance}: ${item.price_relevance}</span><p>${item.description[activeLang]}</p><div class="segment-meta"><strong>${labels[activeLang].proofPoints}</strong>${proof}</div><div class="segment-meta"><strong>${labels[activeLang].risks}</strong>${risks}</div></article>`;
+    }).join("");
+}
+
+function renderDevelopments() {
+    const items = pageData.recent_developments || [];
+    document.getElementById("developmentList").innerHTML = items.map((item) => `<article class="news-item"><div class="news-meta"><span class="pill">${item.date}</span><span class="pill">${item.relevance}</span><span class="pill ${item.confidence === "low" ? "negative" : item.confidence === "high" ? "positive" : "mixed"}">${labels[activeLang].confidence}: ${item.confidence}</span></div><h3>${item.title}</h3><p>${item.price_or_nav_linkage[activeLang]}</p><p><a href="${item.url}" target="_blank" rel="noreferrer">${item.source}</a></p></article>`).join("");
+}
+
+function renderThesis() {
+    const t = pageData.investment_thesis;
+    if (!t) return;
+    const checkpointList = `<ul>${t.checkpoints.map((point) => `<li>${point}</li>`).join("")}</ul>`;
+    const cards = [
+        [labels[activeLang].bullCase, t.bull_case[activeLang]],
+        [labels[activeLang].bearCase, t.bear_case[activeLang]],
+        [labels[activeLang].checkpoints, checkpointList]
+    ];
+    document.getElementById("thesisGrid").innerHTML = cards.map(([title, copy]) => `<article class="strategy-card"><h3>${title}</h3>${copy.startsWith("<ul>") ? copy : `<p>${copy}</p>`}</article>`).join("");
 }
 
 function renderSegments() {

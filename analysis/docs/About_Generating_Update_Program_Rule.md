@@ -389,6 +389,46 @@ All displayed price levels, support/resistance zones, EPS/BPS, dividends, and ma
 
 `monthly_prices` should include at least 12 months when available.
 
+## Global Historical Price Rule
+
+For every `full` update, the updater must attempt to collect at least three months of daily historical price data for both stocks and ETFs, regardless of market.
+
+Preferred `recent_prices` fields:
+
+- `date`
+- `open`
+- `high`
+- `low`
+- `close`
+- `volume`
+- `currency`
+- `source`
+
+Global source priority:
+
+1. Official exchange or issuer/manager historical data, when accessible.
+2. Auditable historical market-data endpoints such as Yahoo Finance chart API, Stooq CSV, exchange CSV downloads, or equivalent public chart APIs.
+3. Auditable market-data pages such as Google Finance, Yahoo Finance, TradingView, MarketScreener, Investing.com, or local market-data sites.
+4. Latest quote plus 52-week range only as a fallback.
+
+If three months of daily OHLCV cannot be collected:
+
+- Keep a usable `price_snapshot`.
+- Keep `recent_prices` only for verified snapshot/reference points.
+- Set `data_quality.status` to `partial`.
+- Add `3-month OHLCV` or the missing coverage period to `data_quality.missing_fields`.
+- Add `price_history_fetch_attempts` or equivalent notes under `data_quality`.
+- Do not calculate moving averages, RSI, or volume trend from incomplete data.
+- Label the chart and technical analysis as snapshot-based or early chart-structure analysis.
+
+Historical price fetch attempts should record:
+
+- source name
+- lookup symbol
+- requested range
+- result (`success`, `blocked`, `empty`, `rate_limited`, `unsupported`, or `failed`)
+- short note
+
 If complete price history is unavailable, the updater must record the limitation in `data_quality.notes`.
 
 ## Financial Rule
@@ -800,6 +840,49 @@ ETF news linkage must explain whether the event affects:
 
 Do not describe every top-holding news item as a direct ETF catalyst. Weight, benchmark relevance, and market timing must be stated.
 
+## Global Background And Recent Developments Rule
+
+Every `full` update must include explanatory context beyond price movement. This rule applies to all markets and all asset types.
+
+For stocks, include these sections when source coverage allows:
+
+- `company_background`
+- `business_model`
+- `technology_or_product_map`
+- `recent_developments`
+- `investment_thesis`
+
+For ETFs, include these sections when source coverage allows:
+
+- `fund_background`
+- `benchmark_or_strategy_background`
+- `holdings_theme_map`
+- `recent_developments`
+- `fund_thesis`
+
+The page should answer:
+
+1. What is the company, fund, or listed instrument?
+2. Why does the market care about it now?
+3. What has changed recently?
+4. How can those changes connect to price, NAV, holdings, or valuation?
+5. What would strengthen or weaken the thesis?
+
+Recent developments web search requirements:
+
+- Search official issuer/company sources first.
+- Search exchange filings, regulatory announcements, and investor-relations reports where available.
+- Search reputable industry and financial news for the most recent product, technology, order, partnership, regulatory, earnings, and sector developments.
+- Each development must include date, title, source, URL, relevance, confidence, and price/NAV linkage.
+- If exact event-study price movement is unavailable, say so plainly.
+- Do not rely only on search snippets when a primary source or full article can be opened.
+- Do not treat promotional product news as confirmed financial impact unless orders, revenue, shipments, or filings support that link.
+
+Narrative completeness validation:
+
+- A `full` page must not be considered complete if it contains only price, chart, valuation, and generic peer data.
+- If background or recent developments cannot be collected, mark `data_quality.status` as `partial` and explain the missing narrative coverage.
+
 ## Technical Analysis Rule
 
 The updater must compute or infer:
@@ -816,6 +899,17 @@ The updater must compute or infer:
 - volume expansion or contraction
 
 If full calculation data is not available, the updater must use observed price zones and label the result as chart-structure analysis rather than indicator calculation.
+
+Technical analysis integrity requirements:
+
+- Calculate MA5 only when at least 5 valid sequential closes are available.
+- Calculate MA20 only when at least 20 valid sequential closes are available.
+- Calculate MA60 only when at least 60 valid sequential closes are available.
+- Calculate RSI only when the required lookback window and enough sequential closes are available.
+- Calculate volume expansion or contraction only when enough sequential volume observations exist.
+- Do not infer RSI, moving averages, or volume trend from a single quote, 52-week high/low, or sparse reference points.
+- Support and resistance must identify whether each level is `calculated`, `observed`, `52-week reference`, or `manual interpretation`.
+- The renderer must avoid presenting sparse-reference charts as full historical price charts.
 
 `technical_view.trend_state.ko/en/ja` must be written as approximately three paragraphs:
 

@@ -107,6 +107,61 @@
       "ja": "UBTECHの公開財務スナップショットは、売上成長期待と損失縮小の進捗を同時に読む必要がある。Google Financeの表では、確認された2025年四半期行として売上高6.8977億元、営業損失1.558億元、純損失1.4477億元が表示される。株価はHKD、財務はCNYであるため、時価総額と売上高を比較する際は為替換算が必要である。\n\n研究開発費1.446億元、販管費2.0151億元は、商用化と規模拡大にまだコストがかかる段階であることを示す。ヒューマノイドロボットでは、粗利率改善よりも納入規模、リピート受注、産業現場での導入速度が先に株価を動かす可能性がある。\n\n重要な確認点は、Walker S/S2系列の量産納入が教育・サービスロボット中心の売上構造を産業ロボットの反復売上へ変えられるかである。損失が縮小し売上が急成長すれば高いテーマバリュエーションを支えられるが、納入遅延や費用増加が続けば株価は過去高値比で圧迫されやすい。"
     }
   },
+  "company_background": {
+    "summary": {
+      "ko": "UBTECH Robotics는 2012년 중국 선전에서 설립된 휴머노이드 및 서비스 로봇 기업이다. 홍콩거래소에는 2023년 12월 29일 9880 코드로 상장했으며, 산업용 Walker 계열, AI 교육, 상업 서비스, 헬스케어, 물류 로봇을 주요 축으로 둔다.",
+      "en": "UBTECH Robotics is a Shenzhen-based humanoid and service robotics company founded in 2012. It listed on the Hong Kong Stock Exchange under code 9880 on December 29, 2023, and spans industrial Walker humanoids, AI education, commercial service, healthcare and logistics robots.",
+      "ja": "UBTECH Roboticsは2012年に中国深圳で設立されたヒューマノイドおよびサービスロボット企業である。2023年12月29日に香港証券取引所へ9880コードで上場し、産業用Walker系列、AI教育、商業サービス、ヘルスケア、物流ロボットを主要領域とする。"
+    },
+    "why_market_cares": {
+      "ko": "시장이 관심을 갖는 이유는 UBTECH가 홍콩 상장사 중 휴머노이드 로봇 테마에 가장 직접적으로 노출된 기업 중 하나이기 때문이다. 특히 Walker S/S1/S2 계열이 제조와 물류 현장에 들어갈 수 있다면, 교육·상업 로봇 중심 매출에서 산업용 반복 매출로 전환될 가능성이 있다.",
+      "en": "The market cares because UBTECH is one of the most direct humanoid robotics exposures among Hong Kong-listed companies. If the Walker S/S1/S2 line can scale in manufacturing and logistics environments, revenue could shift from education and service robots toward repeat industrial revenue.",
+      "ja": "市場が注目する理由は、UBTECHが香港上場企業の中でヒューマノイドロボットテーマに最も直接的にさらされた企業の一つだからである。Walker S/S1/S2系列が製造・物流現場で拡大できれば、教育・商業ロボット中心の売上から産業用反復売上へ移行する可能性がある。"
+    },
+    "business_model": {
+      "ko": "사업모델은 로봇 하드웨어 판매, 산업·상업 현장 솔루션, AI 교육 플랫폼과 로봇 키트, 서비스 로봇 공급으로 구성된다. 아직 손실 구간이므로 단기 핵심은 매출 성장보다 납품 규모, 반복 주문, 비용 통제, R&D 투자 효율이다.",
+      "en": "The business model includes robot hardware sales, industrial and commercial deployment solutions, AI education platforms and kits, and service robot supply. Because the company remains loss-making, the near-term focus is not revenue growth alone but delivery scale, repeat orders, cost control and R&D efficiency.",
+      "ja": "事業モデルは、ロボットハードウェア販売、産業・商業現場ソリューション、AI教育プラットフォームとキット、サービスロボット供給で構成される。まだ赤字段階であるため、短期の焦点は売上成長だけでなく、納入規模、反復受注、費用統制、R&D投資効率である。"
+    }
+  },
+  "technology_or_product_map": [
+    {
+      "theme_id": "walker_humanoid",
+      "theme_name": {"ko": "Walker 휴머노이드 플랫폼", "en": "Walker Humanoid Platform", "ja": "Walkerヒューマノイドプラットフォーム"},
+      "description": {
+        "ko": "Walker S, S1, S2는 산업 제조와 물류 적용을 목표로 하는 휴머노이드 라인업이다. 공식 사이트는 Industrial 제품군에 Walker S2, Walker S1, Walker S를 배치하고 있다.",
+        "en": "Walker S, S1 and S2 are humanoid product lines aimed at industrial manufacturing and logistics applications. UBTECH's official site places Walker S2, Walker S1 and Walker S under Industrial products.",
+        "ja": "Walker S、S1、S2は産業製造と物流用途を目指すヒューマノイドラインアップである。公式サイトではWalker S2、Walker S1、Walker SがIndustrial製品群に配置されている。"
+      },
+      "price_relevance": "high",
+      "proof_points": ["industrial product lineup", "mass-delivery narrative", "factory/logistics use cases"],
+      "risks": ["pilot-to-scale gap", "unit cost", "reliability in real factories"]
+    },
+    {
+      "theme_id": "embodied_ai",
+      "theme_name": {"ko": "Embodied AI와 Thinker", "en": "Embodied AI and Thinker", "ja": "Embodied AIとThinker"},
+      "description": {
+        "ko": "Thinker는 로봇 지각과 추론을 위한 vision-language foundation model로 공개되어 있으며, 로봇이 영상·공간·작업 계획을 이해하는 능력과 연결된다.",
+        "en": "Thinker is presented as a vision-language foundation model for robotic perception and reasoning, tied to video, spatial understanding and task-planning capabilities.",
+        "ja": "Thinkerはロボットの知覚と推論のためのvision-language foundation modelとして提示され、映像、空間理解、タスク計画能力に結び付く。"
+      },
+      "price_relevance": "medium",
+      "proof_points": ["AI model research", "robot perception", "task planning"],
+      "risks": ["research-to-product gap", "benchmark relevance", "unclear monetization"]
+    },
+    {
+      "theme_id": "ai_education_service",
+      "theme_name": {"ko": "AI 교육·서비스 로봇", "en": "AI Education and Service Robots", "ja": "AI教育・サービスロボット"},
+      "description": {
+        "ko": "AI 교육과 상업 서비스 로봇은 UBTECH의 기존 상용화 기반이다. 이 영역은 산업용 휴머노이드보다 테마 탄력은 낮지만 매출 기반을 지지한다.",
+        "en": "AI education and commercial service robots form UBTECH's established commercialization base. This area has less theme torque than industrial humanoids but supports revenue foundation.",
+        "ja": "AI教育と商業サービスロボットはUBTECHの既存商用化基盤である。この領域は産業用ヒューマノイドよりテーマ弾力は低いが、売上基盤を支える。"
+      },
+      "price_relevance": "medium",
+      "proof_points": ["education solutions", "commercial service robots", "healthcare/logistics categories"],
+      "risks": ["project revenue", "public budget cycles", "hardware competition"]
+    }
+  ],
   "business_segment_map": [
     {
       "segment_id": "humanoid_industrial",
@@ -145,6 +200,79 @@
       "risk_factors": ["pilot-to-scale conversion", "maintenance costs", "competition"]
     }
   ],
+  "recent_developments": [
+    {
+      "date": "2026-01-29",
+      "title": "Thinker vision-language foundation model for embodied intelligence was published",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2601.21199",
+      "relevance": "technology capability",
+      "confidence": "medium",
+      "price_or_nav_linkage": {
+        "ko": "로봇 지각·추론 소프트웨어 역량을 보여주지만, 제품 매출 기여와 주가 영향은 아직 직접 검증이 필요하다.",
+        "en": "It supports the software-capability narrative for robot perception and reasoning, but product revenue contribution and direct price impact still require confirmation.",
+        "ja": "ロボットの知覚・推論ソフトウェア能力を示すが、製品売上への寄与と株価への直接影響はまだ検証が必要である。"
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "title": "UBTECH official site highlights Walker S2, Walker S1 and Walker S under Industrial humanoid products",
+      "source": "UBTECH official website",
+      "url": "https://www.ubtrobot.com/en/",
+      "relevance": "product and deployment narrative",
+      "confidence": "high",
+      "price_or_nav_linkage": {
+        "ko": "산업용 Walker 라인업은 주가의 휴머노이드 로봇 프리미엄을 설명하는 핵심 근거다. 다만 공식 제품 배치만으로 매출 확대가 확정되는 것은 아니다.",
+        "en": "The industrial Walker lineup is central to explaining the stock's humanoid robotics premium, but official product placement alone does not prove revenue scale-up.",
+        "ja": "産業用Walkerラインアップは株価のヒューマノイドロボットプレミアムを説明する中心材料だが、公式製品配置だけで売上拡大が確定するわけではない。"
+      }
+    },
+    {
+      "date": "2025-11-14",
+      "title": "Media reports described Walker S2 mass-delivery claims and large 2025 order flow",
+      "source": "The Sun, with references to other reports",
+      "url": "https://www.the-sun.com/news/15492303/humanoid-chinese-robot-army-marches-delivery/",
+      "relevance": "orders and market sentiment",
+      "confidence": "low",
+      "price_or_nav_linkage": {
+        "ko": "대규모 주문·납품 보도는 테마 심리에 긍정적이지만, 공식 공시나 감사 재무제표로 확인되기 전에는 낮은 신뢰도로 다뤄야 한다.",
+        "en": "Large-order and delivery reports are positive for theme sentiment, but should be treated with low confidence until confirmed by filings or audited financials.",
+        "ja": "大型受注・納入報道はテーマ心理にポジティブだが、公式開示や監査済み財務で確認されるまでは低信頼度として扱うべきである。"
+      }
+    },
+    {
+      "date": "2026-04",
+      "title": "Reports highlighted UBTECH recruiting for embodied-intelligence leadership and Airbus testing context",
+      "source": "Business Insider",
+      "url": "https://www.businessinsider.com/chinese-robotics-startup-tesla-rival-18-million-salary-chief-scientist-2026-4",
+      "relevance": "talent and customer validation narrative",
+      "confidence": "medium",
+      "price_or_nav_linkage": {
+        "ko": "고급 AI 인재 확보와 Airbus 테스트 맥락은 기술·고객 검증 서사를 강화한다. 하지만 비용 증가와 실제 상용화 속도를 함께 봐야 한다.",
+        "en": "High-end AI talent recruitment and Airbus testing context strengthen the technology and customer-validation narrative, but cost inflation and commercialization speed must be watched together.",
+        "ja": "高級AI人材の採用とAirbusテストの文脈は技術・顧客検証のストーリーを強めるが、費用増加と実商用化速度を併せて見る必要がある。"
+      }
+    }
+  ],
+  "investment_thesis": {
+    "bull_case": {
+      "ko": "Walker 산업용 휴머노이드가 실제 제조·물류 현장에 반복 납품되고, Thinker 같은 embodied AI 역량이 제품 성능 차별화로 이어지며, 손실이 축소되면 UBTECH는 홍콩 상장 휴머노이드 순수 테마로 프리미엄을 받을 수 있다.",
+      "en": "If Walker industrial humanoids generate repeat deployments in manufacturing and logistics, Thinker-like embodied-AI capability translates into product differentiation, and losses narrow, UBTECH can earn a premium as a Hong Kong-listed humanoid robotics pure-play.",
+      "ja": "Walker産業用ヒューマノイドが製造・物流現場で反復納入され、Thinkerのようなembodied AI能力が製品差別化につながり、損失が縮小すれば、UBTECHは香港上場のヒューマノイド純粋テーマとしてプレミアムを得られる。"
+    },
+    "bear_case": {
+      "ko": "납품 보도가 실제 반복 매출로 이어지지 않거나, R&D·판관비가 계속 커지고, 로봇 단가와 신뢰성 문제가 남으면 고평가 테마주는 빠르게 압박받을 수 있다.",
+      "en": "If delivery headlines do not convert into repeat revenue, R&D and SG&A keep expanding, and robot unit economics or reliability remain unresolved, the high-valuation theme stock can come under pressure quickly.",
+      "ja": "納入報道が反復売上に転換されず、R&D・販管費が拡大し続け、ロボット単価や信頼性問題が残れば、高バリュエーションのテーマ株は急速に圧迫され得る。"
+    },
+    "checkpoints": [
+      "3-month OHLCV and volume trend",
+      "official HKEXnews annual/interim results",
+      "confirmed Walker S/S2 orders and deliveries",
+      "gross margin and loss-narrowing path",
+      "customer concentration and repeat orders"
+    ]
+  },
   "peer_group": [
     {"company": "UBTECH Robotics Corp Ltd", "ticker": "09880.HK", "region": "Hong Kong / China", "currency": "HKD", "price": 108.30, "market_cap": "HKD 54.52B", "one_year_context": {"ko": "홍콩 상장 휴머노이드 로봇 순수 테마에 가까운 기업이다. 고성장 기대와 손실 축소가 함께 확인되어야 한다.", "en": "A Hong Kong-listed company close to a pure humanoid robotics theme. High-growth expectations need to be confirmed alongside loss narrowing.", "ja": "香港上場のヒューマノイドロボット純粋テーマに近い企業。高成長期待と損失縮小を同時に確認する必要がある。"}},
     {"company": "Horizon Robotics", "ticker": "9660.HK", "region": "Hong Kong / China", "currency": "HKD", "price": 4.23, "market_cap": null, "one_year_context": {"ko": "중국 AI/로보틱스 생태계의 비교군이다. UBTECH보다 자율주행·AI 칩 성격이 강하다.", "en": "A China AI and robotics ecosystem peer, with stronger autonomous-driving and AI-chip exposure than UBTECH.", "ja": "中国AI・ロボティクス生態系の比較対象。UBTECHより自動運転・AIチップ色が強い。"}},
@@ -158,8 +286,14 @@
     {"date": "2026-06-18", "title": "Google Finance snapshot showed HKD 108.30 close", "source": "Google Finance", "url": "https://www.google.com/finance/quote/9880:HKG", "related_tickers": ["09880.HK"], "sentiment": "mixed", "impact_horizon": "short", "price_linkage": {"observed": "Close HKD 108.30, 52-week range HKD 73.50 to HKD 161.00.", "interpretation": {"ko": "현재가는 52주 고점 대비 낮지만 저점 대비 높은 구간이다. 추세 판단에는 연속 OHLCV 확보가 추가로 필요하다.", "en": "The price is below the 52-week high but well above the low. Continuous OHLCV is still needed for stronger trend judgment.", "ja": "現在価格は52週高値を下回るが安値を大きく上回る。より強いトレンド判断には連続OHLCVの取得が必要である。"}}}
   ],
   "technical_view": {
-    "support_zones": [106.20, 73.50],
-    "resistance_zones": [110.70, 161.00],
+    "support_zones": [
+      {"level": 106.20, "level_type": "observed daily low", "source": "Google Finance 2026-06-18 snapshot"},
+      {"level": 73.50, "level_type": "52-week reference", "source": "Google Finance 52-week range"}
+    ],
+    "resistance_zones": [
+      {"level": 110.70, "level_type": "observed daily high", "source": "Google Finance 2026-06-18 snapshot"},
+      {"level": 161.00, "level_type": "52-week reference", "source": "Google Finance 52-week range"}
+    ],
     "trend_state": {
       "ko": "확보된 공개 스냅샷 기준 UBTECH는 108.30홍콩달러에서 거래되며, 당일 범위는 106.20~110.70홍콩달러다. 52주 범위 73.50~161.00홍콩달러와 비교하면 중상단이지만 고점 회복 전이다.\n\n연속 일봉 데이터가 부족하므로 이 페이지의 기술적 판단은 초기 구조 분석이다. 106.20홍콩달러 이탈은 단기 약세 신호, 110.70홍콩달러 회복은 단기 반등 확인, 161홍콩달러는 중기 고점 회복 기준으로 둔다.",
       "en": "In the available public snapshot, UBTECH trades at HKD 108.30 with a same-day range of HKD 106.20 to HKD 110.70. Against the 52-week range of HKD 73.50 to HKD 161.00, price sits in the upper-middle zone but has not recovered the prior high.\n\nBecause continuous daily OHLCV is limited in this run, the technical view is an early structure analysis. A break below HKD 106.20 would be short-term weak, recovery above HKD 110.70 would confirm a short-term bounce, and HKD 161 remains the medium-term high-recovery reference.",
@@ -195,11 +329,19 @@
     {"title": "Google Finance 9880:HKG", "url": "https://www.google.com/finance/quote/9880:HKG", "publisher": "Google Finance", "used_for": "Price snapshot, market cap, 52-week range, volume, EPS, shares outstanding, profile and financial table snapshot."},
     {"title": "HKEX 9880 quote page", "url": "https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sc_lang=en&sym=9880", "publisher": "HKEX", "used_for": "HKEX quote route and Hong Kong market holiday notice."},
     {"title": "UBTECH official website", "url": "https://www.ubtrobot.com/en/", "publisher": "UBTECH Robotics", "used_for": "Company product categories, Investor Relations link, Walker S/S1/S2 product family and business segment context."},
-    {"title": "UBTECH public company profile", "url": "https://en.wikipedia.org/wiki/UBtech_Robotics", "publisher": "Wikipedia / public profile", "used_for": "Company identity, IPO history, founder, headquarters, and Thinker model context; used only as a secondary identity cross-check."}
+    {"title": "UBTECH public company profile", "url": "https://en.wikipedia.org/wiki/UBtech_Robotics", "publisher": "Wikipedia / public profile", "used_for": "Company identity, IPO history, founder, headquarters, and Thinker model context; used only as a secondary identity cross-check."},
+    {"title": "Thinker: A Vision-Language Foundation Model for Embodied Intelligence", "url": "https://arxiv.org/abs/2601.21199", "publisher": "arXiv", "used_for": "Embodied AI and Thinker technology context."},
+    {"title": "Business Insider report on UBTECH embodied-intelligence hiring and testing context", "url": "https://www.businessinsider.com/chinese-robotics-startup-tesla-rival-18-million-salary-chief-scientist-2026-4", "publisher": "Business Insider", "used_for": "Recent development context for talent, embodied-intelligence leadership and customer-validation narrative."},
+    {"title": "The Sun report on Walker S2 delivery claims", "url": "https://www.the-sun.com/news/15492303/humanoid-chinese-robot-army-marches-delivery/", "publisher": "The Sun", "used_for": "Low-confidence media signal for delivery and order-flow narrative; not treated as verified financial impact."}
   ],
   "data_quality": {
     "status": "partial",
-    "missing_fields": ["official continuous daily OHLCV", "audited annual report numeric extraction from HKEXnews", "same-source historical price series", "verified full-year 2025 annual financial totals"],
+    "missing_fields": ["3-month OHLCV", "official continuous daily OHLCV", "audited annual report numeric extraction from HKEXnews", "same-source historical price series", "verified full-year 2025 annual financial totals"],
+    "price_history_fetch_attempts": [
+      {"source": "Yahoo Finance chart API", "lookup_symbol": "9880.HK", "requested_range": "3mo daily", "result": "rate_limited", "note": "Endpoint returned Too Many Requests during this run."},
+      {"source": "Stooq CSV", "lookup_symbol": "9880.hk", "requested_range": "daily", "result": "blocked", "note": "Endpoint returned a JavaScript verification page instead of CSV data."},
+      {"source": "Stooq CSV", "lookup_symbol": "09880.hk", "requested_range": "daily", "result": "blocked", "note": "Endpoint returned a JavaScript verification page instead of CSV data."}
+    ],
     "source_conflicts": [],
     "notes": {
       "ko": "이번 생성은 HK 시장 신규 대응용 첫 정적 페이지다. 가격 스냅샷은 Google Finance, 휴장 확인은 HKEX, 사업 구조는 UBTECH 공식 사이트를 우선했다. 연속 차트와 공식 연차보고서 수치 추출은 후속 업데이트에서 보강해야 한다.",
