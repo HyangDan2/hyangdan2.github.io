@@ -49,20 +49,28 @@ section {
     transition: 0.3s;
 }
 
-.link-card {
-    color: #fff;
-    text-decoration: none;
-}
-
 .card:hover {
     transform: scale(1.03);
 }
 
-.tags span {
+.tags span,
+.tag-link {
     display: inline-block;
     margin: 5px;
     padding: 8px 12px;
     background: #333;
+}
+
+.tag-link {
+    color: #fff;
+    text-decoration: none;
+    background: #ff5500;
+    transition: 0.2s;
+}
+
+.tag-link:hover {
+    background: #ff7700;
+    transform: translateY(-1px);
 }
 
 footer {
