@@ -53,12 +53,31 @@ section {
     transform: scale(1.03);
 }
 
+.stack-group {
+    margin: 18px 0;
+    padding: 16px 18px;
+    background: #151515;
+    border-left: 4px solid #ff5500;
+}
+
+.stack-group h3 {
+    margin: 0 0 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .tags span,
 .tag-link {
-    display: inline-block;
-    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
     padding: 8px 12px;
     background: #333;
+    line-height: 1.3;
 }
 
 .tag-link {
