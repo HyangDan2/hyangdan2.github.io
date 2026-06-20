@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBTECH Robotics HK09880 Analysis</title>
+    <script>
+        (() => {
+            const saved = localStorage.getItem("theme");
+            const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            document.documentElement.dataset.theme = saved || preferred;
+        })();
+    </script>
+    <link rel="stylesheet" href="HK09880.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../../index.html">HD2Lab</a>
+        <nav class="controls" aria-label="Page controls">
+            <a class="home-link" href="../../analysis.html">Home</a>
+            <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+            <div class="lang-switch" aria-label="Language selector">
+                <button class="lang-btn active" data-lang="ko" type="button">KOR</button>
+                <button class="lang-btn" data-lang="en" type="button">ENG</button>
+                <button class="lang-btn" data-lang="ja" type="button">JPN</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">HK 09880 · Stock</p>
+                <h1 data-i18n="heroTitle">UBTECH Robotics 휴머노이드 로봇 분석</h1>
+                <p class="hero-copy" data-i18n="heroCopy">홍콩 상장 중국 휴머노이드 로봇 기업 UBTECH를 가격, 재무, 산업 적용, AI 로봇 생태계 관점에서 보는 정적 분석 페이지입니다.</p>
+            </div>
+            <aside class="status-panel">
+                <span data-i18n="dataStatus">데이터 기준</span>
+                <strong id="asOf">-</strong>
+                <small id="marketNote">-</small>
+            </aside>
+        </section>
+
+        <section class="summary-grid">
+            <article class="metric"><span data-i18n="latestClose">최신 종가</span><strong id="latestClose">-</strong><small id="latestMove">-</small></article>
+            <article class="metric"><span data-i18n="marketCap">시가총액</span><strong id="marketCap">-</strong><small id="rangeLine">-</small></article>
+            <article class="metric"><span data-i18n="revenueLabel">최근 매출</span><strong id="revenueValue">-</strong><small id="profitLine">-</small></article>
+            <article class="metric"><span data-i18n="viewState">현재 판단</span><strong id="viewState">-</strong><small data-i18n="viewStateSub">휴머노이드 로봇 모멘텀과 손실 축소 확인 구간</small></article>
+        </section>
+
+        <section class="panel chart-panel">
+            <div class="section-head"><div><p class="eyebrow" data-i18n="chartEyebrow">Price Snapshot</p><h2 data-i18n="chartTitle">가격 스냅샷</h2></div><span>Jun 2026</span></div>
+            <div class="chart-wrap"><canvas id="priceChart"></canvas></div>
+        </section>
+
+        <section class="two-col">
+            <article class="panel"><p class="eyebrow" data-i18n="financialEyebrow">Fundamentals</p><h2 data-i18n="financialTitle">재무와 성장성</h2><p id="financialAnalysis" class="analysis-copy">-</p><div class="mini-table" id="financialTable"></div></article>
+            <article class="panel"><p class="eyebrow" data-i18n="technicalEyebrow">Technical</p><h2 data-i18n="technicalTitle">기술적 관점</h2><p id="technicalTrend" class="analysis-copy">-</p><p id="technicalRisk" class="risk-copy">-</p><div class="levels" id="levels"></div></article>
+        </section>
+
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="segmentEyebrow">Business Segment Map</p><h2 data-i18n="segmentTitle">사업부와 로봇 생태계</h2></div></div><div class="segment-grid" id="segmentGrid"></div></section>
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="peerEyebrow">Peers</p><h2 data-i18n="peerTitle">비교군</h2></div></div><div class="peer-grid" id="peerGrid"></div></section>
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="newsEyebrow">News x Price</p><h2 data-i18n="newsTitle">뉴스와 주가 연결</h2></div></div><div class="news-list" id="newsList"></div></section>
+        <section class="panel"><p class="eyebrow" data-i18n="strategyEyebrow">Scenarios</p><h2 data-i18n="strategyTitle">단기 / 중기 / 장기 관찰 시나리오</h2><div class="strategy-grid" id="strategyGrid"></div></section>
+        <section class="panel source-panel"><p class="eyebrow" data-i18n="sourceEyebrow">Audit Trail</p><h2 data-i18n="sourceTitle">출처 및 원천 데이터</h2><ul id="sourceList"></ul><p id="disclaimer" class="disclaimer">-</p></section>
+    </main>
+    <script src="HK09880.js"></script>
+</body>
+</html>

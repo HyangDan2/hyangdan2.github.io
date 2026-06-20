@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.2.0",
+  "generated_at": "2026-06-20T00:00:00+09:00",
+  "input": {
+    "market": "HK",
+    "ticker": "09880",
+    "asset_type": "stock",
+    "company_hint": "UBTECH Robotics Corp Ltd",
+    "analysis_date": "2026-06-20",
+    "language_set": ["ko", "en", "ja"],
+    "output_base_dir": "analysis"
+  },
+  "identity": {
+    "asset_type": "Stock",
+    "name": "UBTECH Robotics Corp Ltd",
+    "name_ko": "UBTECH Robotics",
+    "ticker": "09880",
+    "lookup_symbols": {
+      "google_finance": "9880:HKG",
+      "yahoo_finance": "9880.HK",
+      "hkex": "sym=9880"
+    },
+    "market": "HK",
+    "exchange": "Hong Kong Stock Exchange",
+    "currency": "HKD",
+    "financial_currency": "CNY",
+    "sector": "Machine industry",
+    "industry": "Humanoid robotics and intelligent machines",
+    "country": "China",
+    "headquarters": "Shenzhen, Guangdong, China",
+    "founded": "2012-03-31",
+    "ceo": "James Zhou",
+    "employees": 2550,
+    "website": "https://www.ubtrobot.com/",
+    "identity_note": {
+      "ko": "HK 09880은 홍콩거래소 상장 UBTECH Robotics Corp Ltd이며, 가격은 HKD, 재무제표는 CNY 기준으로 분리해 읽어야 한다.",
+      "en": "HK 09880 is Hong Kong-listed UBTECH Robotics Corp Ltd. Price data is in HKD while financial statement data should be read separately in CNY.",
+      "ja": "HK 09880は香港上場のUBTECH Robotics Corp Ltdであり、株価はHKD、財務諸表はCNYとして分けて読む必要がある。"
+    }
+  },
+  "target": {
+    "company": "UBTECH Robotics Corp Ltd",
+    "ticker": "09880.HK",
+    "security_code": "09880",
+    "exchange": "Hong Kong Stock Exchange",
+    "currency": "HKD",
+    "business_tags": ["humanoid robots", "AI education", "commercial service robots", "logistics robotics", "healthcare robotics"]
+  },
+  "as_of": {
+    "page_date": "2026-06-20",
+    "market_data_date": "2026-06-18",
+    "financial_data_date": "2025-12-31",
+    "timezone": "Asia/Seoul",
+    "market_timezone": "Asia/Hong_Kong",
+    "note": {
+      "ko": "분석일 2026-06-20은 토요일이며, HKEX는 2026-06-19 홍콩 시장 휴장을 공지했다. 따라서 가격 스냅샷은 확인 가능한 2026-06-18 Google Finance 공개 데이터를 기준으로 작성했다.",
+      "en": "Because June 20, 2026 is a Saturday and HKEX noted that Hong Kong markets were closed on June 19, the price snapshot uses the latest public Google Finance data observed for June 18, 2026.",
+      "ja": "2026年6月20日は土曜日で、HKEXは2026年6月19日の香港市場休場を告知している。そのため価格スナップショットは確認可能な2026年6月18日のGoogle Finance公開データを基準にした。"
+    }
+  },
+  "price_snapshot": {
+    "source": "Google Finance 9880:HKG",
+    "date": "2026-06-18",
+    "open": 108.20,
+    "high": 110.70,
+    "low": 106.20,
+    "close": 108.30,
+    "change": 0.10,
+    "change_percent": 0.09,
+    "volume": 8180000,
+    "average_volume": 9740000,
+    "market_cap": 54.52,
+    "market_cap_unit": "B",
+    "high_52w": 161.00,
+    "low_52w": 73.50,
+    "eps": -1.79,
+    "shares_outstanding": 401270000,
+    "currency": "HKD",
+    "interpretation": {
+      "ko": "6월 18일 종가는 108.30홍콩달러로 52주 고점 161홍콩달러보다는 낮지만 52주 저점 73.50홍콩달러보다 크게 위에 있다. 휴머노이드 로봇 기대는 주가에 남아 있으나, 손실 기업의 밸류에이션 부담도 같이 봐야 한다.",
+      "en": "The June 18 close was HKD 108.30, below the 52-week high of HKD 161 but well above the 52-week low of HKD 73.50. Humanoid robotics expectations remain embedded in price, but valuation risk for a loss-making company needs to be monitored.",
+      "ja": "6月18日の終値は108.30香港ドルで、52週高値161香港ドルを下回る一方、52週安値73.50香港ドルを大きく上回る。ヒューマノイドロボット期待は株価に残っているが、赤字企業としてのバリュエーション負担も確認が必要である。"
+    }
+  },
+  "recent_prices": [
+    {"date": "2026-06-18", "label": "52W Low", "close": 73.50, "volume": null, "source_note": "Google Finance 52-week low reference"},
+    {"date": "2026-06-18", "label": "Close", "close": 108.30, "volume": 8180000, "source_note": "Google Finance latest observed close"},
+    {"date": "2026-06-18", "label": "52W High", "close": 161.00, "volume": null, "source_note": "Google Finance 52-week high reference"}
+  ],
+  "monthly_prices": [
+    {"month": "2026-06", "close": 108.30}
+  ],
+  "financials": {
+    "currency": "CNY",
+    "source": "Google Finance financial table, public snapshot",
+    "period_type": "quarterly snapshot rows observed for 2025",
+    "revenue": 689770000,
+    "cost_of_revenue": 432380000,
+    "research_and_development_expenses": 144600000,
+    "selling_general_and_admin_expenses": 201510000,
+    "operating_income": -155800000,
+    "net_income": -144770000,
+    "net_margin_percent": -20.99,
+    "analysis": {
+      "ko": "UBTECH의 공개 재무 스냅샷은 매출 성장 기대와 손실 축소 여부를 동시에 봐야 하는 구조다. Google Finance 표에는 2025년 분기 기준 매출 6.8977억 위안, 영업손실 1.558억 위안, 순손실 1.4477억 위안이 표시된다. 가격은 HKD지만 재무제표는 CNY 기준이므로, 시가총액과 매출을 단순 나눌 때는 환율 변환이 필요하다.\n\nR&D 비용 1.446억 위안과 판관비 2.0151억 위안은 아직 제품 상용화와 규모 확장에 비용이 많이 드는 단계임을 보여준다. 휴머노이드 로봇은 매출 총이익률보다 납품 규모, 반복 주문, 산업 현장 적용 속도가 먼저 주가를 움직일 수 있다.\n\n핵심 확인점은 Walker S/S2 계열의 양산 납품이 교육·상업 로봇 중심 매출 구조를 산업 로봇 반복 매출로 바꿀 수 있는지다. 손실이 축소되고 매출이 고성장하면 높은 테마 밸류에이션을 방어할 수 있지만, 납품 지연이나 비용 증가가 이어지면 주가는 고점 대비 압박을 받을 수 있다.",
+      "en": "UBTECH's public financial snapshot needs to be read through both revenue-growth expectations and loss-narrowing progress. The Google Finance table shows CNY 689.77M revenue, CNY 155.80M operating loss and CNY 144.77M net loss for observed 2025 quarterly rows. Price data is in HKD while financials are in CNY, so market-cap-to-sales comparisons require FX conversion.\n\nR&D expense of CNY 144.60M and SG&A expense of CNY 201.51M show that commercialization and scale-up remain costly. For humanoid robotics, deliveries, repeat orders and industrial deployment pace may move the stock before conventional margin metrics improve.\n\nThe key checkpoint is whether Walker S/S2 mass deliveries can shift the revenue mix from education and service robots toward repeat industrial robot revenue. If losses narrow while revenue grows quickly, the high theme valuation can be defended; if deliveries slip or costs rise, the share price may stay pressured versus prior highs.",
+      "ja": "UBTECHの公開財務スナップショットは、売上成長期待と損失縮小の進捗を同時に読む必要がある。Google Financeの表では、確認された2025年四半期行として売上高6.8977億元、営業損失1.558億元、純損失1.4477億元が表示される。株価はHKD、財務はCNYであるため、時価総額と売上高を比較する際は為替換算が必要である。\n\n研究開発費1.446億元、販管費2.0151億元は、商用化と規模拡大にまだコストがかかる段階であることを示す。ヒューマノイドロボットでは、粗利率改善よりも納入規模、リピート受注、産業現場での導入速度が先に株価を動かす可能性がある。\n\n重要な確認点は、Walker S/S2系列の量産納入が教育・サービスロボット中心の売上構造を産業ロボットの反復売上へ変えられるかである。損失が縮小し売上が急成長すれば高いテーマバリュエーションを支えられるが、納入遅延や費用増加が続けば株価は過去高値比で圧迫されやすい。"
+    }
+  },
+  "business_segment_map": [
+    {
+      "segment_id": "humanoid_industrial",
+      "segment_name": {"ko": "산업용 휴머노이드 로봇", "en": "Industrial Humanoid Robots", "ja": "産業用ヒューマノイドロボット"},
+      "company_relevance": "high",
+      "segment_linkage": {
+        "ko": "Walker S/S1/S2 계열은 제조와 물류 현장 적용 기대를 대표한다. UBTECH 주가의 테마 프리미엄은 이 영역의 납품 규모와 반복 주문에 가장 민감하다.",
+        "en": "The Walker S/S1/S2 series represents manufacturing and logistics deployment expectations. UBTECH's theme premium is most sensitive to delivery scale and repeat orders in this area.",
+        "ja": "Walker S/S1/S2系列は製造・物流現場への導入期待を代表する。UBTECHのテーマプレミアムは、この領域の納入規模と反復受注に最も敏感である。"
+      },
+      "drivers": ["factory automation", "humanoid robot pilots", "automotive manufacturing", "logistics deployment"],
+      "risk_factors": ["mass-production delay", "unit economics", "customer concentration"]
+    },
+    {
+      "segment_id": "ai_education",
+      "segment_name": {"ko": "AI 교육 로봇", "en": "AI Education Robots", "ja": "AI教育ロボット"},
+      "company_relevance": "medium",
+      "segment_linkage": {
+        "ko": "AI 교육 솔루션은 UBTECH의 기존 상용화 기반이다. 성장률은 휴머노이드보다 낮을 수 있지만 브랜드와 교육 채널을 유지하는 역할을 한다.",
+        "en": "AI education solutions are part of UBTECH's established commercialization base. Growth may be lower than humanoids, but the segment supports brand and education-channel presence.",
+        "ja": "AI教育ソリューションはUBTECHの既存商用化基盤である。成長率はヒューマノイドより低い可能性があるが、ブランドと教育チャネルを支える。"
+      },
+      "drivers": ["AI education adoption", "school lab projects", "robotics curriculum"],
+      "risk_factors": ["budget cycles", "hardware commoditization", "project-based revenue"]
+    },
+    {
+      "segment_id": "commercial_service",
+      "segment_name": {"ko": "상업·헬스케어·물류 로봇", "en": "Commercial, Healthcare and Logistics Robots", "ja": "商業・ヘルスケア・物流ロボット"},
+      "company_relevance": "medium",
+      "segment_linkage": {
+        "ko": "상업 서비스, 헬스케어, 물류 로봇은 휴머노이드 외 매출 다변화 축이다. B2C 물류와 스마트 서비스 로봇 수요가 반복 매출로 이어지는지가 중요하다.",
+        "en": "Commercial service, healthcare and logistics robots diversify revenue beyond humanoids. The key is whether B2C logistics and smart service robots turn into repeat revenue.",
+        "ja": "商業サービス、ヘルスケア、物流ロボットはヒューマノイド以外の売上多角化軸である。B2C物流とスマートサービスロボット需要が反復売上につながるかが重要である。"
+      },
+      "drivers": ["service automation", "elderly care", "warehouse robotics", "commercial deployments"],
+      "risk_factors": ["pilot-to-scale conversion", "maintenance costs", "competition"]
+    }
+  ],
+  "peer_group": [
+    {"company": "UBTECH Robotics Corp Ltd", "ticker": "09880.HK", "region": "Hong Kong / China", "currency": "HKD", "price": 108.30, "market_cap": "HKD 54.52B", "one_year_context": {"ko": "홍콩 상장 휴머노이드 로봇 순수 테마에 가까운 기업이다. 고성장 기대와 손실 축소가 함께 확인되어야 한다.", "en": "A Hong Kong-listed company close to a pure humanoid robotics theme. High-growth expectations need to be confirmed alongside loss narrowing.", "ja": "香港上場のヒューマノイドロボット純粋テーマに近い企業。高成長期待と損失縮小を同時に確認する必要がある。"}},
+    {"company": "Horizon Robotics", "ticker": "9660.HK", "region": "Hong Kong / China", "currency": "HKD", "price": 4.23, "market_cap": null, "one_year_context": {"ko": "중국 AI/로보틱스 생태계의 비교군이다. UBTECH보다 자율주행·AI 칩 성격이 강하다.", "en": "A China AI and robotics ecosystem peer, with stronger autonomous-driving and AI-chip exposure than UBTECH.", "ja": "中国AI・ロボティクス生態系の比較対象。UBTECHより自動運転・AIチップ色が強い。"}},
+    {"company": "Xiaomi Corp", "ticker": "1810.HK", "region": "Hong Kong / China", "currency": "HKD", "price": 24.58, "market_cap": null, "one_year_context": {"ko": "스마트 하드웨어와 전기차, 로봇 생태계를 함께 보는 대형 비교군이다. UBTECH보다 사업 포트폴리오가 훨씬 넓다.", "en": "A large-cap peer for smart hardware, EV and robotics ecosystem context. Its portfolio is much broader than UBTECH's.", "ja": "スマートハードウェア、EV、ロボット生態系を併せて見る大型比較対象。UBTECHより事業ポートフォリオは広い。"}},
+    {"company": "KODEX China Humanoid Robot ETF", "ticker": "0048K0.KR", "region": "Korea / China theme", "currency": "KRW", "price": null, "market_cap": null, "one_year_context": {"ko": "UBTECH가 편입될 수 있는 중국 휴머노이드 테마 ETF 비교군이다. 개별주 리스크와 ETF 분산 효과를 비교하기 좋다.", "en": "A China humanoid robotics ETF peer group where UBTECH-like exposure can be compared against diversified ETF risk.", "ja": "UBTECHのようなエクスポージャーをETF分散リスクと比較できる中国ヒューマノイドテーマETF。"}}
+  ],
+  "news_events": [
+    {"date": "2023-12-29", "title": "UBTECH listed on the Hong Kong Stock Exchange under stock code 9880", "source": "Public company history and market references", "url": "https://www.ubtrobot.com/", "related_tickers": ["09880.HK"], "sentiment": "neutral", "impact_horizon": "long", "price_linkage": {"observed": "IPO history establishes listed operating history.", "interpretation": {"ko": "상장 이력은 가격 촉매라기보다 추적 가능한 공개시장 데이터의 시작점이다.", "en": "The listing is an operating-history marker rather than a current price catalyst.", "ja": "上場履歴は現在の価格材料というより、追跡可能な公開市場データの開始点である。"}}},
+    {"date": "2025-2026", "title": "Walker S series positioned for industrial humanoid deployment", "source": "UBTECH official product site", "url": "https://www.ubtrobot.com/en/", "related_tickers": ["09880.HK"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": {"observed": "Official site lists Walker S2, Walker S1 and Walker S under Industrial humanoid products.", "interpretation": {"ko": "Walker 산업용 라인업은 UBTECH 밸류에이션의 핵심 성장 서사다. 납품 확대가 확인될수록 테마 프리미엄 방어에 유리하다.", "en": "The Walker industrial lineup is central to UBTECH's growth narrative. Confirmed delivery expansion would support the theme premium.", "ja": "Walker産業用ラインアップはUBTECHの成長ストーリーの中心である。納入拡大が確認されるほどテーマプレミアムを支えやすい。"}}},
+    {"date": "2026-02", "title": "UBTECH open-sourced its embodied-intelligence model Thinker", "source": "Public company profile references", "url": "https://www.ubtrobot.com/", "related_tickers": ["09880.HK"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": {"observed": "Thinker is referenced as a self-developed vision-language model.", "interpretation": {"ko": "로봇 하드웨어뿐 아니라 embodied AI 소프트웨어 역량을 보여주는 이벤트다. 단, 실적 기여는 별도 확인이 필요하다.", "en": "This points to embodied-AI software capability beyond hardware, but earnings contribution needs separate confirmation.", "ja": "ハードウェアだけでなくembodied AIソフトウェア能力を示すイベントだが、業績寄与は別途確認が必要である。"}}},
+    {"date": "2026-06-18", "title": "Google Finance snapshot showed HKD 108.30 close", "source": "Google Finance", "url": "https://www.google.com/finance/quote/9880:HKG", "related_tickers": ["09880.HK"], "sentiment": "mixed", "impact_horizon": "short", "price_linkage": {"observed": "Close HKD 108.30, 52-week range HKD 73.50 to HKD 161.00.", "interpretation": {"ko": "현재가는 52주 고점 대비 낮지만 저점 대비 높은 구간이다. 추세 판단에는 연속 OHLCV 확보가 추가로 필요하다.", "en": "The price is below the 52-week high but well above the low. Continuous OHLCV is still needed for stronger trend judgment.", "ja": "現在価格は52週高値を下回るが安値を大きく上回る。より強いトレンド判断には連続OHLCVの取得が必要である。"}}}
+  ],
+  "technical_view": {
+    "support_zones": [106.20, 73.50],
+    "resistance_zones": [110.70, 161.00],
+    "trend_state": {
+      "ko": "확보된 공개 스냅샷 기준 UBTECH는 108.30홍콩달러에서 거래되며, 당일 범위는 106.20~110.70홍콩달러다. 52주 범위 73.50~161.00홍콩달러와 비교하면 중상단이지만 고점 회복 전이다.\n\n연속 일봉 데이터가 부족하므로 이 페이지의 기술적 판단은 초기 구조 분석이다. 106.20홍콩달러 이탈은 단기 약세 신호, 110.70홍콩달러 회복은 단기 반등 확인, 161홍콩달러는 중기 고점 회복 기준으로 둔다.",
+      "en": "In the available public snapshot, UBTECH trades at HKD 108.30 with a same-day range of HKD 106.20 to HKD 110.70. Against the 52-week range of HKD 73.50 to HKD 161.00, price sits in the upper-middle zone but has not recovered the prior high.\n\nBecause continuous daily OHLCV is limited in this run, the technical view is an early structure analysis. A break below HKD 106.20 would be short-term weak, recovery above HKD 110.70 would confirm a short-term bounce, and HKD 161 remains the medium-term high-recovery reference.",
+      "ja": "取得できた公開スナップショットでは、UBTECHは108.30香港ドルで取引され、当日レンジは106.20~110.70香港ドルである。52週レンジ73.50~161.00香港ドルと比較すると中上位圏だが、過去高値の回復前である。\n\n連続日足データが限られるため、このページのテクニカル見解は初期構造分析である。106.20香港ドル割れは短期弱気、110.70香港ドル回復は短期反発確認、161香港ドルは中期高値回復の基準とする。"
+    },
+    "risk_state": {
+      "ko": "무효화 구간은 106.20홍콩달러 이탈, 구조적 위험 구간은 73.50홍콩달러 재접근이다. 상승 확인에는 110.70홍콩달러 돌파 후 거래량과 납품 뉴스 확인이 필요하다.",
+      "en": "The short-term invalidation zone is below HKD 106.20, while structural risk rises if price revisits HKD 73.50. Upside confirmation requires a break above HKD 110.70 with volume and delivery-related news support.",
+      "ja": "短期無効化ゾーンは106.20香港ドル割れ、構造的リスクは73.50香港ドル再接近で高まる。上昇確認には110.70香港ドル突破と出来高、納入関連ニュースの支援が必要である。"
+    },
+    "moving_averages": {"ma5": null, "ma20": null, "ma60": null},
+    "rsi": null,
+    "method_note": "Continuous OHLCV was not available from the gathered public sources in this run; the chart uses latest close and 52-week reference levels."
+  },
+  "trading_scenarios": {
+    "short_term": {
+      "ko": "단기는 106.20~110.70홍콩달러 박스 이탈 방향을 확인한다. 연속 거래량 데이터가 부족하므로 돌파 자체보다 거래량과 뉴스 동반 여부가 더 중요하다.",
+      "en": "Short term, watch the direction of the HKD 106.20 to HKD 110.70 range break. Because continuous volume data is limited, confirmation by volume and news matters more than the break alone.",
+      "ja": "短期では106.20~110.70香港ドルレンジのブレイク方向を確認する。連続出来高データが限られるため、ブレイクそのものより出来高とニュースの同伴が重要である。"
+    },
+    "medium_term": {
+      "ko": "중기는 Walker S/S2 납품 확대와 손실 축소가 함께 나오는지 확인한다. 매출 성장만 있고 비용이 계속 커지면 고평가 부담이 커질 수 있다.",
+      "en": "Medium term, check whether Walker S/S2 delivery expansion comes with loss narrowing. Revenue growth without cost control can increase valuation pressure.",
+      "ja": "中期ではWalker S/S2の納入拡大と損失縮小が同時に出るかを確認する。売上成長だけで費用が増え続ければ割高負担が大きくなる。"
+    },
+    "long_term": {
+      "ko": "장기는 휴머노이드 로봇이 파일럿을 넘어 반복 매출 사업으로 전환되는지가 핵심이다. 산업 로봇 시장 개화와 embodied AI 소프트웨어 역량이 확인되면 구조적 프리미엄을 받을 수 있다.",
+      "en": "Long term, the key is whether humanoid robotics moves beyond pilots into repeat revenue. If industrial robot adoption and embodied-AI software capability are proven, UBTECH can earn a structural premium.",
+      "ja": "長期ではヒューマノイドロボットがパイロットを超えて反復売上事業へ移行するかが核心である。産業ロボット市場の拡大とembodied AIソフトウェア能力が確認されれば、構造的プレミアムを得られる。"
+    }
+  },
+  "sources": [
+    {"title": "Google Finance 9880:HKG", "url": "https://www.google.com/finance/quote/9880:HKG", "publisher": "Google Finance", "used_for": "Price snapshot, market cap, 52-week range, volume, EPS, shares outstanding, profile and financial table snapshot."},
+    {"title": "HKEX 9880 quote page", "url": "https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sc_lang=en&sym=9880", "publisher": "HKEX", "used_for": "HKEX quote route and Hong Kong market holiday notice."},
+    {"title": "UBTECH official website", "url": "https://www.ubtrobot.com/en/", "publisher": "UBTECH Robotics", "used_for": "Company product categories, Investor Relations link, Walker S/S1/S2 product family and business segment context."},
+    {"title": "UBTECH public company profile", "url": "https://en.wikipedia.org/wiki/UBtech_Robotics", "publisher": "Wikipedia / public profile", "used_for": "Company identity, IPO history, founder, headquarters, and Thinker model context; used only as a secondary identity cross-check."}
+  ],
+  "data_quality": {
+    "status": "partial",
+    "missing_fields": ["official continuous daily OHLCV", "audited annual report numeric extraction from HKEXnews", "same-source historical price series", "verified full-year 2025 annual financial totals"],
+    "source_conflicts": [],
+    "notes": {
+      "ko": "이번 생성은 HK 시장 신규 대응용 첫 정적 페이지다. 가격 스냅샷은 Google Finance, 휴장 확인은 HKEX, 사업 구조는 UBTECH 공식 사이트를 우선했다. 연속 차트와 공식 연차보고서 수치 추출은 후속 업데이트에서 보강해야 한다.",
+      "en": "This is the first static page for HK-market support. Google Finance is prioritized for the price snapshot, HKEX for holiday confirmation, and UBTECH's official site for business structure. Continuous chart data and official annual-report extraction should be improved in a later update.",
+      "ja": "これはHK市場対応の初回静的ページである。価格スナップショットはGoogle Finance、休場確認はHKEX、事業構造はUBTECH公式サイトを優先した。連続チャートデータと公式年次報告書の数値抽出は後続更新で補強すべきである。"
+    }
+  },
+  "disclaimer": {
+    "ko": "본 페이지는 공개 데이터 기반 정적 분석 자료이며 투자 권유가 아닙니다. 홍콩 주식은 환율, 유동성, 규제, 테마 밸류에이션, 재무제표 통화 차이로 손실이 발생할 수 있습니다.",
+    "en": "This page is a static analysis based on public data and is not investment advice. Hong Kong stocks can lose value due to FX, liquidity, regulation, theme valuation and financial-statement currency differences.",
+    "ja": "本ページは公開データに基づく静的分析資料であり、投資勧誘ではありません。香港株は為替、流動性、規制、テーマバリュエーション、財務諸表通貨の違いにより損失が発生する可能性があります。"
+  }
+}

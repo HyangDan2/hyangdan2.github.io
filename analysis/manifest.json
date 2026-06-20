@@ -63,5 +63,18 @@
     "benchmark": "Bloomberg China Media & Tech Index PR",
     "url": "analysis/KRX428510/KRX428510.html",
     "latest_json": "analysis/KRX428510/latest.json"
+  },
+  {
+    "asset_type": "stock",
+    "market": "HK",
+    "ticker": "09880",
+    "key": "HK09880",
+    "name": "UBTECH Robotics Corp Ltd",
+    "name_ko": "UBTECH Robotics",
+    "theme": "Humanoid Robotics / AI Robotics",
+    "sector": "Technology",
+    "industry": "Robotics and Intelligent Machines",
+    "url": "analysis/HK09880/HK09880.html",
+    "latest_json": "analysis/HK09880/latest.json"
   }
 ]

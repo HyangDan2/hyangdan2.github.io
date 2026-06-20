@@ -15,6 +15,7 @@ Examples:
 ```text
 TSE 7013
 KRX 012450
+HK.09880
 NYSE LMT
 NASDAQ NVDA
 XETRA RHM
@@ -82,6 +83,7 @@ Examples:
 
 - `TSE 7013` -> `TSE7013`
 - `KRX 012450` -> `KRX012450`
+- `HK.09880` -> `HK09880`
 - `NYSE LMT` -> `NYSELMT`
 - `NASDAQ NVDA` -> `NASDAQNVDA`
 - `XETRA RHM` -> `XETR RHM` is invalid; use `XETRA RHM` -> `XETRARHM`
@@ -233,6 +235,43 @@ KRX / Korea:
 - KRX ETF, K-ETF, issuer ETF pages, and ETF disclosures for ETF products
 - Naver Finance / FnGuide / other auditable market-data pages
 - Korean reputable news sources
+
+HK / Hong Kong:
+
+- Company IR
+- HKEX
+- HKEXnews filings and announcements
+- Auditable market-data pages such as Google Finance, Yahoo Finance, TradingView, MarketScreener, or equivalent quote pages
+- Hong Kong, mainland China, and global reputable financial news sources
+
+Hong Kong ticker normalization:
+
+- User inputs may arrive as `HK.09880`, `HK 09880`, `09880.HK`, or `9880:HKG`.
+- Preserve leading zeros in folder names, manifest tickers, and canonical JSON fields:
+  - `market`: `HK`
+  - `ticker`: `09880`
+  - `key`: `HK09880`
+  - folder: `analysis/HK09880/`
+- Source lookup symbols may remove the leading zero when the source requires it:
+  - HKEX quote query: `sym=9880`
+  - Google Finance: `9880:HKG`
+  - Yahoo Finance: `9880.HK`
+- Do not write the folder as `HK9880`; use `HK09880`.
+- Display the ticker as `HK 09880` or `09880.HK` only after preserving the canonical ticker.
+
+Hong Kong currency handling:
+
+- Listed price, market capitalization, support/resistance levels, and share-price technical levels normally use `HKD`.
+- Issuer financial statements for mainland China or Greater China issuers may report in `CNY` or `RMB`.
+- The updater must keep `price_snapshot.currency` and `financials.currency` separate when they differ.
+- The renderer must not reuse `KRW`, `JPY`, or single-currency formatters for HK pages.
+- If the financial statement currency cannot be verified, mark the financial fields partial and explain the limitation in `data_quality.notes`.
+
+Hong Kong holiday handling:
+
+- HKEX holiday notices must be checked when the analysis date falls near a Hong Kong market holiday.
+- If HKEX is closed, use the latest confirmed trading day and explain the date difference in all requested languages.
+- Example: if the requested page date is `2026-06-20` and HKEX was closed on `2026-06-19`, use `2026-06-18` as the latest confirmed trading day when that is the latest available market snapshot.
 
 NYSE / NASDAQ / US:
 
