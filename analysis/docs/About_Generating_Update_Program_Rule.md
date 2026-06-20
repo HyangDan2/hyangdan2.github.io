@@ -33,6 +33,7 @@ The updater must accept an input object similar to:
   "asset_type": "stock",
   "company_hint": "IHI Corporation",
   "analysis_date": "2026-05-10",
+  "update_mode": "full",
   "language_set": ["ko", "en", "ja"],
   "output_base_dir": "analysis"
 }
@@ -50,6 +51,7 @@ Optional fields:
 - `asset_type` (`stock`, `etf`; infer from verified identity when omitted)
 - `company_hint`
 - `fund_hint`
+- `update_mode` (`full`, `price_only`, `holdings_only`, `index_only`; default `full`)
 - `language_set`
 - `peer_hints`
 - `segment_hints`
@@ -57,6 +59,8 @@ Optional fields:
 - `force_refresh`
 
 If `asset_type` is omitted, the updater must verify whether the target is a listed company, ETF, ETN, fund, preferred share, warrant, or another listed instrument before selecting the generation rules. Do not assume every ticker is common stock.
+
+If `update_mode` is omitted, the updater must perform a full update. Reduced update modes are allowed only when the existing latest raw JSON is valid and the requested target identity matches it.
 
 ## Market And Ticker Normalization Rule
 
@@ -262,6 +266,8 @@ Each raw data JSON must include:
   "financials": {},
   "etf_profile": {},
   "holdings": [],
+  "holdings_snapshot": {},
+  "holdings_changes": {},
   "theme_exposure_map": [],
   "business_segment_map": [],
   "peer_group": [],
@@ -286,6 +292,14 @@ Asset-type handling:
 - For `asset_type: "etf"`, `etf_profile`, `holdings`, `theme_exposure_map`, and ETF peer rules are required.
 - ETF raw JSON may leave stock-only fields empty only when the renderer can clearly hide or relabel those sections.
 - The page must display the verified asset type near the title or summary so users do not mistake an ETF for a company stock.
+
+Update-mode handling:
+
+- `full` generates or refreshes the full raw JSON and static page.
+- `holdings_only` refreshes ETF holdings-related fields while preserving long-form analysis fields.
+- `price_only` may refresh price and chart fields without regenerating fundamental or scenario text.
+- `index_only` may refresh the analysis index manifest without touching target raw data.
+- Any reduced update mode must fail if the existing `latest.json` or raw JSON cannot be loaded.
 
 ## Date Rule
 
@@ -449,6 +463,120 @@ Each holding should include:
 - holding-level multilingual interpretation
 
 For concentrated thematic ETFs, the updater must identify the top holdings and explain whether the ETF is driven by a few dominant positions or a broad basket. If a holdings source does not provide weights, quantities, or dates, record the limitation in `data_quality.notes`.
+
+When available, ETF raw JSON should also include a holdings snapshot summary:
+
+```json
+{
+  "holdings_snapshot": {
+    "date": "2026-06-19",
+    "source": "GoInsider",
+    "count": 21,
+    "top10_weight": 67.42,
+    "changes_summary": {
+      "added": [],
+      "removed": [],
+      "weight_up": [],
+      "weight_down": []
+    }
+  }
+}
+```
+
+`holdings_changes` may be emitted separately when the source provides detailed adds, removes, and weight changes.
+
+## Holdings-Only Update Rule
+
+This rule applies to `update_mode: "holdings_only"` and `asset_type: "etf"`.
+
+Purpose:
+
+- Refresh ETF portfolio composition without spending tokens on full re-analysis.
+- Preserve existing long-form multilingual analysis, scenarios, peer narratives, technical view, and news unless the user explicitly requests a full update.
+- Write a new timestamped raw JSON file rather than mutating the existing historical raw file.
+
+Required input example:
+
+```json
+{
+  "market": "KRX",
+  "ticker": "0048K0",
+  "asset_type": "etf",
+  "update_mode": "holdings_only",
+  "analysis_date": "2026-06-20",
+  "output_base_dir": "analysis"
+}
+```
+
+Holdings-only run order:
+
+1. Normalize `market + ticker` and locate `analysis/{MARKET}{TICKER}/latest.json`.
+2. Load the existing latest raw JSON.
+3. Verify that the existing raw JSON is an ETF and that `identity.market`, `identity.ticker`, fund name, issuer, and benchmark do not conflict with the requested target.
+4. Fetch only the newest holdings source data and minimal ETF profile fields directly tied to holdings.
+5. Update only the fields allowed by this rule.
+6. Validate holdings quality and source dates.
+7. Write a new raw file using a holdings-specific timestamp suffix.
+8. Update `latest.json` only after validation succeeds.
+
+Allowed fields to update:
+
+- `holdings`
+- `holdings_snapshot`
+- `holdings_changes`
+- `etf_profile.holdings_count`
+- `etf_profile.monthly_turnover_percent`, when available
+- `etf_profile.rebalance_frequency`, when available
+- `etf_profile.tracking_error`, when the source reports it together with holdings
+- `as_of.profile_data_date`
+- holdings-related `sources`
+- concise holdings-related `data_quality.notes`
+
+Fields that must normally be preserved:
+
+- `identity`
+- `price_snapshot`
+- `recent_prices`
+- `monthly_prices`
+- `financials`
+- `theme_exposure_map`
+- `business_segment_map`
+- `peer_group`
+- `news_events`
+- `technical_view`
+- `trading_scenarios`
+- `disclaimer`
+
+File path rule:
+
+```text
+analysis/{MARKET}{TICKER}/raw_data/{YYYYMMDD_HHMMSS_KST}_holdings.json
+```
+
+Example:
+
+```text
+analysis/KRX0048K0/raw_data/20260620_103000_KST_holdings.json
+```
+
+Token-saving rules:
+
+- Do not regenerate long analysis paragraphs in holdings-only mode.
+- Preserve existing multilingual analysis text unless a direct holdings field requires a short one-sentence update.
+- Limit holding-level interpretation to one short sentence per language per top holding.
+- Update the top 10 holdings by default.
+- Store additional holdings only when the source is clean and the user asks for full holdings.
+- Use `holdings_changes` for adds, removes, and material weight changes instead of rewriting news or scenarios.
+- If holdings changes are small, record one concise note in `data_quality.notes`.
+
+Validation rules:
+
+- Holdings-only mode must fail for non-ETF assets.
+- The updater must not update `latest.json` if the new holdings array is empty.
+- If all new holding names differ from the prior holdings array, treat this as a possible identity or source mismatch and stop.
+- If top holding weights sum to more than 100% or contain negative weights, set `data_quality.status` to `partial` or fail the run depending on severity.
+- The holdings source date must be recorded in `holdings_snapshot.date` and in `sources`.
+- If the holdings source lacks weights, quantities, or dates, write the limitation in `data_quality.notes`.
 
 ## Theme Exposure Map Rule
 
@@ -762,6 +890,117 @@ Minimum token set:
 
 Validation must check both themes before the run is marked complete. The page must not rely on a single dark-only or light-only palette, and text must meet readable contrast against its background in both themes.
 
+## Analysis Index Rule
+
+The project may provide a static analysis index page at:
+
+```text
+https://HyangDan2.github.io/analysis.html
+```
+
+Purpose:
+
+- Provide one simple entry point for all generated analysis pages.
+- Separate analysis navigation from the root portfolio/home page.
+- Let users filter stocks and ETFs without remembering nested analysis URLs.
+
+Required files:
+
+```text
+analysis.html
+analysis-index.css
+analysis-index.js
+analysis/manifest.json
+```
+
+The updater must not modify the root `index.html` when creating or updating the analysis index unless the user explicitly requests a root-site navigation change.
+
+`analysis/manifest.json` is the source of truth for the index. GitHub Pages cannot perform server-side directory scans, so the index must use a static manifest and browser-side `fetch()`.
+
+Manifest item example:
+
+```json
+{
+  "asset_type": "etf",
+  "market": "KRX",
+  "ticker": "0048K0",
+  "key": "KRX0048K0",
+  "name": "KODEX China Humanoid Robot ETF",
+  "name_ko": "KODEX 차이나휴머노이드로봇",
+  "theme": "China Humanoid Robotics",
+  "issuer": "Samsung Asset Management",
+  "benchmark": "Solactive China Humanoid Robotics Index (CNH) (Price Return)",
+  "url": "analysis/KRX0048K0/KRX0048K0.html",
+  "latest_json": "analysis/KRX0048K0/latest.json"
+}
+```
+
+Required manifest fields:
+
+- `asset_type`
+- `market`
+- `ticker`
+- `key`
+- `name`
+- `name_ko`
+- `theme`
+- `url`
+- `latest_json`
+
+Stock-specific manifest fields:
+
+- `sector`
+- `industry`
+
+ETF-specific manifest fields:
+
+- `issuer`
+- `benchmark`
+
+Index UI requirements:
+
+- Show all available analysis pages.
+- Provide `Stock` and `ETF` filters.
+- Provide market filters, such as `KRX`, `TSE`, `NYSE`, and `NASDAQ`.
+- Provide search over ticker, key, name, Korean name, theme, issuer, sector, and benchmark.
+- Provide sorting by latest update date, market, asset type, and name.
+- Support Light Theme and Dark Theme using the same theme rendering rules.
+- Render usable cards even when raw data fetch fails.
+- Never require a backend server.
+
+Index card enrichment:
+
+- The index should first render cards from `analysis/manifest.json`.
+- It may then fetch each item's `latest_json`, then fetch the referenced raw JSON.
+- Raw JSON enrichment may display `as_of`, `price_snapshot`, `identity`, `etf_profile`, and `data_quality` summary fields.
+- If `latest_json` or raw JSON fails to load, keep the card visible and show `Data unavailable` or a similar concise status.
+
+Stock cards should prefer:
+
+- company name
+- sector or industry
+- latest close and currency
+- data quality status
+- latest analysis date
+
+ETF cards should prefer:
+
+- fund name
+- issuer
+- benchmark or theme
+- NAV or latest market price
+- total fee or real expense ratio, when available
+- holdings count, when available
+- data quality status
+- latest analysis date
+
+Manifest update rules:
+
+- A full target update should add or refresh the matching manifest item.
+- `index_only` mode may update only `analysis/manifest.json`, `analysis.html`, `analysis-index.css`, and `analysis-index.js`.
+- `holdings_only` mode should not change manifest metadata unless fund identity, holdings count, or display theme materially changes.
+- Manifest entries must preserve leading zeros and non-numeric ticker characters such as `0048K0` or `0162L0`.
+
 ## GitHub Pages Rule
 
 The updater must assume there is no backend server.
@@ -825,27 +1064,36 @@ Each source item should include:
 - It must not treat all news as direct catalysts.
 - It must not generate issuer company financials as ETF fundamentals.
 - It must not ship a page that is readable in only Light Theme or only Dark Theme.
+- It must not regenerate full analysis text during `holdings_only` mode unless explicitly requested.
+- It must not hide a valid analysis page from `analysis/manifest.json` when creating or updating the analysis index.
 
 ## Recommended Run Order
 
 1. Normalize `market + ticker`.
-2. Build `{MARKET}{TICKER}` output paths.
-3. Verify target identity and asset type.
-4. Fetch latest market date and price snapshot.
-5. Fetch recent chart data.
-6. Branch by asset type:
+2. Determine `update_mode`; default to `full`.
+3. Build `{MARKET}{TICKER}` output paths.
+4. Verify target identity and asset type.
+5. Branch by update mode:
+   - `full`: run the full stock or ETF update flow.
+   - `holdings_only`: run the Holdings-Only Update Rule and skip full analysis generation.
+   - `price_only`: refresh only price, chart, and technical fields when supported.
+   - `index_only`: update only the analysis index and manifest.
+6. For `full`, fetch latest market date and price snapshot.
+7. For `full`, fetch recent chart data.
+8. For `full`, branch by asset type:
    - For stocks, fetch latest official financials, build business segment map, and build company peer groups.
    - For ETFs, fetch ETF profile, NAV, fees, distributions, holdings, benchmark, tracking data, and ETF peer groups.
-7. Fetch recent company, ETF, sector, benchmark, holdings, and macro news as appropriate for the asset type.
-8. Link news to price, NAV, holdings, benchmark, or theme movement where possible.
-9. Generate multilingual stock or ETF analysis, technical view, and scenarios.
-10. Validate JSON schema and asset-type-specific required fields.
-11. Validate currency, unit, source, and auditability rules.
-12. Validate Light Theme and Dark Theme rendering.
-13. Write timestamped raw data.
-14. Update `latest.json` only after successful validation.
-15. Optionally update or generate the static HTML/CSS/JS page.
-16. Optionally commit and push.
+9. For `full`, fetch recent company, ETF, sector, benchmark, holdings, and macro news as appropriate for the asset type.
+10. For `full`, link news to price, NAV, holdings, benchmark, or theme movement where possible.
+11. For `full`, generate multilingual stock or ETF analysis, technical view, and scenarios.
+12. Validate JSON schema and asset-type-specific required fields.
+13. Validate currency, unit, source, auditability, and update-mode constraints.
+14. Validate Light Theme and Dark Theme rendering when HTML/CSS/JS changes.
+15. Write timestamped raw data when the update mode changes target data.
+16. Update `latest.json` only after successful validation.
+17. Update `analysis/manifest.json` when a full target update creates or materially changes a page.
+18. Optionally update or generate the static HTML/CSS/JS page.
+19. Optionally commit and push.
 
 ## Backward Compatibility Notes
 

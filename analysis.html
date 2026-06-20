@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD2Lab Analysis Index</title>
+    <script>
+        (() => {
+            const saved = localStorage.getItem("analysis-theme");
+            const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            document.documentElement.dataset.theme = saved || preferred;
+        })();
+    </script>
+    <link rel="stylesheet" href="analysis-index.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html">HD2Lab</a>
+        <nav class="nav-actions" aria-label="Analysis controls">
+            <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+            <a class="home-link" href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">Static Research Library</p>
+                <h1>Analysis</h1>
+                <p class="hero-copy">Stocks and ETFs generated as static GitHub Pages research dashboards.</p>
+            </div>
+            <aside class="status-panel">
+                <span>Coverage</span>
+                <strong id="coverageCount">-</strong>
+                <small id="coverageMeta">Loading manifest...</small>
+            </aside>
+        </section>
+
+        <section class="toolbar" aria-label="Analysis filters">
+            <div class="search-wrap">
+                <label for="searchInput">Search</label>
+                <input id="searchInput" type="search" placeholder="Ticker, name, theme, issuer">
+            </div>
+            <div class="control-group" aria-label="Asset type filter">
+                <button class="seg-btn active" type="button" data-filter="asset" data-value="all">All</button>
+                <button class="seg-btn" type="button" data-filter="asset" data-value="stock">Stock</button>
+                <button class="seg-btn" type="button" data-filter="asset" data-value="etf">ETF</button>
+            </div>
+            <select id="marketFilter" aria-label="Market filter">
+                <option value="all">All Markets</option>
+            </select>
+            <select id="sortSelect" aria-label="Sort analyses">
+                <option value="updated_desc">Latest Updated</option>
+                <option value="asset">Asset Type</option>
+                <option value="market">Market</option>
+                <option value="name">Name</option>
+            </select>
+        </section>
+
+        <section class="summary-strip" aria-label="Summary">
+            <article><span>Total</span><strong id="totalCount">0</strong></article>
+            <article><span>Stocks</span><strong id="stockCount">0</strong></article>
+            <article><span>ETFs</span><strong id="etfCount">0</strong></article>
+            <article><span>Partial Data</span><strong id="partialCount">0</strong></article>
+        </section>
+
+        <section class="content-head">
+            <div>
+                <p class="eyebrow">Entries</p>
+                <h2 id="resultTitle">All Analysis Pages</h2>
+            </div>
+            <span id="resultMeta">-</span>
+        </section>
+
+        <section class="card-grid" id="cardGrid" aria-live="polite"></section>
+        <section class="empty-state" id="emptyState" hidden>
+            <h2>No matching analysis</h2>
+            <p>Try a different ticker, theme, market, or asset type.</p>
+        </section>
+    </main>
+
+    <script src="analysis-index.js"></script>
+</body>
+</html>

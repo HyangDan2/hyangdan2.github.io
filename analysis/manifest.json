@@ -1,0 +1,67 @@
+[
+  {
+    "asset_type": "stock",
+    "market": "KRX",
+    "ticker": "005930",
+    "key": "KRX005930",
+    "name": "Samsung Electronics Co., Ltd.",
+    "name_ko": "삼성전자",
+    "theme": "Semiconductor / AI Memory",
+    "sector": "Technology",
+    "industry": "Semiconductors and Consumer Electronics",
+    "url": "analysis/KRX005930/KRX005930.html",
+    "latest_json": "analysis/KRX005930/latest.json"
+  },
+  {
+    "asset_type": "stock",
+    "market": "TSE",
+    "ticker": "7013",
+    "key": "TSE7013",
+    "name": "IHI Corporation",
+    "name_ko": "IHI Corporation",
+    "theme": "Defense / Aerospace / Heavy Industry",
+    "sector": "Industrials",
+    "industry": "Heavy Industry and Aerospace",
+    "url": "analysis/TSE7013/TSE7013.html",
+    "latest_json": "analysis/TSE7013/latest.json"
+  },
+  {
+    "asset_type": "etf",
+    "market": "KRX",
+    "ticker": "0048K0",
+    "key": "KRX0048K0",
+    "name": "KODEX China Humanoid Robot ETF",
+    "name_ko": "KODEX 차이나휴머노이드로봇",
+    "theme": "China Humanoid Robotics",
+    "issuer": "Samsung Asset Management",
+    "benchmark": "Solactive China Humanoid Robotics Index (CNH) (Price Return)",
+    "url": "analysis/KRX0048K0/KRX0048K0.html",
+    "latest_json": "analysis/KRX0048K0/latest.json"
+  },
+  {
+    "asset_type": "etf",
+    "market": "KRX",
+    "ticker": "0162L0",
+    "key": "KRX0162L0",
+    "name": "KODEX China AI Semiconductor TOP10 ETF",
+    "name_ko": "KODEX 차이나AI반도체TOP10",
+    "theme": "China AI Semiconductor",
+    "issuer": "Samsung Asset Management",
+    "benchmark": "Indxx China AI Semiconductor Top 10 Index (Price Return)",
+    "url": "analysis/KRX0162L0/KRX0162L0.html",
+    "latest_json": "analysis/KRX0162L0/latest.json"
+  },
+  {
+    "asset_type": "etf",
+    "market": "KRX",
+    "ticker": "428510",
+    "key": "KRX428510",
+    "name": "KODEX China AI Tech Active ETF",
+    "name_ko": "KODEX 차이나AI테크액티브",
+    "theme": "China AI / Media / Technology",
+    "issuer": "Samsung Asset Management",
+    "benchmark": "Bloomberg China Media & Tech Index PR",
+    "url": "analysis/KRX428510/KRX428510.html",
+    "latest_json": "analysis/KRX428510/latest.json"
+  }
+]

@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.2.0",
+  "generated_at": "2026-06-20T00:00:00+09:00",
+  "input": {
+    "market": "KRX",
+    "ticker": "0048K0",
+    "asset_type": "etf",
+    "fund_hint": "KODEX China Humanoid Robot ETF",
+    "analysis_date": "2026-06-20",
+    "language_set": ["ko", "en", "ja"],
+    "output_base_dir": "analysis"
+  },
+  "identity": {
+    "asset_type": "ETF",
+    "name": "KODEX China Humanoid Robot ETF",
+    "name_ko": "KODEX 차이나휴머노이드로봇",
+    "ticker": "0048K0",
+    "market": "KRX",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "issuer": "Samsung Asset Management",
+    "brand": "KODEX",
+    "benchmark": "Solactive China Humanoid Robotics Index (CNH) (Price Return)",
+    "replication_method": "physical passive",
+    "listing_date": "2025-05-13",
+    "isin": null,
+    "asset_class": "Equity",
+    "category": "China humanoid robotics thematic ETF",
+    "website": "https://www.k-etf.com/etf/0048K0",
+    "identity_note": {
+      "ko": "KRX 0048K0은 개별 회사 주식이 아니라 삼성자산운용이 운용하는 KODEX 차이나휴머노이드로봇 ETF다.",
+      "en": "KRX 0048K0 is not a common stock; it is the KODEX China Humanoid Robot ETF managed by Samsung Asset Management.",
+      "ja": "KRX 0048K0は個別株ではなく、Samsung Asset Managementが運用するKODEX China Humanoid Robot ETFである。"
+    }
+  },
+  "target": {
+    "company": "KODEX China Humanoid Robot ETF",
+    "ticker": "0048K0",
+    "security_code": "0048K0",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "business_tags": ["ETF", "China humanoid robotics", "thematic equity", "physical passive"]
+  },
+  "as_of": {
+    "page_date": "2026-06-20",
+    "market_data_date": "2026-06-19",
+    "profile_data_date": "2026-06-19",
+    "timezone": "Asia/Seoul",
+    "note": {
+      "ko": "분석일 2026-06-20은 토요일이므로 가격 스냅샷과 ETF 보유종목은 확인 가능한 2026-06-19 공개 데이터를 기준으로 작성했다. 일별 가격 히스토리는 공개 페이지에서 확인 가능한 2026-05-22까지의 표본에 6월 19일 스냅샷을 추가했다.",
+      "en": "Because June 20, 2026 is a Saturday, the price snapshot and ETF holdings use the latest public data observed for June 19, 2026. Daily price history uses the public historical sample through May 22 plus the June 19 snapshot.",
+      "ja": "2026年6月20日は土曜日のため、価格スナップショットとETF保有銘柄は確認可能な2026年6月19日の公開データを基準にした。日次価格履歴は公開ページで確認できる2026年5月22日までのサンプルに6月19日のスナップショットを追加した。"
+    }
+  },
+  "price_snapshot": {
+    "source": "GoInsider ETF snapshot",
+    "date": "2026-06-19",
+    "open": 11495,
+    "high": 11500,
+    "low": 11360,
+    "close": 11385,
+    "change": 330,
+    "change_percent": 2.98,
+    "volume": 421345,
+    "currency": "KRW",
+    "interpretation": {
+      "ko": "6월 19일 스냅샷 기준 가격은 11,385원이다. 5월 22일 12,315원 고점권에서 내려왔지만 11,000원대 중반을 유지하고 있어 테마 반등 이후 추적 품질과 보유종목 흐름 확인이 더 중요하다.",
+      "en": "The June 19 snapshot price is KRW 11,385. The ETF has pulled back from the May 22 area near KRW 12,315 but still holds the mid-KRW 11,000 zone, making tracking quality and holdings behavior more important after the theme rebound.",
+      "ja": "6月19日のスナップショット価格は11,385ウォンである。5月22日の12,315ウォン近辺からは下げたが、11,000ウォン台半ばを維持しており、テーマ反発後は追随品質と保有銘柄の動きの確認がより重要である。"
+    }
+  },
+  "recent_prices": [
+    {"date": "2026-03-12", "open": 10855, "high": 10920, "low": 10645, "close": 10755, "volume": 1088825},
+    {"date": "2026-03-13", "open": 10755, "high": 10755, "low": 10610, "close": 10615, "volume": 937459},
+    {"date": "2026-03-16", "open": 10615, "high": 10640, "low": 10395, "close": 10580, "volume": 812519},
+    {"date": "2026-03-17", "open": 10600, "high": 10685, "low": 10430, "close": 10440, "volume": 838923},
+    {"date": "2026-03-18", "open": 10370, "high": 10440, "low": 10250, "close": 10390, "volume": 879083},
+    {"date": "2026-03-19", "open": 10465, "high": 10545, "low": 10140, "close": 10180, "volume": 2779075},
+    {"date": "2026-03-20", "open": 10130, "high": 10200, "low": 10010, "close": 10085, "volume": 610295},
+    {"date": "2026-03-23", "open": 9900, "high": 10195, "low": 9800, "close": 9880, "volume": 1351921},
+    {"date": "2026-03-24", "open": 9960, "high": 10080, "low": 9445, "close": 9650, "volume": 1221682},
+    {"date": "2026-03-25", "open": 9680, "high": 9950, "low": 9680, "close": 9890, "volume": 836722},
+    {"date": "2026-03-26", "open": 9915, "high": 10160, "low": 9860, "close": 9885, "volume": 804810},
+    {"date": "2026-03-27", "open": 9835, "high": 9955, "low": 9710, "close": 9905, "volume": 941946},
+    {"date": "2026-03-30", "open": 9815, "high": 9885, "low": 9695, "close": 9885, "volume": 744489},
+    {"date": "2026-03-31", "open": 9915, "high": 10125, "low": 9880, "close": 9930, "volume": 1749907},
+    {"date": "2026-04-01", "open": 9995, "high": 10185, "low": 9935, "close": 10080, "volume": 1077320},
+    {"date": "2026-04-02", "open": 10170, "high": 10195, "low": 9925, "close": 9980, "volume": 540567},
+    {"date": "2026-04-03", "open": 10030, "high": 10030, "low": 9745, "close": 9770, "volume": 569600},
+    {"date": "2026-04-06", "open": 9770, "high": 9830, "low": 9735, "close": 9740, "volume": 190922},
+    {"date": "2026-04-07", "open": 9800, "high": 9840, "low": 9630, "close": 9695, "volume": 335385},
+    {"date": "2026-04-08", "open": 9795, "high": 10120, "low": 9705, "close": 10090, "volume": 1804235},
+    {"date": "2026-04-09", "open": 10090, "high": 10170, "low": 9925, "close": 10035, "volume": 616283},
+    {"date": "2026-04-10", "open": 10040, "high": 10340, "low": 9975, "close": 10240, "volume": 963597},
+    {"date": "2026-04-13", "open": 10190, "high": 10285, "low": 10135, "close": 10185, "volume": 345944},
+    {"date": "2026-04-14", "open": 10205, "high": 10385, "low": 10205, "close": 10270, "volume": 778774},
+    {"date": "2026-04-15", "open": 10355, "high": 10450, "low": 10190, "close": 10210, "volume": 1054420},
+    {"date": "2026-04-16", "open": 10260, "high": 10430, "low": 10195, "close": 10295, "volume": 2617660},
+    {"date": "2026-04-17", "open": 10330, "high": 10400, "low": 10205, "close": 10400, "volume": 942177},
+    {"date": "2026-04-20", "open": 10400, "high": 10425, "low": 10285, "close": 10340, "volume": 1115509},
+    {"date": "2026-04-21", "open": 10390, "high": 10390, "low": 10130, "close": 10290, "volume": 1207951},
+    {"date": "2026-04-22", "open": 10335, "high": 10385, "low": 10250, "close": 10385, "volume": 521691},
+    {"date": "2026-04-23", "open": 10450, "high": 10450, "low": 10080, "close": 10145, "volume": 992736},
+    {"date": "2026-04-24", "open": 10155, "high": 10175, "low": 9935, "close": 10105, "volume": 1598833},
+    {"date": "2026-04-27", "open": 10105, "high": 10210, "low": 9965, "close": 10170, "volume": 1463503},
+    {"date": "2026-04-28", "open": 10170, "high": 10180, "low": 9875, "close": 9875, "volume": 1556943},
+    {"date": "2026-04-29", "open": 9935, "high": 10125, "low": 9840, "close": 10125, "volume": 938210},
+    {"date": "2026-04-30", "open": 10125, "high": 10445, "low": 10065, "close": 10385, "volume": 1233677},
+    {"date": "2026-05-04", "open": 10385, "high": 10460, "low": 10385, "close": 10410, "volume": 406764},
+    {"date": "2026-05-06", "open": 10310, "high": 10465, "low": 10290, "close": 10395, "volume": 996460},
+    {"date": "2026-05-07", "open": 10470, "high": 10745, "low": 10340, "close": 10745, "volume": 1080873},
+    {"date": "2026-05-08", "open": 10745, "high": 11355, "low": 10650, "close": 11235, "volume": 2414423},
+    {"date": "2026-05-11", "open": 11150, "high": 11375, "low": 11120, "close": 11265, "volume": 1938852},
+    {"date": "2026-05-12", "open": 11280, "high": 11550, "low": 11225, "close": 11310, "volume": 1894801},
+    {"date": "2026-05-13", "open": 11350, "high": 11430, "low": 11175, "close": 11425, "volume": 1339829},
+    {"date": "2026-05-14", "open": 11595, "high": 11597, "low": 11260, "close": 11360, "volume": 1456601},
+    {"date": "2026-05-15", "open": 11160, "high": 12025, "low": 11160, "close": 11740, "volume": 3348081},
+    {"date": "2026-05-18", "open": 11740, "high": 12065, "low": 11405, "close": 11910, "volume": 3088825},
+    {"date": "2026-05-19", "open": 11905, "high": 12135, "low": 11835, "close": 11990, "volume": 2177082},
+    {"date": "2026-05-20", "open": 11990, "high": 12000, "low": 11605, "close": 11745, "volume": 1555100},
+    {"date": "2026-05-21", "open": 11755, "high": 12375, "low": 11705, "close": 12110, "volume": 1511449},
+    {"date": "2026-05-22", "open": 12110, "high": 12315, "low": 11860, "close": 12315, "volume": 1115791},
+    {"date": "2026-06-19", "open": 11495, "high": 11500, "low": 11360, "close": 11385, "volume": 421345}
+  ],
+  "monthly_prices": [
+    {"month": "2026-03", "close": 9930},
+    {"month": "2026-04", "close": 10385},
+    {"month": "2026-05", "close": 12315},
+    {"month": "2026-06", "close": 11385}
+  ],
+  "financials": {},
+  "etf_profile": {
+    "source": "K-ETF, StockAnalysis, GoInsider public ETF snapshots",
+    "fund_name": "KODEX China Humanoid Robot ETF",
+    "issuer": "Samsung Asset Management",
+    "brand": "KODEX",
+    "benchmark": "Solactive China Humanoid Robotics Index (CNH) (Price Return)",
+    "benchmark_description": {
+      "ko": "중국 휴머노이드 로봇과 자동화 밸류체인에 노출된 기업으로 구성된 가격수익률 지수",
+      "en": "A price-return index tracking companies exposed to China's humanoid robotics and automation value chain.",
+      "ja": "中国のヒューマノイドロボットおよび自動化バリューチェーンに関連する企業で構成される価格リターン指数。"
+    },
+    "replication_method": "physical passive",
+    "listing_date": "2025-05-13",
+    "isin": null,
+    "nav": 11385,
+    "market_price": 11385,
+    "premium_discount_percent": "not available from same-day public pair",
+    "aum": "KRW 230.97B on StockAnalysis overview; KRW 2.1B net-assets snapshot on GoInsider",
+    "market_cap": "not separately reported in GoInsider snapshot",
+    "trading_value": null,
+    "trading_volume": 421345,
+    "listed_shares": null,
+    "total_expense_ratio_percent": 0.45,
+    "ter_percent": 0.54,
+    "real_expense_ratio_percent": 0.8654,
+    "distribution_policy": "Quarterly distribution cycle",
+    "latest_distribution": {"ex_date": "2026-04-29", "amount": 21, "pay_date": "2026-05-06", "currency": "KRW"},
+    "distribution_yield_percent": 0.60,
+    "holdings_count": 21,
+    "monthly_turnover_percent": 11.5,
+    "rebalance_frequency": "13.0 days snapshot from GoInsider holdings-change statistics",
+    "tracking_error": "Average 0.5807%, maximum 0.76% over 30 days",
+    "tax_notes": {
+      "ko": "분배금은 배당소득세 및 보유기간 과세 적용 가능성이 있다.",
+      "en": "Distributions may be subject to dividend-income tax and holding-period taxation.",
+      "ja": "分配金には配当所得税および保有期間課税が適用される可能性がある。"
+    },
+    "analysis": {
+      "ko": "0048K0은 중국 휴머노이드 로봇과 자동화 밸류체인을 추종하는 해외주식형 테마 ETF다. 기초지수는 Solactive China Humanoid Robotics Index (CNH) (Price Return)로 확인되며, 운용 방식은 실물 패시브다. 따라서 이 ETF의 핵심은 삼성자산운용의 실적이 아니라 중국 로봇 감속기, 서보/자동화, 유압, 정밀부품, 배터리와 전장 부품의 주가 흐름이다.\n\n보수 구조는 총보수 0.45%, TER 0.54%, 실질보수 0.8654%로 관찰된다. 분배는 분기 주기로 표시되며 2026년 4월 말 분배금 21원이 기록되어 있다. 다만 StockAnalysis의 AUM 2,309.7억 원과 GoInsider의 순자산 21억 원 스냅샷 간 차이가 커서, AUM/순자산 수치는 소스 기준과 시점을 분리해서 봐야 한다.\n\n보유종목은 21개로, 상위권은 감속기, 로봇 본체, 유압, 자동화 제어, 열관리, 배터리 등으로 압축된다. 상위 10개 비중이 높은 편이라 테마 상승기에는 탄력이 있지만, 중국 정책 기대 둔화나 개별 부품주 조정 때 ETF 변동성이 빠르게 커질 수 있다.",
+      "en": "0048K0 is an overseas equity thematic ETF tracking China's humanoid robotics and automation value chain. Its benchmark is identified as the Solactive China Humanoid Robotics Index (CNH) (Price Return), and the product is a physical passive ETF. The core drivers are therefore China robotics reducers, servo/automation, hydraulics, precision components, batteries and auto-electronics stocks rather than Samsung Asset Management's earnings.\n\nThe observed cost stack is a 0.45% total fee, 0.54% TER and 0.8654% real expense ratio. The fund shows a quarterly distribution cycle, with KRW 21 recorded for the late-April 2026 distribution. However, StockAnalysis reports KRW 230.97B assets while GoInsider shows a KRW 2.1B net-assets snapshot, so AUM and net-asset figures should be read by source and timestamp.\n\nThe holdings count is 21, concentrated in reducers, robot bodies, hydraulics, automation control, thermal management, batteries and electronic components. High top-ten concentration can add upside torque during theme rallies, but ETF volatility can rise quickly if China policy expectations fade or component stocks correct.",
+      "ja": "0048K0は、中国のヒューマノイドロボットと自動化バリューチェーンを追跡する海外株式型テーマETFである。基準指数はSolactive China Humanoid Robotics Index (CNH) (Price Return)で、実物パッシブ型として確認される。したがって主なドライバーはSamsung Asset Managementの業績ではなく、中国のロボット減速機、サーボ・自動化、油圧、精密部品、バッテリー、車載電子部品の株価動向である。\n\n費用構造は総報酬0.45%、TER0.54%、実質経費率0.8654%が観察される。分配は四半期周期で、2026年4月末には21ウォンの分配が記録されている。ただしStockAnalysisの資産2,309.7億ウォンとGoInsiderの純資産21億ウォンのスナップショットには大きな差があるため、AUMと純資産はソースと時点を分けて読む必要がある。\n\n保有銘柄数は21で、上位は減速機、ロボット本体、油圧、自動化制御、熱管理、バッテリー、電子部品に集中する。上位10銘柄の集中度が高いため、テーマ上昇時には上昇弾力がある一方、中国政策期待の後退や部品株調整時にはETFの変動性が急速に高まる可能性がある。"
+    }
+  },
+  "holdings": [
+    {"rank": 1, "name": "Leader Harmonious Drive Systems A", "isin": "CNE1000043F9", "country": "China", "currency": "CNY", "sector": "Precision reducers", "weight": 10.79, "market_value_krw": 60314748, "weight_change_percent_points": 0.18, "interpretation": {"ko": "휴머노이드 로봇의 핵심 부품인 정밀 감속기 노출을 대표한다.", "en": "Represents precision reducer exposure, a core component for humanoid robotics.", "ja": "ヒューマノイドロボットの中核部品である精密減速機へのエクスポージャーを代表する。"}},
+    {"rank": 2, "name": "Shenzhen Inovance Technology A", "isin": "CNE100000V46", "country": "China", "currency": "CNY", "sector": "Industrial automation", "weight": 7.70, "market_value_krw": 43054370, "weight_change_percent_points": -0.04, "interpretation": {"ko": "서보, 인버터, 자동화 제어 수요와 연결되는 핵심 자동화 종목이다.", "en": "A key automation holding tied to servo, inverter and motion-control demand.", "ja": "サーボ、インバータ、自動化制御需要に結び付く主要自動化銘柄。"}},
+    {"rank": 3, "name": "Jiangsu Hengli Hydraulic A", "isin": "CNE1000019R4", "country": "China", "currency": "CNY", "sector": "Hydraulics", "weight": 7.26, "market_value_krw": 40582952, "weight_change_percent_points": 0.11, "interpretation": {"ko": "로봇과 산업장비에 필요한 유압/구동 부품 사이클을 반영한다.", "en": "Reflects hydraulic and actuation component cycles for robots and industrial equipment.", "ja": "ロボットと産業装置に必要な油圧・駆動部品サイクルを反映する。"}},
+    {"rank": 4, "name": "UBTECH Robotics H", "isin": "CNE100006CQ4", "country": "China/Hong Kong", "currency": "HKD", "sector": "Humanoid robots", "weight": 6.65, "market_value_krw": 37177989, "weight_change_percent_points": 0.07, "interpretation": {"ko": "ETF의 휴머노이드 로봇 완제품 기대를 가장 직접적으로 연결한다.", "en": "Provides one of the most direct links to humanoid robot product expectations.", "ja": "ETFのヒューマノイドロボット完成品期待に最も直接的に結び付く。"}},
+    {"rank": 5, "name": "Zhejiang Sanhua Intelligent Controls A", "isin": "CNE000001M22", "country": "China", "currency": "CNY", "sector": "Thermal control", "weight": 6.49, "market_value_krw": 36279427, "weight_change_percent_points": -0.06, "interpretation": {"ko": "열관리와 제어 부품을 통해 로봇 및 전장 부품 노출을 제공한다.", "en": "Adds robotics and automotive-electronics exposure through thermal-control components.", "ja": "熱管理・制御部品を通じてロボットおよび車載電子部品へのエクスポージャーを提供する。"}},
+    {"rank": 6, "name": "Lingyi iTech Guangdong A", "isin": "CNE1000015L5", "country": "China", "currency": "CNY", "sector": "Precision components", "weight": 6.38, "market_value_krw": 35702647, "weight_change_percent_points": 0.07, "interpretation": {"ko": "정밀 부품과 전자 제조 체인을 통해 휴머노이드 부품 테마를 보완한다.", "en": "Complements the humanoid component theme through precision parts and electronics manufacturing.", "ja": "精密部品と電子製造チェーンを通じてヒューマノイド部品テーマを補完する。"}},
+    {"rank": 7, "name": "Zhejiang Shuanghuan Driveline A", "isin": "CNE100000TF4", "country": "China", "currency": "CNY", "sector": "Gears and driveline", "weight": 6.09, "market_value_krw": 34039315, "weight_change_percent_points": -0.06, "interpretation": {"ko": "기어와 구동계 노출로 로봇 관절 부품 테마와 연결된다.", "en": "Connects to robot-joint component exposure through gears and driveline systems.", "ja": "ギアと駆動系を通じてロボット関節部品テーマに結び付く。"}},
+    {"rank": 8, "name": "Shenzhen Everwin Precision A", "isin": "CNE100000T40", "country": "China", "currency": "CNY", "sector": "Precision manufacturing", "weight": 5.52, "market_value_krw": 30861273, "weight_change_percent_points": -0.03, "interpretation": {"ko": "정밀 제조와 부품 가공 수요에 민감한 편입종목이다.", "en": "Sensitive to precision manufacturing and component-processing demand.", "ja": "精密製造と部品加工需要に敏感な保有銘柄。"}},
+    {"rank": 9, "name": "Contemporary Amperex Technology A", "isin": "CNE100003662", "country": "China", "currency": "CNY", "sector": "Batteries", "weight": 5.42, "market_value_krw": 30311752, "weight_change_percent_points": -0.05, "interpretation": {"ko": "로봇 전원과 배터리 생태계 노출을 제공하지만 EV 사이클 영향도 함께 받는다.", "en": "Adds robot power and battery ecosystem exposure, while also carrying EV-cycle sensitivity.", "ja": "ロボット電源とバッテリーエコシステムへのエクスポージャーを提供するが、EVサイクルの影響も受ける。"}},
+    {"rank": 10, "name": "Ningbo Joyson Electronic A", "isin": "CNE000000DJ1", "country": "China", "currency": "CNY", "sector": "Electronics and sensors", "weight": 5.16, "market_value_krw": 28833990, "weight_change_percent_points": 0.01, "interpretation": {"ko": "전자부품과 센서/전장 흐름을 통해 로봇 주변 생태계 노출을 더한다.", "en": "Adds peripheral robotics ecosystem exposure through electronics, sensors and auto-electronics.", "ja": "電子部品、センサー、車載電子を通じてロボット周辺エコシステムへのエクスポージャーを加える。"}}
+  ],
+  "theme_exposure_map": [
+    {
+      "theme_id": "humanoid_core",
+      "theme_name": {"ko": "휴머노이드 핵심 구동부품", "en": "Humanoid Core Actuation Components", "ja": "ヒューマノイド中核駆動部品"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Leader Harmonious Drive, Shuanghuan Driveline, Hengli Hydraulic 비중이 높아 ETF는 감속기, 기어, 유압/구동부품에 직접 노출된다.", "en": "Large weights in Leader Harmonious Drive, Shuanghuan Driveline and Hengli Hydraulic give direct exposure to reducers, gears, hydraulics and actuation components.", "ja": "Leader Harmonious Drive、Shuanghuan Driveline、Hengli Hydraulicの比重が高く、減速機、ギア、油圧、駆動部品に直接さらされる。"},
+      "representative_holdings": ["Leader Harmonious Drive", "Shuanghuan Driveline", "Hengli Hydraulic"],
+      "drivers": ["humanoid robot prototypes", "joint-module demand", "industrial automation capex"],
+      "risk_factors": ["valuation compression", "prototype-to-volume delay", "component margin pressure"],
+      "price_linkage": {"ko": "로봇 관절 부품 기대가 강하면 NAV와 ETF 가격이 같이 반응하지만, 양산 지연 뉴스에는 민감하다.", "en": "Stronger robot-joint component expectations can lift both NAV and ETF price, but mass-production delay headlines can pressure the basket.", "ja": "ロボット関節部品への期待が強まるとNAVとETF価格は反応しやすいが、量産遅延ニュースには敏感である。"}
+    },
+    {
+      "theme_id": "robot_oem",
+      "theme_name": {"ko": "휴머노이드 로봇 완제품", "en": "Humanoid Robot OEMs", "ja": "ヒューマノイドロボット完成品"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "UBTECH Robotics는 ETF 안에서 완제품 휴머노이드 로봇 기대를 가장 직접적으로 연결하는 보유종목이다.", "en": "UBTECH Robotics is the holding most directly tied to finished humanoid robot product expectations.", "ja": "UBTECH Roboticsは完成品ヒューマノイドロボット期待に最も直接的に結び付く保有銘柄である。"},
+      "representative_holdings": ["UBTECH Robotics"],
+      "drivers": ["commercial robot launches", "order announcements", "China robotics policy"],
+      "risk_factors": ["cash burn", "competition", "policy disappointment"],
+      "price_linkage": {"ko": "완제품 로봇 뉴스는 ETF 테마 감도를 높이지만, 단일 종목 비중이 제한되어 NAV 영향은 보유비중만큼 계산해야 한다.", "en": "Finished-robot headlines can raise theme sensitivity, but NAV impact should be sized by the holding weight.", "ja": "完成品ロボットのニュースはテーマ感度を高めるが、NAVへの影響は保有比率に応じて評価すべきである。"}
+    },
+    {
+      "theme_id": "automation_supply_chain",
+      "theme_name": {"ko": "자동화와 정밀 제조", "en": "Automation and Precision Manufacturing", "ja": "自動化と精密製造"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Inovance, Lingyi iTech, Everwin Precision은 자동화 제어와 정밀 제조 밸류체인을 ETF 성과에 연결한다.", "en": "Inovance, Lingyi iTech and Everwin Precision link the ETF to automation control and precision manufacturing value chains.", "ja": "Inovance、Lingyi iTech、Everwin Precisionは自動化制御と精密製造バリューチェーンをETFの成果に結び付ける。"},
+      "representative_holdings": ["Inovance", "Lingyi iTech", "Everwin Precision"],
+      "drivers": ["factory automation", "robot component orders", "electronics manufacturing cycle"],
+      "risk_factors": ["capex slowdown", "inventory cycle", "customer concentration"],
+      "price_linkage": {"ko": "자동화 업황이 강하면 ETF가 순수 로봇 뉴스 없이도 방어력을 얻을 수 있다.", "en": "Strong automation conditions can support the ETF even without pure humanoid-robot headlines.", "ja": "自動化市況が強ければ、純粋なヒューマノイドロボットニュースがなくてもETFを支える可能性がある。"}
+    },
+    {
+      "theme_id": "currency_tracking",
+      "theme_name": {"ko": "환율과 추적 품질", "en": "Currency and Tracking Quality", "ja": "為替とトラッキング品質"},
+      "exposure_type": "tracking",
+      "portfolio_linkage": {"ko": "ETF는 KRW로 거래되지만 보유자산은 중국 본토와 홍콩 주식이어서 CNY/HKD 환율, 휴장일 차이, NAV 공시 지연이 괴리율에 영향을 준다.", "en": "The ETF trades in KRW while holding China A-shares and Hong Kong shares, so CNY/HKD FX, market-calendar gaps and NAV publication timing can affect premium/discount.", "ja": "ETFはKRWで取引される一方、中国A株と香港株を保有するため、CNY/HKD為替、市場カレンダー差、NAV公表タイミングが乖離率に影響する。"},
+      "representative_holdings": ["China A-shares", "Hong Kong shares", "KRW cash"],
+      "drivers": ["CNY/KRW", "HKD/KRW", "ETF liquidity", "market holidays"],
+      "risk_factors": ["tracking error", "wide premium/discount", "thin liquidity"],
+      "price_linkage": {"ko": "추정 상관과 추적오차가 낮거나 불안정한 구간에서는 종가보다 NAV와 괴리율 확인이 우선이다.", "en": "When correlation or tracking-error signals look weak or unstable, NAV and premium/discount checks matter more than the last traded price alone.", "ja": "相関やトラッキングエラーのシグナルが弱い、または不安定な局面では、終値だけでなくNAVと乖離率の確認が優先される。"}
+    }
+  ],
+  "business_segment_map": [],
+  "peer_group": [
+    {"fund_name": "KODEX China Humanoid Robot", "company": "KODEX China Humanoid Robot", "ticker": "0048K0", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China/Hong Kong", "benchmark": "Solactive China Humanoid Robotics Index", "currency": "KRW", "price": 11385, "nav": 11385, "aum": "KRW 230.97B / KRW 2.1B source-dependent", "expense_ratio": 0.45, "distribution_yield": 0.60, "one_year_context": {"ko": "중국 휴머노이드 로봇 부품과 완제품 테마에 집중된 ETF다. 가격과 NAV의 같은 시점 비교가 핵심 확인 항목이다.", "en": "A focused ETF for China humanoid robotics components and finished-product exposure. Same-timestamp price and NAV comparison is the key check.", "ja": "中国ヒューマノイドロボット部品と完成品テーマに集中するETF。同時点の価格とNAV比較が重要な確認項目である。"}},
+    {"fund_name": "KODEX China AI Semiconductor TOP10", "company": "KODEX China AI Semiconductor TOP10", "ticker": "0162L0", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China/Hong Kong", "benchmark": "Indxx China AI Semiconductor Top 10 Index", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 42.13B to 59.94B prior snapshot", "expense_ratio": 0.55, "distribution_yield": 0.04, "one_year_context": {"ko": "중국 AI 반도체 ETF로, 휴머노이드 로봇 ETF와 함께 중국 첨단 제조 테마 내 순환매를 비교하기 좋다.", "en": "A China AI semiconductor ETF useful for comparing rotation within China advanced-manufacturing themes.", "ja": "中国AI半導体ETFであり、中国先端製造テーマ内の循環物色比較に有用。"}},
+    {"fund_name": "KODEX China AI Tech Active", "company": "KODEX China AI Tech Active", "ticker": "428510", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China", "benchmark": "Active China AI technology strategy", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 46.53B prior ETF weekly snapshot", "expense_ratio": 0.50, "distribution_yield": null, "one_year_context": {"ko": "중국 AI 테크 전반에 넓게 노출되는 액티브 비교군이다. 0048K0은 로봇 부품/자동화 집중도가 더 높다.", "en": "An active China AI technology peer with broader exposure. 0048K0 is more concentrated in robotics components and automation.", "ja": "中国AIテック全般に広く投資するアクティブ比較対象。0048K0はロボット部品と自動化への集中度が高い。"}},
+    {"fund_name": "Global X Robotics & Artificial Intelligence ETF", "company": "Global X Robotics & Artificial Intelligence ETF", "ticker": "BOTZ", "market": "NASDAQ", "issuer": "Global X", "region": "Global", "benchmark": "Indxx Global Robotics & Artificial Intelligence Thematic Index", "currency": "USD", "price": null, "nav": null, "aum": null, "expense_ratio": 0.68, "distribution_yield": null, "one_year_context": {"ko": "글로벌 로봇/AI ETF 비교군이다. 0048K0은 중국 본토/홍콩 로봇 밸류체인에 더 집중되어 지역 리스크가 크다.", "en": "A global robotics and AI ETF peer. 0048K0 is more concentrated in the China/Hong Kong robotics value chain and carries higher regional risk.", "ja": "グローバルなロボット・AI ETFの比較対象。0048K0は中国本土・香港のロボットバリューチェーンにより集中し、地域リスクが高い。"}}
+  ],
+  "news_events": [
+    {"date": "2025-05-13", "title": "KODEX China Humanoid Robot ETF inception date", "source": "StockAnalysis overview", "url": "https://stockanalysis.com/quote/krx/0048K0/", "related_tickers": ["0048K0"], "sentiment": "neutral", "impact_horizon": "long", "price_linkage": {"observed": "Product inception date; no single-day event study used.", "interpretation": {"ko": "상장일은 가격 촉매라기보다 ETF 이력의 시작점이다. 1년 이상 운용되었지만 추적 품질과 실질보수는 계속 확인해야 한다.", "en": "The inception date is an operating-history marker rather than a price catalyst. The fund now has more than one year of history, but tracking quality and real expenses still need monitoring.", "ja": "上場日は価格材料というより運用履歴の開始点である。1年以上の履歴はあるが、追随品質と実質費用の確認は継続が必要である。"}}},
+    {"date": "2026-04-29", "title": "Quarterly distribution recorded at KRW 21", "source": "StockAnalysis and GoInsider distribution history", "url": "https://goinsider.kr/en/etf/0048K0", "related_tickers": ["0048K0"], "sentiment": "neutral", "impact_horizon": "short", "price_linkage": {"observed": "KRW 21 distribution paid May 6, 2026.", "interpretation": {"ko": "분배금은 ETF 운용 이력 확인 항목이다. 가격 방향성은 분배보다 중국 로봇 보유종목 흐름에 더 민감하다.", "en": "The distribution is an operating-history item. Directional price movement is more sensitive to China robotics holdings than to the distribution itself.", "ja": "分配金は運用履歴の確認項目である。価格方向は分配そのものより中国ロボット保有銘柄の動きに敏感である。"}}},
+    {"date": "2026-05-22", "title": "Public historical table shows KRW 12,315 close", "source": "StockAnalysis historical prices", "url": "https://stockanalysis.com/quote/krx/0048K0/history/", "related_tickers": ["0048K0"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": {"observed": "May 22 close was KRW 12,315 with 1,115,791 volume.", "interpretation": {"ko": "5월 반등은 거래량을 동반했다. 이후 6월 19일 11,385원으로 내려와 12,000원대 회복이 다음 확인 지점이다.", "en": "The May rebound came with volume. By June 19 the ETF had moved down to KRW 11,385, making recovery into the KRW 12,000 zone the next confirmation point.", "ja": "5月の反発は出来高を伴った。その後6月19日に11,385ウォンへ下げており、12,000ウォン台回復が次の確認点である。"}}},
+    {"date": "2026-06-16", "title": "StockAnalysis overview reports KRW 11,125 delayed price and 0.45% expense ratio", "source": "StockAnalysis overview", "url": "https://stockanalysis.com/quote/krx/0048K0/", "related_tickers": ["0048K0"], "sentiment": "neutral", "impact_horizon": "medium", "price_linkage": {"observed": "Delayed price was KRW 11,125 at Jun 16, 2026 1:50 PM KST.", "interpretation": {"ko": "6월 중순 가격은 5월 고점권보다 낮아졌다. 추세 복원에는 11,900원과 12,300원 회복이 필요하다.", "en": "The mid-June price was below the May high area. Trend repair needs recovery above KRW 11,900 and KRW 12,300.", "ja": "6月中旬の価格は5月高値圏を下回った。トレンド修復には11,900ウォンと12,300ウォンの回復が必要である。"}}},
+    {"date": "2026-06-19", "title": "GoInsider holdings snapshot shows concentrated reducer, automation and robot OEM exposure", "source": "GoInsider holdings snapshot", "url": "https://goinsider.kr/en/etf/0048K0", "related_tickers": ["0048K0", "Leader Harmonious Drive", "Inovance", "Hengli", "UBTECH"], "sentiment": "mixed", "impact_horizon": "medium", "price_linkage": {"observed": "Top ten weights are led by Leader Harmonious Drive at 10.79%.", "interpretation": {"ko": "상위 보유종목 집중도가 높아 로봇 부품 랠리에는 민감하지만, 단일 부품군 조정에도 NAV가 흔들릴 수 있다.", "en": "High top-holding concentration makes the ETF sensitive to robotics-component rallies, but NAV can also swing on single component-group corrections.", "ja": "上位保有銘柄への集中度が高く、ロボット部品ラリーには敏感だが、単一部品群の調整でもNAVは揺れやすい。"}}},
+    {"date": "2026-06-19", "title": "Tracking-error and correlation snapshot flags low benchmark correlation", "source": "GoInsider NAV and index comparison", "url": "https://goinsider.kr/en/etf/0048K0", "related_tickers": ["0048K0"], "sentiment": "mixed", "impact_horizon": "long", "price_linkage": {"observed": "Estimated 245-day correlation is shown as 0.07; 30-day tracking error average 0.5807%.", "interpretation": {"ko": "상관 추정치가 낮게 표시되는 만큼, ETF 가격만으로 기초지수 추종을 판단하면 안 된다. NAV와 보유종목, 환율을 함께 확인해야 한다.", "en": "Because the estimated correlation is shown as low, benchmark tracking should not be judged from ETF price alone. NAV, holdings and FX need to be checked together.", "ja": "推定相関が低く表示されているため、ETF価格だけで基準指数への追随を判断すべきではない。NAV、保有銘柄、為替を併せて確認する必要がある。"}}}
+  ],
+  "technical_view": {
+    "support_zones": [11000, 10600],
+    "resistance_zones": [11900, 12300],
+    "trend_state": {
+      "ko": "0048K0은 3월 말 9,930원에서 5월 22일 12,315원까지 상승한 뒤, 6월 19일 스냅샷 기준 11,385원으로 되돌림이 나왔다. 5월 고점권을 완전히 유지하지는 못했지만 11,000원 위에 머물러 있어 중기 상승분을 전부 반납한 상태는 아니다.\n\n단기 지지권은 11,000원과 10,600원 부근이다. 11,000원을 지키면 5월 반등 후 조정으로 볼 수 있지만, 10,600원 이탈은 4월 박스권 재진입 신호가 될 수 있다. 위쪽으로는 11,900원 회복과 12,300원대 재돌파가 추세 복원 확인선이다.\n\n확인 가능한 표본 기준 5일 평균은 11,909원, 20일 평균은 11,100원이다. 가격이 20일 평균 부근은 지키지만 5일 평균 아래에 있어 단기 모멘텀은 둔화됐다. ETF 특성상 가격 차트만 보지 말고 NAV, 추적오차, 상위 보유종목 움직임을 함께 확인해야 한다.",
+      "en": "0048K0 rose from KRW 9,930 at the end of March to KRW 12,315 on May 22, then pulled back to KRW 11,385 in the June 19 snapshot. It did not fully hold the May high area, but it remains above KRW 11,000 and has not given back the entire medium-term advance.\n\nShort-term support sits near KRW 11,000 and KRW 10,600. Holding KRW 11,000 keeps the move as a post-May-rally consolidation, while a break below KRW 10,600 would signal a return to the April range. On the upside, recovery above KRW 11,900 and then the KRW 12,300 area would confirm trend repair.\n\nIn the available sample, the 5-day average is KRW 11,909 and the 20-day average is KRW 11,100. Price is near the 20-day average but below the 5-day average, showing softer short-term momentum. For an ETF, price should be checked with NAV, tracking error and top-holding movement.",
+      "ja": "0048K0は3月末の9,930ウォンから5月22日の12,315ウォンまで上昇した後、6月19日のスナップショットでは11,385ウォンへ反落した。5月高値圏を完全には維持できていないが、11,000ウォンを上回っており、中期上昇分をすべて失ったわけではない。\n\n短期支持は11,000ウォンと10,600ウォン付近である。11,000ウォンを維持すれば5月反発後の調整と見られるが、10,600ウォン割れは4月レンジへの再突入シグナルになり得る。上値では11,900ウォン回復と12,300ウォン台再突破がトレンド修復の確認線である。\n\n確認可能なサンプルでは5日平均が11,909ウォン、20日平均が11,100ウォンである。価格は20日平均近辺を維持しているが5日平均を下回り、短期モメンタムは鈍化している。ETFでは価格チャートだけでなく、NAV、トラッキングエラー、上位保有銘柄の動きも併せて確認すべきである。"
+    },
+    "risk_state": {
+      "ko": "무효화 구간은 10,600원 이탈, 다음 상승 확인 구간은 11,900원 회복 후 12,300원대 재돌파다. 추정 상관과 추적오차 신호가 불안정하므로, 가격 상승만으로 테마 추종이 정상이라고 결론내리면 안 된다.",
+      "en": "The invalidation zone is a break below KRW 10,600, while upside confirmation requires recovery above KRW 11,900 and then the KRW 12,300 area. Because correlation and tracking-error signals are unstable, a price rise alone should not be treated as proof of clean theme tracking.",
+      "ja": "無効化ゾーンは10,600ウォン割れ、上昇確認は11,900ウォン回復後の12,300ウォン台再突破である。相関とトラッキングエラーのシグナルが不安定なため、価格上昇だけでテーマ追随が正常と結論づけるべきではない。"
+    },
+    "moving_averages": {"ma5": 11909, "ma20": 11100, "ma60": null, "ma120": null},
+    "rsi": null,
+    "volume_state": "May volume expanded during the rally; June 19 volume was lower than the May spike but sufficient for a public snapshot.",
+    "method_note": "Chart uses public daily rows through May 22 plus the June 19 ETF snapshot; full official KRX continuous history was not available in this run."
+  },
+  "trading_scenarios": {
+    "short_term": {
+      "ko": "단기 관찰은 11,000원 지지와 11,900원 회복 여부에 둔다. 11,000원 위에서 거래량이 유지되면 5월 상승 후 정상 조정으로 해석할 수 있다.\n\n공격적인 접근은 11,900원 회복 뒤 눌림에서 지지가 확인될 때가 더 안정적이다. 보수적인 접근은 10,600~11,000원 구간에서 가격과 NAV 괴리가 과도하지 않고 상위 감속기/자동화 종목이 동시에 무너지지 않는지 확인하는 방식이 맞다.\n\n리스크는 중국 로봇 테마 급락, 상위 보유종목 조정, ETF 추적 품질 악화다. 10,600원 이탈과 추적오차 확대가 동시에 나오면 단기 반등 시나리오는 약해진다.",
+      "en": "Short-term observation should focus on KRW 11,000 support and recovery above KRW 11,900. If volume holds above KRW 11,000, the move can still be read as a normal consolidation after the May rally.\n\nAn aggressive setup is cleaner after recovery above KRW 11,900 followed by support on a pullback. A conservative setup waits around KRW 10,600-11,000 while checking that price-to-NAV gaps are not excessive and top reducer/automation holdings are not breaking together.\n\nRisks include a China robotics theme reversal, top-holding pullbacks and worse ETF tracking quality. A break below KRW 10,600 together with wider tracking error weakens the short-term rebound case.",
+      "ja": "短期では11,000ウォンの支持と11,900ウォン回復を見る。11,000ウォン上で出来高が維持されれば、5月上昇後の通常調整と解釈できる。\n\n積極的には11,900ウォン回復後の押し目で支持を確認する形が安定的である。保守的には10,600~11,000ウォン付近で価格とNAVの乖離が過度でなく、上位の減速機・自動化銘柄が同時に崩れていないかを確認する。\n\nリスクは中国ロボットテーマの急落、上位保有銘柄の調整、ETF追随品質の悪化である。10,600ウォン割れとトラッキングエラー拡大が同時に出れば短期反発シナリオは弱まる。"
+    },
+    "medium_term": {
+      "ko": "중기는 중국 휴머노이드 로봇 부품주가 실제 수주와 양산 기대를 얼마나 가격에 반영하는지가 핵심이다. 감속기, 유압, 자동화 제어, 완제품 로봇이 함께 움직이면 ETF의 테마 순도가 장점으로 작동한다.\n\n보유종목 상위 10개 비중이 높아 편입종목 일부만 움직여도 NAV가 흔들릴 수 있다. 따라서 중기 판단은 ETF 가격, NAV, 상위 보유종목 비중 변화, 월간 회전율과 리밸런싱 흐름을 같이 봐야 한다.\n\n중기 리스크는 중국 정책 기대 둔화, 로봇 양산 지연, 부품주 밸류에이션 부담, 원화 환산 손실이다. 12,300원대 회복이 확인되기 전까지는 추세 복원보다 박스권 재정비로 보는 편이 보수적이다.",
+      "en": "Medium-term focus is whether China humanoid robotics component names convert order and mass-production expectations into prices. If reducers, hydraulics, automation control and robot OEMs move together, the ETF's thematic purity becomes an advantage.\n\nBecause the top ten holdings are concentrated, NAV can move materially even when only part of the basket leads. Medium-term judgment should therefore combine ETF price, NAV, top-holding weight changes, monthly turnover and rebalance behavior.\n\nMedium-term risks include weaker China policy expectations, mass-production delays, component-stock valuation pressure and KRW translation losses. Until recovery above the KRW 12,300 area is confirmed, a range-repair view is more conservative than a full trend-restoration view.",
+      "ja": "中期では、中国ヒューマノイドロボット部品株が受注と量産期待をどれだけ価格に反映できるかが重要である。減速機、油圧、自動化制御、完成品ロボットが同時に動けば、ETFのテーマ純度は強みになる。\n\n上位10銘柄の集中度が高いため、一部銘柄だけが主導してもNAVは大きく動き得る。中期判断ではETF価格、NAV、上位保有比率変化、月次回転率、リバランス動向を併せて見る必要がある。\n\n中期リスクは中国政策期待の後退、ロボット量産遅延、部品株のバリュエーション負担、ウォン換算損失である。12,300ウォン台回復が確認されるまでは、完全なトレンド回復よりレンジ修復と見る方が保守的である。"
+    },
+    "long_term": {
+      "ko": "장기는 중국 제조업 고도화와 휴머노이드 로봇 공급망을 ETF 단위로 보유하는 시나리오다. 0048K0은 개별 로봇 회사 하나가 아니라 로봇 본체, 감속기, 자동화, 유압, 배터리, 전자부품을 묶어 보는 구조다.\n\n장기 접근은 고점 추격보다 정기 리밸런싱, 실질보수, 추적오차, AUM 안정성, 분배 이력을 확인하면서 분할 관찰하는 방식이 적합하다. 특히 GoInsider의 추정 상관이 낮게 표시되는 만큼, 기초지수와 실제 NAV의 괴리를 장기간 확인해야 한다.\n\n장기 리스크는 중국 로봇 정책 실망, 양산 지연, 부품 공급 과잉, 미중 기술 규제, 환율이다. 장기 thesis가 유지되려면 휴머노이드 로봇 상용화 기대뿐 아니라 ETF 자체의 유동성, 추적 품질, 비용 구조도 안정적으로 확인돼야 한다.",
+      "en": "The long-term scenario is ownership of China's manufacturing-upgrade and humanoid robotics supply chain through an ETF wrapper. 0048K0 is not a single robot company; it packages robot OEMs, reducers, automation, hydraulics, batteries and electronic components.\n\nFor long-term positioning, staged observation around rebalances, real expenses, tracking error, AUM stability and distribution history is preferable to chasing highs. Since GoInsider shows low estimated correlation, long-term monitoring of benchmark and NAV behavior is especially important.\n\nLong-term risks include disappointment in China robotics policy, mass-production delays, component oversupply, US-China technology restrictions and FX. The thesis requires not only humanoid commercialization expectations, but also stable ETF liquidity, tracking quality and cost structure.",
+      "ja": "長期では、中国製造業高度化とヒューマノイドロボット供給網をETF単位で保有するシナリオである。0048K0は単一のロボット企業ではなく、ロボット本体、減速機、自動化、油圧、バッテリー、電子部品を束ねる構造である。\n\n長期では高値追いより、定期リバランス、実質費用、トラッキングエラー、AUM安定性、分配履歴を確認しながら段階的に観察する方が適切である。GoInsiderの推定相関が低く表示されているため、基準指数と実際のNAVの挙動を長期的に確認する必要がある。\n\n長期リスクは中国ロボット政策への失望、量産遅延、部品供給過剰、米中技術規制、為替である。長期シナリオ維持には、ヒューマノイド商用化期待だけでなく、ETF自体の流動性、追随品質、費用構造も安定的に確認される必要がある。"
+    }
+  },
+  "sources": [
+    {"title": "K-ETF KODEX China Humanoid Robot", "url": "https://www.k-etf.com/etf/0048K0", "publisher": "K-ETF", "used_for": "ETF identity and official product page confirmation", "data_date": "2026-06-20 access", "access_date": "2026-06-20"},
+    {"title": "GoInsider SAMSUNG KODEX China Humanoid Robot ETF", "url": "https://goinsider.kr/en/etf/0048K0", "publisher": "GoInsider", "used_for": "holdings, real expense ratio, distribution, tracking error, listed date, benchmark and June 19 ETF snapshot", "data_date": "2026-06-19 snapshot", "access_date": "2026-06-20"},
+    {"title": "StockAnalysis KRX 0048K0 overview", "url": "https://stockanalysis.com/quote/krx/0048K0/", "publisher": "StockAnalysis", "used_for": "ETF overview, delayed price, assets, expense ratio, dividend history, inception date and benchmark", "data_date": "2026-06-16", "access_date": "2026-06-20"},
+    {"title": "StockAnalysis KRX 0048K0 historical prices", "url": "https://stockanalysis.com/quote/krx/0048K0/history/", "publisher": "StockAnalysis", "used_for": "daily OHLCV price history through May 22, 2026", "data_date": "2026-05-22", "access_date": "2026-06-20"}
+  ],
+  "data_quality": {
+    "status": "partial",
+    "missing_fields": [
+      "official KRX continuous OHLCV after 2026-05-22",
+      "official same-day market price and NAV pair for precise premium/discount",
+      "official ISIN from an issuer/KRX page visible in this run",
+      "complete 60-day and 120-day indicator history"
+    ],
+    "stale_fields": [
+      "AUM and net-asset values differ materially across public snapshots"
+    ],
+    "notes": [
+      "ETF page uses asset_type=ETF and does not treat Samsung Asset Management financials as ETF fundamentals.",
+      "Confirmed public price history is available through 2026-05-22 from StockAnalysis; the June 19 price and holdings profile use GoInsider public snapshot data.",
+      "Premium/discount is not calculated because a clean same-timestamp price/NAV pair was not available.",
+      "Tracking quality requires caution because GoInsider displays low estimated benchmark correlation."
+    ],
+    "source_confidence": "medium"
+  },
+  "disclaimer": {
+    "ko": "본 자료는 투자 조언이 아닌 리서치/웹페이지 시각화용 정적 ETF 분석 데이터다. ETF 가격, NAV, 괴리율, 보유종목은 소스 시점에 따라 달라질 수 있으며 투자 결정은 사용자 책임이다.",
+    "en": "This is static ETF research and visualization data, not investment advice. ETF price, NAV, premium/discount and holdings can vary by source timestamp, and investment decisions remain the user's responsibility.",
+    "ja": "本資料は投資助言ではなく、リサーチおよびWeb表示用の静的ETF分析データである。ETF価格、NAV、乖離率、保有銘柄はソース時点により変わる可能性があり、投資判断は利用者自身の責任で行う。"
+  }
+}

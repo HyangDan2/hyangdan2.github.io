@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODEX China Humanoid Robot ETF KRX0048K0 Analysis</title>
+    <script>
+        (() => {
+            const saved = localStorage.getItem("theme");
+            const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+            document.documentElement.dataset.theme = saved || preferred;
+        })();
+    </script>
+    <link rel="stylesheet" href="KRX0048K0.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../../index.html">HD2Lab</a>
+        <nav class="controls" aria-label="Page controls">
+            <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">◐</button>
+            <div class="lang-switch" aria-label="Language selector">
+                <button class="lang-btn active" data-lang="ko" type="button">KOR</button>
+                <button class="lang-btn" data-lang="en" type="button">ENG</button>
+                <button class="lang-btn" data-lang="ja" type="button">JPN</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <p class="eyebrow">KRX 0048K0 · ETF</p>
+                <h1 data-i18n="heroTitle">KODEX 차이나휴머노이드로봇 ETF 분석</h1>
+                <p class="hero-copy" data-i18n="heroCopy">중국 휴머노이드 로봇, 정밀 감속기, 자동화 부품, 배터리와 센서 밸류체인을 NAV와 보유종목 관점에서 보는 정적 ETF 분석 페이지입니다.</p>
+            </div>
+            <aside class="status-panel">
+                <span data-i18n="dataStatus">데이터 기준</span>
+                <strong id="asOf">-</strong>
+                <small id="marketNote">-</small>
+            </aside>
+        </section>
+
+        <section class="summary-grid">
+            <article class="metric"><span data-i18n="latestClose">확정 종가</span><strong id="latestClose">-</strong><small id="latestMove">-</small></article>
+            <article class="metric"><span>NAV</span><strong id="navValue">-</strong><small id="discountLine">-</small></article>
+            <article class="metric"><span data-i18n="feeLabel">보수 / 분배</span><strong id="feeValue">-</strong><small id="distributionLine">-</small></article>
+            <article class="metric"><span data-i18n="viewState">현재 판단</span><strong id="viewState">-</strong><small data-i18n="viewStateSub">휴머노이드 테마와 NAV 괴리 확인 구간</small></article>
+        </section>
+
+        <section class="panel chart-panel">
+            <div class="section-head"><div><p class="eyebrow" data-i18n="chartEyebrow">Price Action</p><h2 data-i18n="chartTitle">ETF 가격 흐름</h2></div><span>Mar-Jun 2026</span></div>
+            <div class="chart-wrap"><canvas id="priceChart"></canvas></div>
+        </section>
+
+        <section class="two-col">
+            <article class="panel"><p class="eyebrow" data-i18n="profileEyebrow">ETF Profile</p><h2 data-i18n="profileTitle">ETF 구조와 NAV</h2><p id="profileAnalysis" class="analysis-copy">-</p><div class="mini-table" id="profileTable"></div></article>
+            <article class="panel"><p class="eyebrow" data-i18n="technicalEyebrow">Technical</p><h2 data-i18n="technicalTitle">기술적 관점</h2><p id="technicalTrend" class="analysis-copy">-</p><p id="technicalRisk" class="risk-copy">-</p><div class="levels" id="levels"></div></article>
+        </section>
+
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="themeEyebrow">Theme Exposure</p><h2 data-i18n="themeTitle">테마 노출 맵</h2></div></div><div class="segment-grid" id="themeGrid"></div></section>
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="holdingsEyebrow">Holdings</p><h2 data-i18n="holdingsTitle">상위 보유종목</h2></div></div><div class="holdings-grid" id="holdingsGrid"></div></section>
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="peerEyebrow">ETF Peers</p><h2 data-i18n="peerTitle">ETF 비교군</h2></div></div><div class="peer-grid" id="peerGrid"></div></section>
+        <section class="panel"><div class="section-head"><div><p class="eyebrow" data-i18n="newsEyebrow">News x NAV</p><h2 data-i18n="newsTitle">뉴스와 ETF 가격 연결</h2></div></div><div class="news-list" id="newsList"></div></section>
+        <section class="panel"><p class="eyebrow" data-i18n="strategyEyebrow">ETF Scenarios</p><h2 data-i18n="strategyTitle">단기 / 중기 / 장기 관찰 시나리오</h2><div class="strategy-grid" id="strategyGrid"></div></section>
+        <section class="panel source-panel"><p class="eyebrow" data-i18n="sourceEyebrow">Audit Trail</p><h2 data-i18n="sourceTitle">출처 및 원천 데이터</h2><ul id="sourceList"></ul><p id="disclaimer" class="disclaimer">-</p></section>
+    </main>
+    <script src="KRX0048K0.js"></script>
+</body>
+</html>

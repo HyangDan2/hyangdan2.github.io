@@ -1,0 +1,324 @@
+{
+  "schema_version": "1.2.0",
+  "generated_at": "2026-06-20T00:00:00+09:00",
+  "input": {
+    "market": "KRX",
+    "ticker": "428510",
+    "asset_type": "etf",
+    "fund_hint": "KODEX China AI Tech Active ETF",
+    "analysis_date": "2026-06-20",
+    "language_set": ["ko", "en", "ja"],
+    "output_base_dir": "analysis"
+  },
+  "identity": {
+    "asset_type": "ETF",
+    "name": "KODEX China AI Tech Active ETF",
+    "name_ko": "KODEX 차이나AI테크액티브",
+    "ticker": "428510",
+    "market": "KRX",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "issuer": "Samsung Asset Management",
+    "brand": "KODEX",
+    "benchmark": "Bloomberg China Media & Tech Index PR",
+    "replication_method": "physical active",
+    "listing_date": "2022-05-17",
+    "isin": null,
+    "asset_class": "Equity",
+    "category": "China AI, media and technology active ETF",
+    "website": "https://www.k-etf.com/etf/428510",
+    "identity_note": {
+      "ko": "KRX 428510은 개별 회사 주식이 아니라 삼성자산운용이 운용하는 KODEX 차이나AI테크액티브 ETF다.",
+      "en": "KRX 428510 is not a common stock; it is the KODEX China AI Tech Active ETF managed by Samsung Asset Management.",
+      "ja": "KRX 428510は個別株ではなく、Samsung Asset Managementが運用するKODEX China AI Tech Active ETFである。"
+    }
+  },
+  "target": {
+    "company": "KODEX China AI Tech Active ETF",
+    "ticker": "428510",
+    "security_code": "428510",
+    "exchange": "Korea Exchange",
+    "currency": "KRW",
+    "business_tags": ["ETF", "China AI", "active equity", "media technology", "semiconductor supply chain"]
+  },
+  "as_of": {
+    "page_date": "2026-06-20",
+    "market_data_date": "2026-06-19",
+    "profile_data_date": "2026-06-19",
+    "timezone": "Asia/Seoul",
+    "note": {
+      "ko": "분석일 2026-06-20은 토요일이므로 가격 스냅샷과 ETF 보유종목은 확인 가능한 2026-06-19 공개 데이터를 기준으로 작성했다. 일별 가격 히스토리는 공개 페이지에서 확인 가능한 2026-05-12까지의 표본에 6월 19일 스냅샷을 추가했다.",
+      "en": "Because June 20, 2026 is a Saturday, the price snapshot and ETF holdings use the latest public data observed for June 19, 2026. Daily price history uses the public historical sample through May 12 plus the June 19 snapshot.",
+      "ja": "2026年6月20日は土曜日のため、価格スナップショットとETF保有銘柄は確認可能な2026年6月19日の公開データを基準にした。日次価格履歴は公開ページで確認できる2026年5月12日までのサンプルに6月19日のスナップショットを追加した。"
+    }
+  },
+  "price_snapshot": {
+    "source": "StockAnalysis delayed ETF overview, cross-checked with GoInsider same-day ETF snapshot",
+    "date": "2026-06-19",
+    "open": 34270,
+    "high": 35235,
+    "low": 33900,
+    "close": 34305,
+    "change": 420,
+    "change_percent": 1.24,
+    "volume": 19623,
+    "currency": "KRW",
+    "interpretation": {
+      "ko": "6월 19일 StockAnalysis 스냅샷 기준 가격은 34,305원이다. 5월 12일 공개 히스토리 종가 27,270원 대비 급등했으며, 52주 고점권에서 중국 AI 테크 노출과 액티브 편입종목 변경이 성과를 좌우하는 구간이다.",
+      "en": "The June 19 StockAnalysis snapshot price is KRW 34,305. It is sharply above the public historical close of KRW 27,270 on May 12, putting the ETF near its 52-week high area where China AI-tech exposure and active holdings changes drive results.",
+      "ja": "6月19日のStockAnalysisスナップショット価格は34,305ウォンである。公開履歴上の5月12日終値27,270ウォンを大きく上回り、52週高値圏で中国AIテックへのエクスポージャーとアクティブな組入変更が成果を左右する局面である。"
+    }
+  },
+  "recent_prices": [
+    {"date": "2026-02-27", "open": 20845, "high": 20900, "low": 20240, "close": 20620, "volume": 97292},
+    {"date": "2026-03-03", "open": 20810, "high": 21290, "low": 20145, "close": 20235, "volume": 76999},
+    {"date": "2026-03-04", "open": 20230, "high": 20395, "low": 19665, "close": 19665, "volume": 91073},
+    {"date": "2026-03-05", "open": 19720, "high": 20350, "low": 19670, "close": 20155, "volume": 50380},
+    {"date": "2026-03-06", "open": 20470, "high": 20470, "low": 20150, "close": 20200, "volume": 21669},
+    {"date": "2026-03-09", "open": 20095, "high": 20295, "low": 18980, "close": 19830, "volume": 70480},
+    {"date": "2026-03-10", "open": 20045, "high": 21250, "low": 20045, "close": 21110, "volume": 48505},
+    {"date": "2026-03-11", "open": 20140, "high": 21695, "low": 20140, "close": 20765, "volume": 117097},
+    {"date": "2026-03-12", "open": 20905, "high": 21285, "low": 20425, "close": 20525, "volume": 22575},
+    {"date": "2026-03-13", "open": 20645, "high": 20787, "low": 20500, "close": 20570, "volume": 15757},
+    {"date": "2026-03-16", "open": 20645, "high": 21000, "low": 20370, "close": 21000, "volume": 18915},
+    {"date": "2026-03-17", "open": 21010, "high": 21380, "low": 20720, "close": 20720, "volume": 48264},
+    {"date": "2026-03-18", "open": 20880, "high": 21530, "low": 20500, "close": 21530, "volume": 55031},
+    {"date": "2026-03-19", "open": 20810, "high": 21800, "low": 20810, "close": 20915, "volume": 145296},
+    {"date": "2026-03-20", "open": 21320, "high": 21320, "low": 20605, "close": 20605, "volume": 51048},
+    {"date": "2026-03-23", "open": 20350, "high": 20350, "low": 19120, "close": 19255, "volume": 174121},
+    {"date": "2026-03-24", "open": 19675, "high": 20185, "low": 19295, "close": 19820, "volume": 53499},
+    {"date": "2026-03-25", "open": 20055, "high": 20855, "low": 20055, "close": 20740, "volume": 31976},
+    {"date": "2026-03-26", "open": 20475, "high": 21175, "low": 20395, "close": 20395, "volume": 60764},
+    {"date": "2026-03-27", "open": 20250, "high": 20490, "low": 19880, "close": 20320, "volume": 31925},
+    {"date": "2026-03-30", "open": 19930, "high": 20595, "low": 19670, "close": 20500, "volume": 25099},
+    {"date": "2026-03-31", "open": 20500, "high": 20500, "low": 19705, "close": 19835, "volume": 23390},
+    {"date": "2026-04-01", "open": 19940, "high": 20945, "low": 19935, "close": 20870, "volume": 57670},
+    {"date": "2026-04-02", "open": 20500, "high": 21020, "low": 20055, "close": 20135, "volume": 89827},
+    {"date": "2026-04-03", "open": 20470, "high": 20590, "low": 20205, "close": 20295, "volume": 35484},
+    {"date": "2026-04-06", "open": 20325, "high": 20330, "low": 20180, "close": 20190, "volume": 13561},
+    {"date": "2026-04-07", "open": 20335, "high": 20490, "low": 20200, "close": 20315, "volume": 18929},
+    {"date": "2026-04-08", "open": 20570, "high": 21645, "low": 20485, "close": 21630, "volume": 67408},
+    {"date": "2026-04-09", "open": 21395, "high": 22215, "low": 21395, "close": 21975, "volume": 82201},
+    {"date": "2026-04-10", "open": 21975, "high": 22695, "low": 21810, "close": 22695, "volume": 39251},
+    {"date": "2026-04-13", "open": 22570, "high": 22700, "low": 22300, "close": 22525, "volume": 21089},
+    {"date": "2026-04-14", "open": 22530, "high": 23120, "low": 22530, "close": 22745, "volume": 36361},
+    {"date": "2026-04-15", "open": 23200, "high": 23270, "low": 22280, "close": 22320, "volume": 42853},
+    {"date": "2026-04-16", "open": 22460, "high": 23040, "low": 22380, "close": 23015, "volume": 38325},
+    {"date": "2026-04-17", "open": 23025, "high": 23570, "low": 22910, "close": 23390, "volume": 27766},
+    {"date": "2026-04-20", "open": 23390, "high": 24000, "low": 23220, "close": 23600, "volume": 24402},
+    {"date": "2026-04-21", "open": 23825, "high": 23825, "low": 23395, "close": 23645, "volume": 29513},
+    {"date": "2026-04-22", "open": 23645, "high": 24290, "low": 23492, "close": 24285, "volume": 33997},
+    {"date": "2026-04-23", "open": 24295, "high": 24900, "low": 23810, "close": 24000, "volume": 84144},
+    {"date": "2026-04-24", "open": 24000, "high": 24895, "low": 23850, "close": 24385, "volume": 34898},
+    {"date": "2026-04-27", "open": 24395, "high": 24700, "low": 24330, "close": 24340, "volume": 25541},
+    {"date": "2026-04-28", "open": 24420, "high": 24420, "low": 23960, "close": 23960, "volume": 39350},
+    {"date": "2026-04-29", "open": 24195, "high": 24195, "low": 23620, "close": 24030, "volume": 23252},
+    {"date": "2026-04-30", "open": 24030, "high": 24745, "low": 24030, "close": 24640, "volume": 21324},
+    {"date": "2026-05-04", "open": 24650, "high": 25580, "low": 24650, "close": 25170, "volume": 33383},
+    {"date": "2026-05-06", "open": 25285, "high": 25950, "low": 24915, "close": 25740, "volume": 35981},
+    {"date": "2026-05-07", "open": 25745, "high": 26370, "low": 25745, "close": 26340, "volume": 61794},
+    {"date": "2026-05-08", "open": 26235, "high": 26445, "low": 25850, "close": 26085, "volume": 36581},
+    {"date": "2026-05-11", "open": 26110, "high": 27090, "low": 26110, "close": 26995, "volume": 49457},
+    {"date": "2026-05-12", "open": 26925, "high": 27595, "low": 26915, "close": 27270, "volume": 76889},
+    {"date": "2026-06-19", "open": 34270, "high": 35235, "low": 33900, "close": 34305, "volume": 19623}
+  ],
+  "monthly_prices": [
+    {"month": "2026-02", "close": 20620},
+    {"month": "2026-03", "close": 19835},
+    {"month": "2026-04", "close": 24640},
+    {"month": "2026-05", "close": 27270},
+    {"month": "2026-06", "close": 34305}
+  ],
+  "financials": {},
+  "etf_profile": {
+    "source": "K-ETF, Naver Finance, StockAnalysis, GoInsider public ETF snapshots",
+    "fund_name": "KODEX China AI Tech Active ETF",
+    "issuer": "Samsung Asset Management",
+    "brand": "KODEX",
+    "benchmark": "Bloomberg China Media & Tech Index PR",
+    "benchmark_description": {
+      "ko": "중국 미디어·테크와 AI 밸류체인에 노출되는 지수를 참고하되, 액티브 운용으로 초과성과를 목표로 하는 구조",
+      "en": "A strategy referencing a China media and technology index while using active management to seek excess return.",
+      "ja": "中国メディア・テクノロジー指数を参照しつつ、アクティブ運用で超過収益を目指す構造。"
+    },
+    "replication_method": "physical active",
+    "listing_date": "2022-05-17",
+    "isin": null,
+    "nav": 33945,
+    "market_price": 34305,
+    "premium_discount_percent": "not available from same-source public pair",
+    "aum": "KRW 63.25B assets on StockAnalysis; KRW 712M net-assets snapshot on GoInsider",
+    "market_cap": "KRW 75.5B on GoInsider snapshot",
+    "trading_value": null,
+    "trading_volume": 19623,
+    "listed_shares": null,
+    "total_expense_ratio_percent": 0.5,
+    "ter_percent": 0.71,
+    "real_expense_ratio_percent": 1.5014,
+    "distribution_policy": "Quarterly distribution cycle",
+    "latest_distribution": {"ex_date": "2026-04-29", "amount": 12, "pay_date": "2026-05-06", "currency": "KRW"},
+    "distribution_yield_percent": 0.09,
+    "holdings_count": 37,
+    "monthly_turnover_percent": 41.2,
+    "rebalance_frequency": "4.3 days snapshot from GoInsider holdings-change statistics",
+    "tracking_error": "Average 21.763%, maximum 24.06% over 30 days; benchmark correlation watch",
+    "tax_notes": {
+      "ko": "분배금은 배당소득세 및 보유기간 과세 적용 가능성이 있다.",
+      "en": "Distributions may be subject to dividend-income tax and holding-period taxation.",
+      "ja": "分配金には配当所得税および保有期間課税が適用される可能性がある。"
+    },
+    "analysis": {
+      "ko": "428510은 중국 AI 테크 전반에 투자하는 해외주식형 액티브 ETF다. Naver/FnGuide 설명상 Bloomberg Greater China Media & Tech Index(KRW)를 비교지수로 삼아 초과성과를 추구하는 구조이며, GoInsider에서는 Bloomberg China Media & Tech Index PR을 추적 기준으로 표시한다. 핵심은 중국·홍콩 AI 소프트웨어, 광통신, 반도체 장비, PCB/패키징, 메모리와 파운드리 밸류체인의 주가 흐름이다.\n\n총보수는 0.50%, TER은 0.71%, 실질보수는 1.5014%로 관찰된다. 2026년 4월 말 분배금은 12원이며, 분배수익률은 약 0.09%로 표시된다. 액티브 ETF라서 단순 지수 복제보다 편입 변경, 회전율, 추적오차 해석이 더 중요하다. GoInsider 스냅샷은 월간 회전율 41.2%, 평균 리밸런싱 4.3일, 30일 평균 추적오차 21.763%를 보여 추적 품질은 반드시 별도 확인해야 한다.\n\n보유종목은 37개이며 상위 10개 합산 비중은 약 49.11%다. Knowledge Atlas, Zhongji Innolight, Elite Material, Shengyi, Unimicron, Nanya, Piotech, Hangzhou Chang Chuan, Hygon, Hua Hong이 상위권을 형성한다. 가격은 52주 고점권에 접근했으므로 AI 테크 랠리 지속 여부와 함께 NAV, 환율, 중국/홍콩 휴장일 차이를 같이 봐야 한다.",
+      "en": "428510 is an overseas equity active ETF investing across China AI technology. Naver/FnGuide describes a structure seeking excess return against the Bloomberg Greater China Media & Tech Index (KRW), while GoInsider shows Bloomberg China Media & Tech Index PR as the reference. The drivers are China/Hong Kong AI software, optical networking, semiconductor equipment, PCB/substrate, memory and foundry stocks.\n\nThe observed cost stack is a 0.50% total fee, 0.71% TER and 1.5014% real expense ratio. The late-April 2026 distribution was KRW 12, and the distribution yield is shown around 0.09%. Because this is an active ETF, holdings changes, turnover and tracking-error interpretation matter more than for a plain passive index product. GoInsider shows 41.2% monthly turnover, a 4.3-day average rebalance frequency and a 21.763% 30-day average tracking error, so tracking quality needs separate monitoring.\n\nThe holdings count is 37 and the top ten sum to roughly 49.11%. Knowledge Atlas, Zhongji Innolight, Elite Material, Shengyi, Unimicron, Nanya, Piotech, Hangzhou Chang Chuan, Hygon and Hua Hong lead the basket. With price near the 52-week high area, NAV, FX and China/Hong Kong calendar effects should be checked together with AI-tech rally continuation.",
+      "ja": "428510は中国AIテクノロジー全般に投資する海外株式型アクティブETFである。Naver/FnGuideではBloomberg Greater China Media & Tech Index(KRW)を比較指数として超過収益を目指す構造と説明され、GoInsiderではBloomberg China Media & Tech Index PRが参照基準として表示される。主なドライバーは中国・香港のAIソフトウェア、光通信、半導体装置、PCB・基板、メモリ、ファウンドリ関連株である。\n\n費用構造は総報酬0.50%、TER0.71%、実質経費率1.5014%が観察される。2026年4月末の分配金は12ウォンで、分配利回りは約0.09%と表示される。アクティブETFであるため、単純な指数複製よりも組入変更、回転率、トラッキングエラーの解釈が重要である。GoInsiderのスナップショットでは月間回転率41.2%、平均リバランス頻度4.3日、30日平均トラッキングエラー21.763%が示され、追随品質の別途確認が必要である。\n\n保有銘柄数は37、上位10銘柄の合計比率は約49.11%である。Knowledge Atlas、Zhongji Innolight、Elite Material、Shengyi、Unimicron、Nanya、Piotech、Hangzhou Chang Chuan、Hygon、Hua Hongが上位を構成する。価格は52週高値圏に近づいており、AIテックラリーの継続性とともにNAV、為替、中国・香港市場カレンダー差を併せて確認すべきである。"
+    }
+  },
+  "holdings_snapshot": {
+    "date": "2026-06-19",
+    "source": "GoInsider holdings snapshot",
+    "holdings_count": 37,
+    "top10_weight_percent": 49.11,
+    "changes_summary": {"added": 1, "removed": 3, "weight_up": 7, "weight_down": 7},
+    "notes": "Added ACM Research Shanghai I-A; removed SMIC-H, CATL-H and Hubei Feilihua Quartz Glas-A in the observed snapshot."
+  },
+  "holdings_changes": {
+    "added": [{"name": "ACM Research Shanghai I-A", "weight": 0.3}],
+    "removed": [
+      {"name": "Semiconductor Manufacturing International-H", "previous_weight": 1.1},
+      {"name": "Contemporary Amperex Technology-H", "previous_weight": 0.4},
+      {"name": "Hubei Feilihua Quartz Glas-A", "previous_weight": 0.2}
+    ],
+    "weight_up_examples": ["Knowledge Atlas Technology-H", "Piotech Inc-A", "Hangzhou Chang Chuan Tech-A", "Hua Hong Semiconductor-H"],
+    "weight_down_examples": ["Elite Material", "Shengyi Technology-A", "Unimicron Technology", "Nanya Technology"]
+  },
+  "holdings": [
+    {"rank": 1, "name": "Knowledge Atlas Technology-H", "isin": "CNE100007DH9", "country": "China/Hong Kong", "currency": "HKD", "sector": "AI applications and media technology", "weight": 6.22, "market_value_krw": 100709703, "weight_change_percent_points": 0.87, "interpretation": {"ko": "AI 응용·미디어 테크 노출을 대표하며 이번 스냅샷에서 비중 증가가 가장 두드러진 상위 종목이다.", "en": "Represents AI application and media-tech exposure, with one of the most visible weight increases in the snapshot.", "ja": "AIアプリケーションとメディアテックへのエクスポージャーを代表し、今回のスナップショットで比率上昇が目立つ上位銘柄である。"}},
+    {"rank": 2, "name": "Zhongji Innolight Co Ltd-A", "isin": "CNE100001CY9", "country": "China", "currency": "CNY", "sector": "Optical modules", "weight": 5.66, "market_value_krw": 91678118, "weight_change_percent_points": -0.08, "interpretation": {"ko": "AI 데이터센터와 고속 광모듈 수요에 연결되는 핵심 편입종목이다.", "en": "A key holding tied to AI data-center and high-speed optical-module demand.", "ja": "AIデータセンターと高速光モジュール需要に結び付く主要保有銘柄。"}},
+    {"rank": 3, "name": "Elite Material Co Ltd", "isin": "TW0002383007", "country": "Taiwan", "currency": "TWD", "sector": "High-end PCB and CCL", "weight": 5.64, "market_value_krw": 91423854, "weight_change_percent_points": -0.12, "interpretation": {"ko": "AI 서버용 고다층 PCB와 동박적층판 수요를 ETF 성과에 연결한다.", "en": "Links ETF performance to high-layer PCB and copper-clad laminate demand for AI servers.", "ja": "AIサーバー向け高多層PCBと銅張積層板需要をETFの成果に結び付ける。"}},
+    {"rank": 4, "name": "Shengyi Technology Co Ltd-A", "isin": "CNE000000XL5", "country": "China", "currency": "CNY", "sector": "Electronic materials", "weight": 5.19, "market_value_krw": 84032689, "weight_change_percent_points": -0.17, "interpretation": {"ko": "PCB 소재와 전자재료 사이클에 민감해 AI 하드웨어 투자 흐름을 반영한다.", "en": "Sensitive to PCB materials and electronic-material cycles, reflecting AI hardware investment trends.", "ja": "PCB材料と電子材料サイクルに敏感で、AIハードウェア投資の流れを反映する。"}},
+    {"rank": 5, "name": "Unimicron Technology Corp", "isin": "TW0003037008", "country": "Taiwan", "currency": "TWD", "sector": "PCB and IC substrate", "weight": 5.03, "market_value_krw": 81425534, "weight_change_percent_points": -0.15, "interpretation": {"ko": "고성능 패키징과 기판 수요를 통해 AI 반도체 인프라 노출을 더한다.", "en": "Adds AI semiconductor-infrastructure exposure through advanced packaging and substrate demand.", "ja": "先端パッケージングと基板需要を通じてAI半導体インフラへのエクスポージャーを加える。"}},
+    {"rank": 6, "name": "Nanya Technology Corp", "isin": "TW0002408002", "country": "Taiwan", "currency": "TWD", "sector": "Memory semiconductors", "weight": 4.89, "market_value_krw": 79233562, "weight_change_percent_points": -0.04, "interpretation": {"ko": "DRAM 업황과 AI 서버 메모리 사이클에 민감한 편입종목이다.", "en": "Sensitive to the DRAM cycle and AI-server memory demand.", "ja": "DRAM市況とAIサーバーメモリ需要に敏感な保有銘柄。"}},
+    {"rank": 7, "name": "Piotech Inc-A", "isin": "CNE100005998", "country": "China", "currency": "CNY", "sector": "Semiconductor equipment", "weight": 4.70, "market_value_krw": 76148806, "weight_change_percent_points": 0.38, "interpretation": {"ko": "중국 반도체 국산화와 장비 투자 사이클을 반영하는 종목이다.", "en": "Reflects China's semiconductor localization and equipment-investment cycle.", "ja": "中国半導体国産化と装置投資サイクルを反映する銘柄。"}},
+    {"rank": 8, "name": "Hangzhou Chang Chuan Technology-A", "isin": "CNE100002Q09", "country": "China", "currency": "CNY", "sector": "Semiconductor testing equipment", "weight": 4.03, "market_value_krw": 65300670, "weight_change_percent_points": 0.22, "interpretation": {"ko": "후공정 테스트 장비 노출로 중국 반도체 장비 테마를 보완한다.", "en": "Complements China semiconductor-equipment exposure through back-end testing equipment.", "ja": "後工程テスト装置へのエクスポージャーにより中国半導体装置テーマを補完する。"}},
+    {"rank": 9, "name": "Hygon Information Technology-A", "isin": "CNE100005PT2", "country": "China", "currency": "CNY", "sector": "AI processors", "weight": 4.01, "market_value_krw": 64890595, "weight_change_percent_points": 0.04, "interpretation": {"ko": "중국 AI 프로세서와 서버 CPU 국산화 기대를 ETF에 연결한다.", "en": "Links the ETF to China AI processor and server-CPU localization expectations.", "ja": "中国AIプロセッサとサーバーCPU国産化期待をETFに結び付ける。"}},
+    {"rank": 10, "name": "Hua Hong Semiconductor Ltd-H", "isin": "HK0000218211", "country": "China/Hong Kong", "currency": "HKD", "sector": "Foundry", "weight": 3.74, "market_value_krw": 60630065, "weight_change_percent_points": 0.16, "interpretation": {"ko": "중국 파운드리와 레거시/특수공정 반도체 사이클에 노출된다.", "en": "Provides exposure to China foundry and specialty-process semiconductor cycles.", "ja": "中国ファウンドリと特殊プロセス半導体サイクルへのエクスポージャーを提供する。"}}
+  ],
+  "theme_exposure_map": [
+    {
+      "theme_id": "ai_compute_semis",
+      "theme_name": {"ko": "AI 컴퓨트와 반도체", "en": "AI Compute and Semiconductors", "ja": "AIコンピュートと半導体"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Hygon, Piotech, Chang Chuan, Hua Hong, Nanya를 통해 AI 프로세서, 장비, 테스트, 파운드리, 메모리 노출을 동시에 갖는다.", "en": "Hygon, Piotech, Chang Chuan, Hua Hong and Nanya provide combined exposure to AI processors, equipment, testing, foundry and memory.", "ja": "Hygon、Piotech、Chang Chuan、Hua Hong、Nanyaを通じてAIプロセッサ、装置、テスト、ファウンドリ、メモリへ同時に投資する。"},
+      "representative_holdings": ["Hygon", "Piotech", "Chang Chuan", "Hua Hong", "Nanya"],
+      "drivers": ["AI server capex", "China semiconductor localization", "memory cycle"],
+      "risk_factors": ["export controls", "valuation compression", "capex cyclicality"],
+      "price_linkage": {"ko": "중국 AI 반도체 기대가 강하면 NAV 탄력이 커지지만, 규제와 장비 사이클 둔화에는 민감하다.", "en": "China AI-semiconductor optimism can increase NAV torque, but regulation and equipment-cycle slowdowns are key risks.", "ja": "中国AI半導体への期待が強まるとNAVの弾力性は高まるが、規制と装置サイクル減速には敏感である。"}
+    },
+    {
+      "theme_id": "ai_networking",
+      "theme_name": {"ko": "AI 네트워킹과 광모듈", "en": "AI Networking and Optical Modules", "ja": "AIネットワーキングと光モジュール"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Zhongji Innolight는 AI 데이터센터 고속 광모듈 수요를 ETF 성과에 직접 연결한다.", "en": "Zhongji Innolight directly connects ETF performance to AI data-center optical-module demand.", "ja": "Zhongji InnolightはAIデータセンター向け光モジュール需要をETFの成果に直接結び付ける。"},
+      "representative_holdings": ["Zhongji Innolight", "Eoptolink"],
+      "drivers": ["AI cluster buildouts", "800G/1.6T optical upgrades", "cloud capex"],
+      "risk_factors": ["customer concentration", "margin normalization", "order volatility"],
+      "price_linkage": {"ko": "광모듈 랠리는 상위 비중 종목을 통해 ETF 가격을 밀어 올릴 수 있지만, 주문 변동성도 함께 크다.", "en": "Optical-module rallies can lift the ETF through top-weight holdings, while order volatility remains high.", "ja": "光モジュール株のラリーは上位比率銘柄を通じてETF価格を押し上げ得るが、受注変動性も高い。"}
+    },
+    {
+      "theme_id": "pcb_substrate",
+      "theme_name": {"ko": "PCB·기판·전자재료", "en": "PCB, Substrates and Electronic Materials", "ja": "PCB・基板・電子材料"},
+      "exposure_type": "direct",
+      "portfolio_linkage": {"ko": "Elite Material, Shengyi, Unimicron은 AI 서버와 고성능 패키징에 필요한 소재·기판 노출을 제공한다.", "en": "Elite Material, Shengyi and Unimicron add materials and substrate exposure needed for AI servers and advanced packaging.", "ja": "Elite Material、Shengyi、UnimicronはAIサーバーと先端パッケージングに必要な材料・基板へのエクスポージャーを提供する。"},
+      "representative_holdings": ["Elite Material", "Shengyi", "Unimicron"],
+      "drivers": ["advanced packaging", "AI server boards", "high-speed materials"],
+      "risk_factors": ["inventory cycle", "ASP pressure", "Taiwan/China market risk"],
+      "price_linkage": {"ko": "AI 하드웨어 투자 확대가 이어질수록 소재·기판 비중이 NAV에 의미 있게 기여한다.", "en": "As AI hardware investment expands, materials and substrate weights can materially contribute to NAV.", "ja": "AIハードウェア投資が拡大すれば、材料・基板比率はNAVに意味のある寄与をし得る。"}
+    },
+    {
+      "theme_id": "active_tracking",
+      "theme_name": {"ko": "액티브 운용과 추적 품질", "en": "Active Management and Tracking Quality", "ja": "アクティブ運用と追随品質"},
+      "exposure_type": "tracking",
+      "portfolio_linkage": {"ko": "보유종목 37개, 월간 회전율 41.2%, 평균 리밸런싱 4.3일로 표시되어 단순 지수 ETF보다 매매와 편입 변경의 영향이 크다.", "en": "With 37 holdings, 41.2% monthly turnover and a 4.3-day average rebalance frequency, trading and holdings changes matter more than in a plain index ETF.", "ja": "37銘柄、月間回転率41.2%、平均リバランス頻度4.3日と表示され、単純な指数ETFより売買と組入変更の影響が大きい。"},
+      "representative_holdings": ["Active basket", "KRW trading price", "China/HK/Taiwan holdings"],
+      "drivers": ["active selection", "FX", "market-calendar gaps", "liquidity"],
+      "risk_factors": ["tracking error", "premium/discount uncertainty", "source price mismatch"],
+      "price_linkage": {"ko": "액티브 ETF는 종가만 보면 착시가 생길 수 있어 NAV, 괴리율, 보유종목 변경을 함께 확인해야 한다.", "en": "For an active ETF, the closing price alone can mislead; NAV, premium/discount and holdings changes need to be checked together.", "ja": "アクティブETFでは終値だけでは誤認が生じ得るため、NAV、乖離率、保有変更を併せて確認する必要がある。"}
+    }
+  ],
+  "business_segment_map": [],
+  "peer_group": [
+    {"fund_name": "KODEX China AI Tech Active", "company": "KODEX China AI Tech Active", "ticker": "428510", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China/Hong Kong/Taiwan", "benchmark": "Bloomberg China Media & Tech Index PR", "currency": "KRW", "price": 34305, "nav": 33945, "aum": "KRW 63.25B / KRW 75.5B market-cap source-dependent", "expense_ratio": 0.50, "distribution_yield": 0.09, "one_year_context": {"ko": "중국 AI 테크 전반을 액티브로 담는 ETF다. 반도체, 광모듈, PCB, AI 애플리케이션까지 폭이 넓고 회전율이 높다.", "en": "An active ETF covering broad China AI technology exposure, including semiconductors, optical modules, PCB and AI applications, with high turnover.", "ja": "中国AIテック全般をアクティブに組み入れるETF。半導体、光モジュール、PCB、AIアプリケーションまで幅広く、回転率が高い。"}},
+    {"fund_name": "KODEX China AI Semiconductor TOP10", "company": "KODEX China AI Semiconductor TOP10", "ticker": "0162L0", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China/Hong Kong", "benchmark": "Indxx China AI Semiconductor Top 10 Index", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 42.13B to 59.94B prior snapshot", "expense_ratio": 0.55, "distribution_yield": 0.04, "one_year_context": {"ko": "중국 AI 반도체 순수 노출에 더 가까운 비교군이다. 428510은 액티브 운용과 AI 테크 전반 확장이 차이다.", "en": "A more pure-play China AI semiconductor peer. 428510 differs by using active management and broader AI-tech exposure.", "ja": "中国AI半導体のピュアプレイに近い比較対象。428510はアクティブ運用とAIテック全般への広がりが違いである。"}},
+    {"fund_name": "KODEX China Humanoid Robot", "company": "KODEX China Humanoid Robot", "ticker": "0048K0", "market": "KRX", "issuer": "Samsung Asset Management", "region": "China/Hong Kong", "benchmark": "Solactive China Humanoid Robotics Index", "currency": "KRW", "price": null, "nav": null, "aum": "KRW 230.97B / KRW 2.1B source-dependent prior snapshot", "expense_ratio": 0.45, "distribution_yield": 0.60, "one_year_context": {"ko": "중국 휴머노이드 로봇 부품과 완제품 테마에 집중된 ETF다. 428510은 로봇보다 AI 반도체·미디어·광모듈 범위가 넓다.", "en": "A focused ETF for China humanoid robotics components and finished-product exposure. 428510 is broader across AI semis, media and optical modules.", "ja": "中国ヒューマノイドロボット部品と完成品テーマに集中するETF。428510はロボットよりAI半導体、メディア、光モジュールまで幅が広い。"}},
+    {"fund_name": "Global X Robotics & Artificial Intelligence ETF", "company": "Global X Robotics & Artificial Intelligence ETF", "ticker": "BOTZ", "market": "NASDAQ", "issuer": "Global X", "region": "Global", "benchmark": "Indxx Global Robotics & Artificial Intelligence Thematic Index", "currency": "USD", "price": null, "nav": null, "aum": null, "expense_ratio": 0.68, "distribution_yield": null, "one_year_context": {"ko": "글로벌 로봇/AI ETF 비교군이다. 428510은 중국권 AI 테크 액티브 전략이라 지역·정책 리스크가 더 집중된다.", "en": "A global robotics and AI ETF peer. 428510 is an active Greater China AI-tech strategy and carries more concentrated regional and policy risk.", "ja": "グローバルなロボット・AI ETFの比較対象。428510は中華圏AIテックのアクティブ戦略で、地域・政策リスクがより集中する。"}}
+  ],
+  "news_events": [
+    {"date": "2022-05-17", "title": "KODEX China AI Tech Active ETF inception date", "source": "StockAnalysis overview and GoInsider profile", "url": "https://stockanalysis.com/quote/krx/428510/", "related_tickers": ["428510"], "sentiment": "neutral", "impact_horizon": "long", "price_linkage": {"observed": "Product inception date; no single-day event study used.", "interpretation": {"ko": "상장일은 가격 촉매라기보다 ETF 이력의 시작점이다. 액티브 ETF 특성상 운용 기간, 회전율, 실질보수 누적을 함께 봐야 한다.", "en": "The inception date is an operating-history marker rather than a price catalyst. For an active ETF, operating history, turnover and real expense accumulation should be monitored together.", "ja": "上場日は価格材料というより運用履歴の開始点である。アクティブETFでは運用期間、回転率、実質費用の累積を併せて見る必要がある。"}}},
+    {"date": "2026-04-29", "title": "Quarterly distribution recorded at KRW 12", "source": "StockAnalysis and GoInsider distribution history", "url": "https://goinsider.kr/en/etf/428510", "related_tickers": ["428510"], "sentiment": "neutral", "impact_horizon": "short", "price_linkage": {"observed": "KRW 12 distribution paid May 6, 2026.", "interpretation": {"ko": "분배금은 운용 이력 확인 항목이다. 가격 방향성은 분배보다 중국 AI 테크 보유종목과 환율에 더 민감하다.", "en": "The distribution is an operating-history item. Directional price movement is more sensitive to China AI-tech holdings and FX than to the distribution itself.", "ja": "分配金は運用履歴の確認項目である。価格方向は分配そのものより中国AIテック保有銘柄と為替に敏感である。"}}},
+    {"date": "2026-05-12", "title": "Public historical table shows KRW 27,270 close", "source": "StockAnalysis historical prices", "url": "https://stockanalysis.com/quote/krx/428510/history/", "related_tickers": ["428510"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": {"observed": "May 12 close was KRW 27,270 with 76,889 volume.", "interpretation": {"ko": "3월 말 2만원 부근에서 5월 중순 2.7만원대로 상승했다. 이후 6월 19일 스냅샷은 3.4만원대로 추가 상승을 보여 AI 테크 모멘텀이 강했다.", "en": "The ETF rose from the KRW 20,000 area in late March to the KRW 27,000 area by mid-May. The June 19 snapshot moved into the KRW 34,000 area, showing strong AI-tech momentum.", "ja": "3月末の2万ウォン付近から5月中旬には2.7万ウォン台へ上昇した。6月19日のスナップショットは3.4万ウォン台への追加上昇を示し、AIテックモメンタムは強かった。"}}},
+    {"date": "2026-06-19", "title": "StockAnalysis overview reports KRW 34,305 delayed price and 1-year return above 190%", "source": "StockAnalysis overview", "url": "https://stockanalysis.com/quote/krx/428510/", "related_tickers": ["428510"], "sentiment": "positive", "impact_horizon": "medium", "price_linkage": {"observed": "Delayed price was KRW 34,305, +1.24%, with a 52-week high shown at KRW 34,305.", "interpretation": {"ko": "가격은 52주 고점권에 있다. 신규 매수 판단은 모멘텀보다 NAV 괴리, 상위 보유종목 과열, 액티브 리밸런싱 방향 확인이 우선이다.", "en": "Price is near the 52-week high area. New-entry decisions should prioritize NAV gap, top-holding overheating and active rebalance direction over momentum alone.", "ja": "価格は52週高値圏にある。新規判断ではモメンタムだけでなく、NAV乖離、上位保有銘柄の過熱、アクティブリバランス方向の確認を優先すべきである。"}}},
+    {"date": "2026-06-19", "title": "GoInsider holdings snapshot shows 37 holdings and 49.11% top-ten concentration", "source": "GoInsider holdings snapshot", "url": "https://goinsider.kr/en/etf/428510", "related_tickers": ["428510", "Knowledge Atlas", "Zhongji Innolight", "Elite Material", "Hygon"], "sentiment": "mixed", "impact_horizon": "medium", "price_linkage": {"observed": "Top ten weights are led by Knowledge Atlas at 6.22%; one addition and three removals are observed.", "interpretation": {"ko": "상위 10개가 절반에 가까워 테마 랠리에는 민감하지만, 편입 변경과 단일 섹터 조정이 NAV를 크게 흔들 수 있다.", "en": "Top-ten concentration near half of assets creates sensitivity to theme rallies, but holdings changes and single-sector corrections can move NAV materially.", "ja": "上位10銘柄が資産の半分近くを占め、テーマラリーには敏感だが、組入変更と単一セクター調整がNAVを大きく動かし得る。"}}},
+    {"date": "2026-06-19", "title": "Tracking-error snapshot flags active strategy monitoring need", "source": "GoInsider NAV and index comparison", "url": "https://goinsider.kr/en/etf/428510", "related_tickers": ["428510"], "sentiment": "mixed", "impact_horizon": "long", "price_linkage": {"observed": "Estimated 245-day correlation is shown as -0.03; 30-day tracking error average is 21.763%.", "interpretation": {"ko": "액티브 ETF에서는 낮은 상관 자체가 오류라고 단정할 수 없지만, 벤치마크 대비 성과와 운용 의도는 별도로 점검해야 한다.", "en": "Low correlation is not automatically an error for an active ETF, but benchmark-relative performance and manager intent need separate review.", "ja": "アクティブETFでは低い相関自体を直ちに誤りとは言えないが、ベンチマーク比の成果と運用意図は別途確認が必要である。"}}}
+  ],
+  "technical_view": {
+    "support_zones": [33800, 30000],
+    "resistance_zones": [35235, 36000],
+    "trend_state": {
+      "ko": "428510은 3월 말 19,835원에서 5월 12일 27,270원까지 상승했고, 6월 19일 스냅샷에서는 34,305원으로 52주 고점권에 들어섰다. 공개 히스토리의 5월 12일 이후 구간이 비어 있어 중간 경로는 제한적으로만 해석해야 하지만, 확인 가능한 표본만 놓고 보면 상승 탄력은 매우 강하다.\n\n단기 지지권은 당일 저가권인 33,800원 부근과 심리적 가격대인 30,000원이다. 위쪽으로는 6월 19일 고가 35,235원과 36,000원이 추세 연장 확인선이다. 고점권에서는 종가보다 NAV, 괴리율, 보유종목 과열 여부를 같이 보는 것이 우선이다.\n\n확인 가능한 표본 기준 5일 평균은 28,199원, 20일 평균은 25,013원이다. 현재 가격은 두 평균을 크게 웃돌아 추세는 강하지만, 평균선과의 거리가 커진 만큼 단기 변동성 확대와 갭 메우기 리스크가 있다.",
+      "en": "428510 rose from KRW 19,835 at the end of March to KRW 27,270 on May 12, and the June 19 snapshot moved to KRW 34,305 near the 52-week high area. Because the public history after May 12 is missing in this sample, the intermediate path should be interpreted cautiously; still, the available sample shows very strong upside momentum.\n\nShort-term support sits near the same-day low area around KRW 33,800 and the psychological KRW 30,000 level. On the upside, the June 19 high of KRW 35,235 and KRW 36,000 are trend-extension checkpoints. Near highs, NAV, premium/discount and top-holding overheating matter more than the closing price alone.\n\nIn the available sample, the 5-day average is KRW 28,199 and the 20-day average is KRW 25,013. Price is well above both averages, confirming a strong trend but also raising short-term volatility and gap-fill risk.",
+      "ja": "428510は3月末の19,835ウォンから5月12日の27,270ウォンまで上昇し、6月19日のスナップショットでは34,305ウォンと52週高値圏に入った。公開履歴では5月12日以降の中間経路が欠けているため慎重な解釈が必要だが、確認可能なサンプルだけでは上昇モメンタムは非常に強い。\n\n短期支持は当日安値圏の33,800ウォン付近と心理的節目の30,000ウォンである。上値では6月19日高値35,235ウォンと36,000ウォンがトレンド延長の確認線である。高値圏では終値だけでなく、NAV、乖離率、上位保有銘柄の過熱を併せて見ることが優先される。\n\n確認可能なサンプルでは5日平均が28,199ウォン、20日平均が25,013ウォンである。現在価格は両平均を大きく上回り強いトレンドを示すが、平均線との距離が広がった分、短期変動性とギャップ埋めリスクも大きい。"
+    },
+    "risk_state": {
+      "ko": "무효화 구간은 30,000원 이탈, 다음 상승 확인 구간은 35,235원 돌파 후 36,000원 안착이다. 액티브 ETF라서 가격 상승만으로 운용 품질을 판단하지 말고, 보유종목 변경과 추적오차를 함께 확인해야 한다.",
+      "en": "The invalidation zone is a break below KRW 30,000, while upside confirmation requires a move through KRW 35,235 and stabilization above KRW 36,000. Because this is an active ETF, price gains alone should not be treated as proof of operating quality; holdings changes and tracking error should be checked together.",
+      "ja": "無効化ゾーンは30,000ウォン割れ、上昇確認は35,235ウォン突破後の36,000ウォン定着である。アクティブETFであるため、価格上昇だけで運用品質を判断せず、保有変更とトラッキングエラーを併せて確認すべきである。"
+    },
+    "moving_averages": {"ma5": 28199, "ma20": 25013, "ma60": null, "ma120": null},
+    "rsi": null,
+    "volume_state": "June 19 volume from StockAnalysis was 19,623, while GoInsider showed 35,706 for a same-day snapshot; public sources do not align perfectly.",
+    "method_note": "Chart uses public daily rows through May 12 plus the June 19 ETF snapshot; full official KRX continuous history after May 12 was not available in this run."
+  },
+  "trading_scenarios": {
+    "short_term": {
+      "ko": "단기는 33,800원 지지와 35,235원 돌파 여부가 핵심이다. 고점권 추격보다 장중 괴리율, 거래량, 상위 보유종목 동반 상승 여부를 확인하는 쪽이 낫다.",
+      "en": "Short term, the key is whether KRW 33,800 holds and KRW 35,235 breaks. Near highs, intraday premium/discount, volume and synchronized moves in top holdings matter more than chasing price alone.",
+      "ja": "短期では33,800ウォン維持と35,235ウォン突破が焦点である。高値圏では追随買いより、日中乖離率、出来高、上位保有銘柄の同時上昇確認が重要である。"
+    },
+    "medium_term": {
+      "ko": "중기는 중국 AI 반도체, 광모듈, PCB 소재 랠리가 이어지는지와 액티브 편입 변경이 성과를 유지하는지가 관찰 포인트다. 30,000원을 지키면 강세 추세의 조정으로 해석할 수 있다.",
+      "en": "Medium term, watch whether China AI semis, optical modules and PCB-material rallies continue and whether active holdings changes preserve performance. Holding KRW 30,000 would keep the move as a correction within an uptrend.",
+      "ja": "中期では中国AI半導体、光モジュール、PCB材料のラリー継続と、アクティブな組入変更が成果を維持するかが観察点である。30,000ウォンを維持すれば上昇トレンド内の調整と見られる。"
+    },
+    "long_term": {
+      "ko": "장기는 중국 AI 테크 국산화, 클라우드/데이터센터 투자, 반도체 장비 사이클이 ETF의 구조적 성과를 좌우한다. 실질보수 1.5014%와 높은 회전율은 장기 보유 비용으로 반영해야 한다.",
+      "en": "Long term, China AI-tech localization, cloud/data-center capex and semiconductor-equipment cycles will drive structural performance. The 1.5014% real expense ratio and high turnover should be included in long-term holding costs.",
+      "ja": "長期では中国AIテック国産化、クラウド・データセンター投資、半導体装置サイクルがETFの構造的成果を左右する。実質経費率1.5014%と高い回転率は長期保有コストとして織り込む必要がある。"
+    }
+  },
+  "sources": [
+    {"title": "K-ETF 428510 product page", "url": "https://www.k-etf.com/etf/428510", "used_for": "Product identity and KODEX ETF page reference."},
+    {"title": "Naver Finance 428510", "url": "https://finance.naver.com/item/main.naver?code=428510", "used_for": "Korean product name and FnGuide description that this is an active ETF seeking excess return versus Bloomberg Greater China Media & Tech Index(KRW)."},
+    {"title": "StockAnalysis KRX:428510 overview", "url": "https://stockanalysis.com/quote/krx/428510/", "used_for": "Delayed price, assets, expense ratio, dividend, 52-week range, product profile and top-holdings cross-check."},
+    {"title": "StockAnalysis KRX:428510 historical prices", "url": "https://stockanalysis.com/quote/krx/428510/history/", "used_for": "Public daily OHLCV sample through May 12, 2026."},
+    {"title": "GoInsider 428510 ETF profile", "url": "https://goinsider.kr/en/etf/428510", "used_for": "ETF holdings, expense stack, turnover, rebalance, tracking-error, distribution and same-day ETF snapshot."}
+  ],
+  "data_quality": {
+    "status": "partial",
+    "missing_fields": ["official KRX continuous OHLCV after 2026-05-12", "clean same-source market price and NAV pair", "official ISIN in gathered sources"],
+    "stale_fields": ["Naver Finance quote area appeared stale relative to StockAnalysis and GoInsider, so it was used only for product description."],
+    "source_conflicts": [
+      "StockAnalysis showed KRW 34,305 and 19,623 volume for June 19, while GoInsider showed KRW 33,945 and 35,706 volume for the same date.",
+      "StockAnalysis overview shows 10 holdings summary while GoInsider shows 37 holdings; GoInsider was used for holdings_count and top holdings."
+    ],
+    "notes": {
+      "ko": "공개 소스 간 가격·거래량이 완전히 일치하지 않아 가격 스냅샷은 StockAnalysis, 보유종목과 운용 지표는 GoInsider를 우선했다.",
+      "en": "Because public sources do not fully align on price and volume, StockAnalysis is prioritized for the price snapshot while GoInsider is prioritized for holdings and operating metrics.",
+      "ja": "公開ソース間で価格・出来高が完全には一致しないため、価格スナップショットはStockAnalysis、保有銘柄と運用指標はGoInsiderを優先した。"
+    }
+  },
+  "disclaimer": {
+    "ko": "본 페이지는 공개 데이터 기반 정적 분석 자료이며 투자 권유가 아닙니다. ETF는 기초자산, 환율, 괴리율, 유동성, 보수와 세금에 따라 손실이 발생할 수 있습니다.",
+    "en": "This page is a static analysis based on public data and is not investment advice. ETF investments can lose value due to underlying assets, FX, premium/discount, liquidity, fees and taxes.",
+    "ja": "本ページは公開データに基づく静的分析資料であり、投資勧誘ではありません。ETFは原資産、為替、乖離率、流動性、費用、税金により損失が発生する可能性があります。"
+  }
+}
